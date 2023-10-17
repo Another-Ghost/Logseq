@@ -1,0 +1,1 @@
+alias:: oscillate, oscilations, oscillating

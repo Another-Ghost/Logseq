@@ -1,0 +1,1 @@
+- 和 [[Phong reflection model]] 不同之处只有[[高光反射]]的计算方式。

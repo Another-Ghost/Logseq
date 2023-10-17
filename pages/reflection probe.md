@@ -1,0 +1,3 @@
+- #UnityRender
+- [[reflection probe]]是有一个影响范围(`box size`)的.
+- ![image.png](../assets/image_1695386637392_0.png)

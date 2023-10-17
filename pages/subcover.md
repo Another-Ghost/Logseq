@@ -1,0 +1,2 @@
+- By [[subcover]] of an [[open cover]] $\{G_\alpha\}$ of a set $E$, we mean a **subset** of $\{G_\alpha\}$ is also an **open cover** of $E$  .
+-

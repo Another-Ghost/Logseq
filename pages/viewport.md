@@ -1,0 +1,1 @@
+alias:: rectangular window

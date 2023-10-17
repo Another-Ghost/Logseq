@@ -1,0 +1,23 @@
+alias:: 图形学
+
+- [Real_Time_Rendering_by_T_Akenine_Möller_E_Haines_N_Hoffman_A_Pesce_M_Iwanicki_S_Hillaire_z_liborg.pdf](../assets/Real_Time_Rendering_by_T_Akenine_Möller_E_Haines_N_Hoffman_A_Pesce_M_Iwanicki_S_Hillaire_z_liborg_1691589737525_0.pdf)
+- ![《Real-Time Rendering 3rd》 提炼总结.pdf](../assets/《Real-Time_Rendering_3rd》_提炼总结_1693543612981_0.pdf)
+- [《Real-Time Rendering 3rd》核心知识网络图解.jpg](../assets/《Real-Time_Rendering_3rd》核心知识网络图解_1691596876813_0.jpg){:height 2491, :width 608}
+- [Fundamentals of Computer Graphics (Steve Marschner, Peter Shirley) (Z-Library).pdf](../assets/Fundamentals_of_Computer_Graphics_(Steve_Marschner,_Peter_Shirley)_(Z-Library)_1691589956424_0.pdf)
+- ![计算机图形学（第二版） Fundamentals of Computer Graphics ([美] 舍利, Peter Shirley, 高晓春译) (Z-Library).pdf](../assets/计算机图形学（第二版）_Fundamentals_of_Computer_Graphics_([美]_舍利,_Peter_Shirley,_高晓春译)_(Z-Library)_1693543547372_0.pdf)
+- [OpenGL编程指南（原书第9版） ( etc.) (Z-Library).pdf](../assets/OpenGL编程指南（原书第9版）_(_etc.)_(Z-Library)_1691589966804_0.pdf)
+- [计算机图形学编程（使用OpenGL和C++）（第2版） ((美)V.斯科特·戈登,(美)约翰) (Z-Library).pdf](../assets/计算机图形学编程（使用OpenGL和C++）（第2版）_((美)V.斯科特·戈登,(美)约翰)_(Z-Library)_1691590574340_0.pdf)
+- ![Vulkan Programming Guide  The Official Guide to Learning Vulkan (OpenGL) (Graham Sellers, John Kessenich) (Z-Library).pdf](../assets/Vulkan_Programming_Guide_The_Official_Guide_to_Learning_Vulkan_(OpenGL)_(Graham_Sellers,_John_Kessenich)_(Z-Library)_1693543641337_0.pdf)
+- [Mathematics for 3D Game Programming and Computer Graphics (Eric Lengyel) (Z-Library).pdf](../assets/Mathematics_for_3D_Game_Programming_and_Computer_Graphics_(Eric_Lengyel)_(Z-Library)_1693619361557_0.pdf)
+- [3D游戏与计算机图形学中的数学方法  第3版.pdf](../assets/3D游戏与计算机图形学中的数学方法_第3版_1691590640637_0.pdf)
+- [UNITY SHADER入门精要 (冯乐乐著) (Z-Library).pdf](../assets/UNITY_SHADER入门精要_(冯乐乐著)_(Z-Library)_1693543685999_0.pdf)
+- [[rendering pipeline]]
+- [[Notational Conventions in Graphics]]
+-
+- # Unity
+	- [Unity Shader入门精要 (冯乐乐 [冯乐乐]) (Z-Library).epub](../assets/Unity_Shader入门精要_(冯乐乐_[冯乐乐])_(Z-Library)_1695392517540_0.epub)
+	- ![The Unity Shaders Bible (Jettelly).pdf](../assets/The_Unity_Shaders_Bible_(Jettelly)_1695392580580_0.pdf)
+	- [Building Quality Shaders for Unity®  Using Shader Graphs and HLSL Shaders (Daniel Ilett).epub](../assets/Building_Quality_Shaders_for_Unity®_Using_Shader_Graphs_and_HLSL_Shaders_(Daniel_Ilett)_1695392607784_0.epub)
+	- [Unity 2018 Shaders and Effects Cookbook (John P. Doran Alan Zucconi) (Z-Library).epub](../assets/Unity_2018_Shaders_and_Effects_Cookbook_(John_P._Doran_Alan_Zucconi)_(Z-Library)_1695392650177_0.epub)
+	- [Physically Based Shader Development for Unity 2017 (Claudia Doppioslash) (Z-Library).epub](../assets/Physically_Based_Shader_Development_for_Unity_2017_(Claudia_Doppioslash)_(Z-Library)_1695392714617_0.epub)
+	-

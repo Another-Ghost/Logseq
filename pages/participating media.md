@@ -1,0 +1,1 @@
+- Sometimes the ray may travel through a [[medium]] that does affect its [[radiance]] appreciably via [[absorption]] or [[scattering]]. Such *media* are called [[participating media]].

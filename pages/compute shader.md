@@ -1,0 +1,4 @@
+- A separate mode of [[GPU]] treats the *GPU* as a *highly parallel general processor* .
+- Using [[compute shader]] requires compatible GPU hardware.
+-
+-

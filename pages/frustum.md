@@ -1,0 +1,1 @@
+- [[frustum]] is a [[truncated pyramid]] with [[rectangular]] base.

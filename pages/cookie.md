@@ -1,0 +1,2 @@
+- https://docs.unity3d.com/2023.2/Documentation/Manual/Cookies.html
+- A cookie is a mask that you place on a Light to create a shadow with a specific shape or color, which changes the appearance and intensity of the Light. Cookies are an efficient way of simulating complex lighting effects with minimal or no runtime performance impact. Effects you can simulate with cookies include caustics, soft shadows, and light shapes.

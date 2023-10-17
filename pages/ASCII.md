@@ -1,0 +1,11 @@
+alias:: American Standard Code for Information Interchange
+
+- |十进制|名称|
+  |--|--|
+  |10|[[换行]] `\n`|
+  |13|[[归位]] `\c`|
+  |65|A|
+  |90|Z|
+  |97|a|
+  |122|z|
+-

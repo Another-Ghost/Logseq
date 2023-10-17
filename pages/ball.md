@@ -1,0 +1,1 @@
+- If $x\in R^k$ and $r > 0$, the [[open]] (or [[closed]]) [[ball]] $B$ with [[center]] at $\mathbf{x}$ and [[radius]] $\mathbf{r}$ is defined to be the set of all $\mathbf{y}\in R^k$ such that $|\mathbf{y - x}|< r$ (or $|\mathbf{y} - \mathbf{x}|\le r)$.

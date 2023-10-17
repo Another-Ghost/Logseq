@@ -1,0 +1,1 @@
+- the size of a [[pixel]], or the [[distance]] between [[shading samples]].

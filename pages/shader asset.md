@@ -1,0 +1,2 @@
+- #UnityRender
+- A file with the `.shader` extension in your *Unity project*. It defines a [[Shader object]].
