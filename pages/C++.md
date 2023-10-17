@@ -1,0 +1,7 @@
+# Reference
+	- [The C++ Programming Language, Fourth Edition (Bjarne Stroustrup) (Z-Library).epub](../assets/The_C++_Programming_Language,_Fourth_Edition_(Bjarne_Stroustrup)_(Z-Library)_1697542304500_0.epub)
+	- [C++ Primer中文版：第5版 (王刚  杨巨峰).epub](../assets/C++_Primer中文版：第5版_(王刚_杨巨峰)_1697542323938_0.epub)
+	- [Effective C++ (Meyers, Scott).epub](../assets/Effective_C++_(Meyers,_Scott)_1697542234373_0.epub)
+	- [Effective C++：改善程序与设计的55个具体做法（中文第三版） (Scott Meyers).mobi](../assets/Effective_C++：改善程序与设计的55个具体做法（中文第三版）_(Scott_Meyers)_1697542282322_0.mobi)
+	- [Effective Modern C++ 42 Specific Ways to Improve Your Use of C++11 and C++14.epub](../assets/Effective_Modern_C++_42_Specific_Ways_to_Improve_Your_Use_of_C++11_and_C++14_1697542339173_0.epub)
+		-

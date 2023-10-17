@@ -10,7 +10,6 @@ alias:: 图形学
 - ![Vulkan Programming Guide  The Official Guide to Learning Vulkan (OpenGL) (Graham Sellers, John Kessenich) (Z-Library).pdf](../assets/Vulkan_Programming_Guide_The_Official_Guide_to_Learning_Vulkan_(OpenGL)_(Graham_Sellers,_John_Kessenich)_(Z-Library)_1693543641337_0.pdf)
 - [Mathematics for 3D Game Programming and Computer Graphics (Eric Lengyel) (Z-Library).pdf](../assets/Mathematics_for_3D_Game_Programming_and_Computer_Graphics_(Eric_Lengyel)_(Z-Library)_1693619361557_0.pdf)
 - [3D游戏与计算机图形学中的数学方法  第3版.pdf](../assets/3D游戏与计算机图形学中的数学方法_第3版_1691590640637_0.pdf)
-- [UNITY SHADER入门精要 (冯乐乐著) (Z-Library).pdf](../assets/UNITY_SHADER入门精要_(冯乐乐著)_(Z-Library)_1693543685999_0.pdf)
 - [[rendering pipeline]]
 - [[Notational Conventions in Graphics]]
 -
