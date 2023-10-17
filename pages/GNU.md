@@ -1,4 +1,2 @@
-- [[GNU]] is an extensive collection of *free software* (385 packages as of September 2023), which can be used as an [[operating system]] or can be used in parts with other operating systems.
-- The use of the completed GNU tools led to the family of operating systems popularly known as [[Linux]]
-  Most of GNU is licensed under the [GNU Project](https://en.wikipedia.org/wiki/GNU_Project)'s own General Public License ([GPL](https://en.wikipedia.org/wiki/GNU_General_Public_License)).
--
+- [[GNU]]是一个庞大的免费软件集合（截至2023年9月拥有385个软件包），可用作[[操作系统]]，或可以与其他操作系统的组件一起使用。完整的GNU工具的使用导致了广泛称为[[Linux]]的操作系统家族的诞生。
+- 大多数GNU软件都是根据[GNU项目](https://en.wikipedia.org/wiki/GNU_Project)自己的GNU通用公共许可证（[GPL](https://en.wikipedia.org/wiki/GNU_General_Public_License)）进行许可。
