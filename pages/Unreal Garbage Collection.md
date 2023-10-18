@@ -1,3 +1,3 @@
-alias:: Unreal GC, 垃圾回收
+alias:: Unreal GC
 
-- 大象无形
+-
