@@ -11,7 +11,9 @@ alias:: ELF 可重定位目标文件
   夹在[[ELF 头]]和[[节头部表]]之间的都是[[节]]。一个典型的 [[ELF 可重定位目标文件]]包含下面几个[[节]]：
 	- [[.text]]: [[已编译程序]]的[[机器代码]]。
 	  logseq.order-list-type:: number
-	- [[.rodata]]: [[只读数据]]，比如`printf`
+	- [[.rodata]]: [[read-only data]]，比如`printf`语句中的[[format string]]和`switch`语句的[[jump table]]。
 	  logseq.order-list-type:: number
-	  语句中的格式串和开关语句的跳转表。
+	- [[.data]]: 已初始化的全局和静态 C 变量。局部 C 变量在运行时被保存在栈中，既不出
+	  logseq.order-list-type:: number
+	  现在.data 节中，也不出现在 .bss 节中。
 -
