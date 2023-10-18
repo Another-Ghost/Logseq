@@ -43,8 +43,9 @@ alias:: ELF 可重定位目标文件
 	  #+BEGIN_TIP
 	  只有以`-g`选项调用编译器驱动程序时，才会得到这张表。
 	  #+END_TIP
-	- [[.strtab]]: —个[[string table]]，其内容包括[[.symtab]]和[[.debug]]节中的[[]]符号表，以及节头部中的令名字。字符串表就是以 null 结尾的字符串的序列。
+	- [[.strtab]]: —个[[string table]]，其内容包括[[.symtab]]和[[.debug]]节中的[[符号表]]，以及[[section headers]]中的 *节名字* 。
 	  logseq.order-list-type:: number
+	  >字符串表就是以`null`结尾的字符串的序列。
 -
 -
 -
