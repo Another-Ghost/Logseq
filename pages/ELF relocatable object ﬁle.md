@@ -33,8 +33,18 @@ alias:: ELF 可重定位目标文件
 	- [[.rel.data]]: 被模块引用或定义的所有全局变量的 [[relocation information]]。
 	  logseq.order-list-type:: number
 	  一般而言，如果任何[已初始化的]([[已初始化变量]])[[全局变量]]的初始值是一个[[全局变量]][[地址]]或者[[外部定义函数]]的[[地址]]，都需要被修改。
-	- [[.debug]]: —个[[debugging symbol table]]，其 *条目* 是程序中定义的[[局部变量]]和[[typedefs]]，程序中定
+	- [[.debug]]: —个[[debugging symbol table]]，其 *条目* 是程序中定义的[[局部变量]]和[[typedefs]]，程序中定义和引用的[[全局变量]]，以及原始的[[C source file]]。
 	  logseq.order-list-type:: number
-	  义和引用的全局变量，以及原始的 C 源文件。只有以-g 选项调用编译器驱动程序时，才
+	  #+BEGIN_TIP
+	  只有以`-g`选项调用[[编译器驱动程序]]时，才会得到这张表。
+	  #+END_TIP
+	- [[.line]]: 原始[[C source program]]中的[[line numbers]]和[[.text]]节中[[机器指令之间的[[映射]]。
+	  logseq.order-list-type:: number
+	  #+BEGIN_TIP
+	  只有以`-g`选项调用编译器驱动程序时，才会得到这张表。
+	  #+END_TIP
+	- [[.strtab]]: —个[[string table]]，其内容包括[[.symtab]]和[[.debug]]节中的[[]]符号表，以及节头部中的令名字。字符串表就是以 null 结尾的字符串的序列。
+	  logseq.order-list-type:: number
+-
 -
 -
