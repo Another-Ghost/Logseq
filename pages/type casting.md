@@ -1,4 +1,4 @@
-alias:: 类型转换, explicit conversion, 显式转换, type-casting, type-cast, 显示类型转换
+alias:: 类型转换, explicit conversion, 显式转换, type-casting, type-cast, 显示类型转换, explicit type-casting
 
 - C++ 是一种强类型语言。许多转换，特别是那些涉及到值不同解释的情况，需要[[显式转换]]，C++ 中称为[[type-casting]]。有两种主要语法用于通用类型转换：[[functional type-casting]]和[[C-like type casting]]：
 - ``` cpp
@@ -35,19 +35,17 @@ alias:: 类型转换, explicit conversion, 显式转换, type-casting, type-cast
   ```cpp
   padd = (Addition*) &d;
   ```
-  不受限制的显式类型转换允许将任何指针转换为任何其他指针类型，独立于它们指向的类型。随后对成员 result 的调用将产生运行时错误或其他意外的结果。
-- 为了控制类之间的这些类型转换，我们有四种特定的转换运算符：dynamic_cast、reinterpret_cast、static_cast 和 const_cast。它们的格式是在尖括号（<>）之间跟随新类型，然后在括号内紧跟要转换的表达式。
-- ```
-  cppCopy code
-  - dynamic_cast<new_type>(expression)
+  不受限制的[[显式类型转换]]允许将任何指针转换为任何其他指针类型，独立于它们指向的类型。随后对成员 *result* 的调用将产生运行时错误或其他意外的结果。
+- 为了控制类之间的这些类型转换，我们有四种特定的[[casting operators]]：[[dynamic_cast]]、[[reinterpret_cast]]、[[static_cast]]和[[const_cast]]。它们的格式是在尖括号（<>）之间跟随新类型，然后在括号内紧跟要转换的[[表达式]]。
+- ``` cpp
+  dynamic_cast<new_type>(expression)
   reinterpret_cast<new_type>(expression)
   static_cast<new_type>(expression)
   const_cast<new_type>(expression)
   ```
 - 传统的类型转换等效于这些表达式的形式为：
-- ```
-  cppCopy code
-  - (new_type) expression
+  ``` cpp
+  (new_type) expression
   new_type (expression)
   ```
-- 但每种类型转换都有自己的特殊特性。
+  但每种类型转换都有自己的特殊特性。
