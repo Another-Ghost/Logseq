@@ -28,7 +28,8 @@ alias:: 隐式转换
 		  logseq.order-list-type:: number
 		- 类型转换操作符（[[type-cast operator]]）：允许进行隐式转换以获得特定类型。
 		  logseq.order-list-type:: number
-	- 例如：
+	- 示例：
+	  id:: 653280eb-8e9c-4d9e-a740-511017191a15
 	  
 	  ``` cpp
 	  // implicit conversion of classes:
@@ -54,4 +55,10 @@ alias:: 隐式转换
 	  }
 	  
 	  ```
-	- 类型转换运算符使用特定的语法：它使用`operator`关键字，后面跟着目标类型和一对空括号。请注意，返回类型是目标类型，因此不需要在`operator`关键字之前指定。
+	- [[type-cast operator]] 使用特定的语法：它使用`operator`关键字，后面跟着目标类型和一对空括号。请注意，返回类型是**目标类型**，因此不需要在`operator`关键字之前指定。
+	  id:: 653282b3-35e1-4874-8be2-df057d4d46d8
+- ```
+  cppCopy code
+  - B bar = foo;
+  ```
+- 类型转换成员函数（在上一节中描述的那些）也可以标记为 explicit。这将以与目标类型的 explicit 构造函数相同的方式阻止隐式转换。
