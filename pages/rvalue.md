@@ -19,7 +19,7 @@ alias:: rvalues
   }
   ```
 - id:: 653249c9-e404-490b-b923-83e5b1297cac
-- 对于实际编程来说，通常以 rvalue 和 lvalue 的术语思考已经足够。请注意，每个表达式要么是 lvalue，要么是 rvalue，而不会同时兼具两者。
+- 对于实际编程来说，通常以[[rvalue]]和[[lvalue]]的术语思考已经足够。请注意，每个表达式要么是 lvalue，要么是 rvalue，而不会同时兼具两者。
   id:: 653249c9-1dda-41d1-9ee6-71fde8e073c6
 -
 -
