@@ -11,13 +11,13 @@ alias:: rvalues
   ![image.png](../assets/image_1697787998357_0.png)
 - 因此，经典的[[lvalue]]是指具有[[身份]]但**不能**[[移动]]的东西（因为我们可以在移动之后检查它），而经典的[[rvalue]]则是可以[[移动]]的任何东西。其他替代方案包括 [[prvalue]]（"pure rvalue"，纯粹的 rvalue）、[[glvalue]]（"generalized lvalue"，广义的 lvalue）和[[xvalue]]（"x" 代表 "extraordinary" 或 "expert only"，有关这个 "x" 的含义的建议是非常有创意的）。例如：
   id:: 653249c9-0af4-4d47-a1a0-ac55cd81db31
-- ```
-  cppCopy code
-  - void f(vector<string>& vs)
+- ```C++
+  void f(vector<string>& vs)
   {
     vector<string>& v2 = std::move(vs); // 将 vs 移动到 v2
     // ...
   }
   ```
-- 在这里，`std::move(vs)` 是一个 xvalue：它明显具有身份（我们可以引用它作为 vs），但我们通过调用 `std::move()` 明确地允许它被移动（参考 §3.3.2、§35.5.1）。
+- 在这里，`std::move(vs)` 是一个[[xvalue]]：它明显具有身份（我们可以引用它作为 `vs`），但我们通过调用 `std::move()` 明确地允许它被移动（参考 §3.3.2、§35.5.1）。
 - 对于实际编程来说，通常以 rvalue 和 lvalue 的术语思考已经足够。请注意，每个表达式要么是 lvalue，要么是 rvalue，而不会同时兼具两者。
+-
