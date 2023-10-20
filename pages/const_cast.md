@@ -2,7 +2,8 @@
   const_cast<target-type>(expression)	//返回 target-type 类型的值	
   ```
 - `const_cast`用于在不同[[cv-修饰符]]间转换，可以添加或移除。
-- 例如，为了将一个`const`指针传递给一个期望非`const`参数的函数：``` cpp
+- 例如，为了将一个`const`指针传递给一个期望非`const`参数的函数：
+  ``` cpp
   // const_cast
   #include <iostream>
   using namespace std;
