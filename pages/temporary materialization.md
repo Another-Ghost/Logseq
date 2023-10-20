@@ -1,4 +1,6 @@
-#### Temporary materialization
+alias:: materialized temporary
+
+- #### Temporary materialization
 - A [prvalue](https://en.cppreference.com/w/cpp/language/value_category#prvalue) of any complete type `T` can be converted to an xvalue of the same type `T`. This conversion initializes a [temporary object](https://en.cppreference.com/w/cpp/language/lifetime#Temporary_object_lifetime) of type T from the prvalue by evaluating the prvalue with the temporary object as its result object, and produces an xvalue denoting the temporary object. If `T` is a class or array of class type, it must have an accessible and non-deleted destructor.
 - ```
   struct S { int m; };
