@@ -20,6 +20,7 @@
 	  logseq.order-list-type:: number
 	- 转换为[[右值引用]]。
 	  logseq.order-list-type:: number
-	- 将[[枚举类的值转换为整数或浮点值。
+	- 将[[枚举类]]的值转换为整型或浮点值。
 	  logseq.order-list-type:: number
-- 将任何类型转换为 `void`，并评估和丢弃该值。
+	- 将任何类型转换为`void`，并[[求解]]和[[丢弃]]该值。
+	  logseq.order-list-type:: number
