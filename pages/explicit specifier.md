@@ -37,5 +37,4 @@ alias:: explicit
 - ```cpp
   B bar = foo;
   ```
-- [[type-cast]]成员函数也可以标记为`explicit`。这将以与目标类型的`explicit`构造函数相同的方式阻止[[隐式转换]]。
--
+- [[type-cast 成员函数]] 也可以标记为`explicit`。这将以与目标类型的`explicit`构造函数相同的方式阻止[[隐式转换]]。
