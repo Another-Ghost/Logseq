@@ -12,5 +12,4 @@ alias:: value category
 	- 一个[[xvalue]]（“eXpiring” value）是一个[[glvalue]]，表示其资源可以被重用的对象；
 	- 一个[[lvalue]]（因为在历史上，[[lvalues]]可以出现在[[赋值表达式]]的左侧而得名）是一个不是[[xvalue]]的[[glvalue]]；
 	- 一个[[rvalue]]（因为在历史上，[[rvalues]]可以出现在[[赋值表达式]]的右侧而得名）是一个[[prvalue]]或 [[xvalue]]。
-	  
-	  注意：这种分类法在过去的 C++ 标准修订中经历了重大变化，有关详细信息，请参阅下面的历史部分。
+	- ![image.png](../assets/image_1697787998357_0.png)
