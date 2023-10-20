@@ -9,6 +9,6 @@
 		- 如果 *target-type* 是某个[[类]] D 的[[引用]]，而 *expression* 是其non-[[virtual base class]] B 的[[lvalue]]，或者 *target-type* 是某个完整类 D 的指针，而表达式是其非虚基类 B 的[[prvalue]]指针，`static_cast` 执行一[[downcast]]。
 		  logseq.order-list-type:: number
 		  如果 B 是 D 的模糊、不可访问或虚基类（或虚基类的基类），这种 downcast 是非法的。
-		  这种 downcast 不会在运行时检查对象的运行时类型是否确实为 $D$ ，只有在其他方式（例如实现静态多态性时）可以保证这个前提条件的情况下才能安全使用。安全的下行转换可以使用 `dynamic_cast` 完成。如果表达式引用或指向的对象实际上是类型 D 的对象的基类子对象，结果将引用类型 D 的封装对象。否则，行为是未定义的。[[]]
+		  这种 downcast 不会在运行时检查对象的运行时类型是否确实为 D ，只有在其他方式（例如实现静态多态性时）可以保证这个前提条件的情况下才能安全使用。安全的下行转换可以使用 `dynamic_cast` 完成。如果表达式引用或指向的对象实际上是类型 D 的对象的基类子对象，结果将引用类型 D 的封装对象。否则，行为是未定义的。
 		- logseq.order-list-type:: number
 -
