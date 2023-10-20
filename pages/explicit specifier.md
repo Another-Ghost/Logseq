@@ -5,18 +5,37 @@ alias:: explicit
   void fn(B arg) {}
   ```
 - 这个函数接受类型为 B 的参数，但实际上也可以使用类型为 A 的对象作为参数来调用：
-- ```
-  cppCopy code
-  - fn(foo);
+- ```cpp
+  fn(foo);
   ```
-- 这可能不是预期的行为，但无论如何，可以通过在受影响的构造函数前加上 explicit 关键字来阻止这种情况发生：
-- ```
-  cppCopy code
-  - class B {
+- 这可能不是预期的行为，但无论如何，可以通过在受影响的[[构造函数]]前加上`explicit`关键字来阻止这种[[隐式转换]]发生：
+- ```cpp
+  class B {
   public:
-  explicit B(const A& x) {}
-  B& operator=(const A& x) { return *this; }
-  operator A() { return A(); }
+    explicit B(const A& x) {}
+    B& operator=(const A& x) { return *this; }
+    operator A() { return A(); }
   };
+  
+  void fn (B x) {}
+  
+  int main ()
+  {
+    A foo;
+    B bar (foo);
+    bar = foo;
+    foo = bar;
+    
+  //  fn (foo);  // not allowed for explicit ctor.
+    fn (bar);  
+  
+    return 0;
+  }
+  
   ```
-- 通过这样标记的构造函数，可以避免这种类型的隐式转换。此外，使用 explicit 标记的构造函数不能使用赋值样式的语法进行调用；在上述示例中，bar 不能通过以下方式构造：
+- 此外，使用`explicit`标记的[[构造函数]]不能使用[[赋值]]样式的语法进行调用；在上述示例中，`bar`不能通过以下方式构造：
+- ```cpp
+  B bar = foo;
+  ```
+- [[type-cast]]成员函数（在上一节中描述的那些）也可以标记为`explicit`。这将以与目标类型的 explicit 构造函数相同的方式阻止隐式转换。
+-
