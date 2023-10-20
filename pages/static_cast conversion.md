@@ -10,6 +10,7 @@
 		  logseq.order-list-type:: number
 		  id:: 65325f02-b5eb-49dc-a66a-40ec8f0ee0e5
 		  如果 B 是 D 的模糊、不可访问或虚基类（或虚基类的基类），这种 downcast 是非法的。
-		  这种 downcast 不会在运行时检查对象的运行时类型是否确实为 D ，只有在其他方式（例如实现静态多态性时）可以保证这个前提条件的情况下才能安全使用。安全的 downcast 可以使用[[dynamic_cast]]完成。如果表达式引用或指向的对象实际上是类型 D 的对象的基类子对象，结果将引用类型 D 的封装对象。否则，行为是未定义的。
+		  这种 downcast 不会在运行时检查对象的运行时类型是否确实为 D ，只有在其他方式（例如实现[[静态多态性]]时）可以保证这个前提条件的情况下才能安全使用。
+		  安全的 downcast 可以使用[[dynamic_cast]]完成。
 		- logseq.order-list-type:: number
 -
