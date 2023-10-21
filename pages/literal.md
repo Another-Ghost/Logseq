@@ -1,4 +1,3 @@
 alias:: 文字
 
 - [[命题变元]]或命题变元的[[否定]]称为[[literal]]。
-  title:: literal

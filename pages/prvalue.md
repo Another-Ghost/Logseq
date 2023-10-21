@@ -4,12 +4,18 @@ alias:: pure rvalue
   id:: 65340fa8-3eb9-4bc8-900e-e6cbd3b9e347
 	- [[literals]]（不包括字符串字面值），比如 `42`、`true` 或 `nullptr`。
 	  logseq.order-list-type:: number
-- 函数调用或重载运算符表达式，其返回类型是非引用类型，比如 `str.substr(1, 2)`、`str1 + str2` 或 `it++`。
-- 内置的后增和后减表达式，即 `a++` 和 `a--`。
-- 所有其他内置算术表达式，如 `a + b`、`a % b`、`a & b`、`a << b` 等。
-- 内置的逻辑表达式，包括 `a && b`、`a || b`、`!a` 等。
-- 内置的比较表达式，包括 `a < b`、`a == b`、`a >= b` 等。
-- 内置的取地址表达式，即 `&a`。
+	- *函数调用* 或 *重载运算符* 表达式，其返回类型是 *非引用类型*，比如 `str.substr(1, 2)`、`str1 + str2` 或 `it++`。
+	  logseq.order-list-type:: number
+	- 内置的后增和后减表达式，即 `a++` 和 `a--`。
+	  logseq.order-list-type:: number
+	- 所有其他内置 *算术表达式*，如 `a + b`、`a % b`、`a & b`、`a << b` 等。
+	  logseq.order-list-type:: number
+	- 内置的 *逻辑表达式* ，包括 `a && b`、`a || b`、`!a` 等。
+	  logseq.order-list-type:: number
+	- 内置的 *比较表达式* ，包括 `a < b`、`a == b`、`a >= b` 等。
+	  logseq.order-list-type:: number
+	- 内置的 *取地址* 表达式，即 `&a`。
+	  logseq.order-list-type:: number
 - 对象成员表达式 `a.m`，其中 `m` 是成员枚举器或非静态成员函数。
 - 指针成员表达式 `p->m`，其中 `m` 是成员枚举器或非静态成员函数。
 - 对象的指针成员表达式 `a.*mp`，其中 `mp` 是成员函数的指针。
