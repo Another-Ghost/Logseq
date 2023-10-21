@@ -1,0 +1,2 @@
+- https://www.ibm.com/docs/en/aix/7.3?topic=concepts-shared-libraries-shared-memory
+-
