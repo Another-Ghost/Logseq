@@ -14,7 +14,7 @@ alias:: eXpiring value
 	  logseq.order-list-type:: number
 	- 内置[[下标]]表达式 `a[n]`，其中一个[[运算元]]是数组右。
 	  logseq.order-list-type:: number
-	- [[类型转换]]表达式为对象类型的右值引用，例如 `static_cast<char&&>(x)`（自[[C++11]]起）。
+	- [[类型转换]]表达式为对象类型的右值引用，例如 `static_cast<char&&>(x)`。
 	  logseq.order-list-type:: number
 	- 任何指代[[临时对象]]的表达式，在[[temporary materialization]]后（自[[C++17]]起）。
 	  logseq.order-list-type:: number
