@@ -23,15 +23,14 @@
   ```
 - 有一个例外情况，当函数参数的类型是类型模板参数的右值引用（"forwarding reference" 或 "universal reference"）时，此时会使用 `std::forward`。
 - 除非另有规定，已移动的所有标准库对象都被置于一个“有效但未指定状态”，这意味着对象的类不变量成立（因此不带前提条件的函数，例如赋值运算符，可以在对象被移动后安全使用）。
-- ```
-  cppCopy code
-  - std::vector<std::string> v;
+- ``` cpp
+  std::vector<std::string> v;
   std::string str = "example";
   v.push_back(std::move(str)); // 现在 str 处于有效但未指定状态
   str.back(); // 如果 size() == 0，那么是未定义行为：back() 有前提条件 !empty()
   if (!str.empty())
-    str.back(); // OK，empty() 没有前提条件，而 back() 的前提条件已满足
-  - str.clear(); // OK，clear() 没有前提条件
+  str.back(); // OK，empty() 没有前提条件，而 back() 的前提条件已满足
+  str.clear(); // OK，clear() 没有前提条件
   ```
 - 此外，使用 `xvalue` 参数调用的标准库函数可能假定参数是对象的唯一引用；如果它是从左值构造而来的，没有进行别名检查。但是，标准库类型的自我移动赋值保证将对象置于有效（通常是未指定）状态：
 - ```
