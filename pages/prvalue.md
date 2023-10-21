@@ -14,16 +14,24 @@ alias:: pure rvalue
 	  logseq.order-list-type:: number
 	- 内置的 *比较表达式* ，包括 `a < b`、`a == b`、`a >= b` 等。
 	  logseq.order-list-type:: number
-	- 内置的 *取地址* 表达式，即 `&a`。
+	- 内置的[[取地址]]表达式，即 `&a`。
 	  logseq.order-list-type:: number
-- 对象成员表达式 `a.m`，其中 `m` 是成员枚举器或非静态成员函数。
-- 指针成员表达式 `p->m`，其中 `m` 是成员枚举器或非静态成员函数。
-- 对象的指针成员表达式 `a.*mp`，其中 `mp` 是成员函数的指针。
-- 指针的指针成员表达式 `p->*mp`，其中 `mp` 是成员函数的指针。
-- 内置的逗号表达式，其中 `b` 是 `prvalue`。
-- 三元条件表达式 `a ? b : c`，对于特定的 `b` 和 `c`（具体定义详见标准文档）。
-- 强制类型转换表达式为非引用类型，比如 `static_cast<double>(x)`、`std::string{}` 或 `(int)42`。
-- `this` 指针。
+	- *对象成员* 表达式 `a.m`，其中 `m` 是 *成员枚举器* 或 *非静态成员函数* 。
+	  logseq.order-list-type:: number
+	- *指针成员* 表达式 `p->m`，其中 `m` 是 *成员枚举器* 或 *非静态成员函数* 。
+	  logseq.order-list-type:: number
+	- *对象的指针成员* 表达式 `a.*mp`，其中 `mp` 是 *成员函数* 的指针。
+	  logseq.order-list-type:: number
+	- *指针的指针成员* 表达式 `p->*mp`，其中 `mp` 是 *成员函数* 的指针。
+	  logseq.order-list-type:: number
+	- 内置的[[逗号]]表达式 `a, b`，其中 `b` 是 `prvalue`。
+	  logseq.order-list-type:: number
+	- *三元条件表达式* `a ? b : c`，对于特定的 `b` 和 `c`（具体定义见[definition](https://en.cppreference.com/w/cpp/language/operator_other#Conditional_operator)）。
+	  logseq.order-list-type:: number
+	- [[类型转换]]表达式为 *非引用类型* ，比如 `static_cast<double>(x)`、`std::string{}` 或 `(int)42`。
+	  logseq.order-list-type:: number
+	- `this` 指针。
+	  logseq.order-list-type:: number
 - 枚举器（enumerator）。
 - 标量类型的非类型模板参数。
 - Lambda 表达式，比如 `[](int x){ return x * x; }`（自 C++11 起）。
