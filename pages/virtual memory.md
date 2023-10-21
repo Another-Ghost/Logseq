@@ -1,4 +1,4 @@
 alias:: 虚拟内存
 
-- # Linux Virtual Memory System
+- # Linux 虚拟内存系统
 	-
