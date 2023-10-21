@@ -30,10 +30,13 @@ alias:: pure rvalue
 	  logseq.order-list-type:: number
 	- [[类型转换]]表达式为 *非引用类型* ，比如 `static_cast<double>(x)`、`std::string{}` 或 `(int)42`。
 	  logseq.order-list-type:: number
-	- `this` 指针。
+	- [[this]]指针。
 	  logseq.order-list-type:: number
-- 枚举器（enumerator）。
-- 标量类型的非类型模板参数。
-- Lambda 表达式，比如 `[](int x){ return x * x; }`（自 C++11 起）。
+	- [[枚举值]]。
+	  logseq.order-list-type:: number
+	- *标量类型* 的非类型[[模板参数]]。
+	  logseq.order-list-type:: number
+	- [[Lambda 表达式]]，比如 `[](int x){ return x * x; }`。
+	  logseq.order-list-type:: number
 - `requires` 表达式，比如 `requires (T i) { typename T::type; }`。
 - 概念的特化，比如 `std::equality_comparable<int>`（自 C++20 起）。
