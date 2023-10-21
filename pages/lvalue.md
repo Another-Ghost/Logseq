@@ -18,17 +18,21 @@ alias:: lvalues, 左值
 	  logseq.order-list-type:: number
 	- *指针成员* 表达式 `p->m`，除非 `m` 是 *成员枚举器* 或 *非静态成员函数* 。
 	  logseq.order-list-type:: number
-	- *对象的指针成员* 表达式 `a.*mp`，其中 `a` 是[[左值]]，`mp` 是数据成员的指针。
+	- *对象的指针成员* 表达式 `a.*mp`，其中 `a` 是 *左值* ，`mp` 是数据成员的指针。
 	  logseq.order-list-type:: number
 	- 指针的指针成员表达式 `p->*mp`，其中 `mp` 是数据成员的指针。
 	  logseq.order-list-type:: number
-	- 内置逗号表达式 `a, b`，其中 `b` 是左值。
+	- *内置逗号* 表达式 `a, b`，其中 `b` 是左值。
 	  logseq.order-list-type:: number
-	- 三元条件表达式 `a ? b : c`，对于特定的 `b` 和 `c`（例如，当它们都是相同类型的左值时，但具体定义详见标准文档）。
+	- 对于特定的 `b` 和 `c`的 *三元条件* 表达式 `a ? b : c`（例如，当它们都是相同类型的 *左值* 时，但具体定义见[definition](https://en.cppreference.com/w/cpp/language/operator_other#Conditional_operator)）。
 	  logseq.order-list-type:: number
-- 字符串字面值，比如 `"Hello, world!"`。
-- 强制类型转换表达式为左值引用类型，例如 `static_cast<int&>(x)` 或 `static_cast<void(&)(int)>(x)`。
-- 左值引用类型的非类型模板参数。
-- 函数调用或重载运算符表达式，其返回类型为函数的右值引用。
+	- [[string literal]]，比如 `"Hello, world!"`。
+	  logseq.order-list-type:: number
+	- [[类型转换]]表达式为 *左值引用* 类型，例如 `static_cast<int&>(x)` 或 `static_cast<void(&)(int)>(x)`。
+	  logseq.order-list-type:: number
+	- 左值引用类型的**非类型**[[模板参数]]。
+	  logseq.order-list-type:: number
+	- 函数调用或重载运算符表达式，其[[返回类型]]为函数的[[右值引用]]。
+	  logseq.order-list-type:: number
 - 强制类型转换表达式为函数类型的右值引用，例如 `static_cast<void(&&)(int)>(x)`（自 C++11 起）。
 - `lvalue` 具有与 `glvalue` 相同的特性。可以取一个 `lvalue` 的地址，可以用于内置的取地址操作符 `&`。可修改的 `lvalue` 可以用作内置的赋值和复合赋值操作符的左操作数。`lvalue` 可以用来初始化左值引用，这将使新名称与表达式标识的对象相关联。
