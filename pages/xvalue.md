@@ -18,6 +18,7 @@ alias:: eXpiring value
 	  logseq.order-list-type:: number
 	- 任何指代[[临时对象]]的表达式，在[[temporary materialization]]后（自[[C++17]]起）。
 	  logseq.order-list-type:: number
-	- 移动可选表达式（自 C++23 起）。
+	- [[move-eligible expressions]] （自[[C++23]]起）。
 	  logseq.order-list-type:: number
-- `xvalue` 具有与 `rvalue` 相同的特性，同时也具有与 `glvalue` 相同的特性。特别地，像所有的右值一样，`xvalue` 绑定到右值引用，像所有的左值一样，`xvalue` 可能是多态的，而且非类类型的 `xvalue` 可能带有 cv 限定符。
+- [[xvalue]]具有与[[rvalue]]相同的特性，同时也具有与[[glvalue]]相同的特性。
+- 特别地，像所有的右值一样，`xvalue` 绑定到右值引用，像所有的左值一样，`xvalue` 可能是[[多态]]的，而且非[[类]]类型的 `xvalue` 可能带有[[cv 限定符]]。
