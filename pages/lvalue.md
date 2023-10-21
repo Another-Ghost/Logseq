@@ -2,7 +2,7 @@ alias:: lvalues
 
 - 一个[[lvalue]]（因为在历史上，[[lvalues]]可以出现在[[赋值表达式]]的左侧而得名）是一个不是[[xvalue]]的[[glvalue]]。
 - 属于 lvalue 的表达式如下：
-	- 变量、函数、[[template parameter object]]（自[[C++20]]起）或数据成员的[[name]]，无论类型如何，比如 `std::cin` 或 `std::endl`。即使变量的类型是[[右值引用]]，其名称组成的表达式仍然是 `lvalue` 表达式（但参见“可移动表达式”）。
+	- 变量、函数、[[template parameter object]]（自[[C++20]]起）或数据成员的[[name]]，无论类型如何，比如 `std::cin` 或 `std::endl`。即使变量的类型是[[右值引用]]，其[[名称]]**组成的表达式**仍然是 `lvalue` 表达式（参见[[move-eligible expression]]）。
 	  logseq.order-list-type:: number
 - 函数调用或重载运算符表达式，其返回类型为左值引用，例如 `std::getline(std::cin, str)`、`std::cout << 1`、`str1 = str2` 或 `++it`。
 - `a = b`、`a += b`、`a %= b` 以及所有其他内置赋值和复合赋值表达式。
