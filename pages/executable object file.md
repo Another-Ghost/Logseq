@@ -28,9 +28,11 @@ alias:: 可执行目标文件, .prog, executable file
 - 第 3 行和第 4 行告诉我们第二个段（[[data segment]]）有 *读/写* 权限，开始于 *内存地址* 
   id:: 6533e121-5a7d-4205-aeac-d4233f0a7d8a
   0x600df8 处，总的内存大小为 0x230 字节，并用从目标文件中偏移 0xdf8 处开始的[[.data]]节中的 0x228 个字节初始化。该段中剩下的 8 个字节对应于运行时将被初始化为 0 的[[.bss]]数据。
-  对于任何段 sÿ 链接器必须选择一个起始地址 vaddr, 使得
-  vaddr mod align = off mod align
-  这里，off 是目标文件中段的第一个节的偏移量，align 是程序头部中指定的对齐(221_ =
+  对于任何段`s`，[[链接器]]必须选择一个起始地址`vaddr`, 使得
+  #+BEGIN_CENTER
+  `vaddr` $\operatorname{mod}$ `align` $=$ `off` $\operatorname{mod}$ `align`
+  #+END_CENTER 
+  这里，`off`是目标文件中段的第一个节的偏移量，`align`是程序头部中指定的对齐 (221_ =
   OdOOQQ.CJh 例如，图 7-14 中的数据段中
   vaddr mod align = 0x600df8 mod 0x200000 = Oxdf8
   以及
