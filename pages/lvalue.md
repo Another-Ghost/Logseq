@@ -4,9 +4,10 @@ alias:: lvalues
 - 属于 lvalue 的表达式如下：
 	- 变量、函数、[[template parameter object]]（自[[C++20]]起）或数据成员的[[name]]，无论类型如何，比如 `std::cin` 或 `std::endl`。即使变量的类型是[[右值引用]]，其[[名称]]**组成的表达式**仍然是 `lvalue` 表达式（参见[[move-eligible expression]]）。
 	  logseq.order-list-type:: number
-	- *函数调用* 或 *重载运算符* 表达式，其[[返回类型]]为[[左值引用]]，例如 `std::getline(std::cin, str)`、`std::cout << 1`、`str1 = str2` 或 `++it`。
+	- *函数调用* 或 *重载运算符* 表达式，其[[返回类型]]为[[左值引用]]，例如`std::getline(std::cin, str)`、`std::cout << 1`、`str1 = str2` 或 `++it`。
 	  logseq.order-list-type:: number
-- `a = b`、`a += b`、`a %= b` 以及所有其他内置赋值和复合赋值表达式。
+	- `a = b`、`a += b`、`a %= b` 以及所有其他 *内置赋值* 和 *复合赋值表达式* 。
+	  logseq.order-list-type:: number
 - `++a` 和 `--a`，内置的前增和前减表达式。
 - `*p`，内置的间接引用表达式。
 - `a[n]` 和 `p[n]`，内置的下标表达式，其中 `a[n]` 中的一个操作数是数组的左值（自 C++11 起）。
