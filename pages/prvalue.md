@@ -48,8 +48,11 @@ alias:: pure rvalue
 	- prvalue 不能是[[多态]]的：它表示的对象的[[动态类型]]始终是 *表达式的类型* 。
 	  logseq.order-list-type:: number
 	  id:: 6534333b-f974-4cc9-bd5c-8089f1c27a4b
-	- 非[[类]]非[[数组]]的 prvalue 通常不能具有[[cv 限定符]]，除非它被实例化以绑定到 [[cv 限定符]]类型的引用。 （注意：函数调用或强制转换表达式可能会导致非类 cv 限定符类型的 prvalue，但通常会立即删除 cv 限定符。）
+	- 非[[类]]非[[数组]]的 prvalue 通常不能具有[[cv 限定符]]，除非它被[[materialized]]以绑定到[[cv 限定符]]类型的引用（自[[C++17]]起）。 
 	  logseq.order-list-type:: number
-	  prvalue 不能具有不完整的类型（除了类型 void，见下文，或在 decltype 指定符中使用时）。
-	  prvalue 不能具有抽象类类型或其数组。
+	  >注意：函数调用或类型转换表达式可能会导致非类 cv 限定符类型的 prvalue，但通常会立即删除 cv 限定符。
+	- prvalue 不能具有[[incomplete type]]（除了[[void]]类型，或在 [[decltype]]说明符中使用时）。
+	  logseq.order-list-type:: number
+	- prvalue 不能具有[[抽象类]]类型或其 *数组* 。
+	  logseq.order-list-type:: number
 -
