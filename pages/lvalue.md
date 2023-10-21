@@ -32,7 +32,16 @@ alias:: lvalues, 左值
 	  logseq.order-list-type:: number
 	- 左值引用类型的**非类型**[[模板参数]]。
 	  logseq.order-list-type:: number
-	- 函数调用或重载运算符表达式，其[[返回类型]]为函数的[[右值引用]]。
+	- *函数调用* 或 *重载运算符* 表达式，其[[返回类型]]为**函数**的[[右值引用]]。
 	  logseq.order-list-type:: number
-- 强制类型转换表达式为函数类型的右值引用，例如 `static_cast<void(&&)(int)>(x)`（自 C++11 起）。
-- `lvalue` 具有与 `glvalue` 相同的特性。可以取一个 `lvalue` 的地址，可以用于内置的取地址操作符 `&`。可修改的 `lvalue` 可以用作内置的赋值和复合赋值操作符的左操作数。`lvalue` 可以用来初始化左值引用，这将使新名称与表达式标识的对象相关联。
+	- [[类型转换]]表达式为[[函数类型]]的[[右值引用]]，例如 `static_cast<void(&&)(int)>(x)`。
+	  logseq.order-list-type:: number
+- # 特性
+	- 与 `glvalue`（通用左值）相同的属性。
+	  logseq.order-list-type:: number
+	- 可以通过内置的[[取地址操作符 `&` 取一个 `lvalue` 的地址。例如，`&++i[1]` 和 `&std::endl` 都是有效的表达式。
+	  logseq.order-list-type:: number
+	- 可修改的 `lvalue` 可以作为内置的赋值和复合赋值操作符的左操作数。
+	  logseq.order-list-type:: number
+	- `lvalue` 可以用来初始化左值引用；这将使新名称与表达式所标识的对象关联起来。
+	  logseq.order-list-type:: number
