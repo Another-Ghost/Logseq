@@ -1,4 +1,4 @@
-alias:: lvalues
+alias:: lvalues, 左值
 
 - 一个[[lvalue]]（因为在历史上，[[lvalues]]可以出现在[[赋值表达式]]的左侧而得名）是一个不是[[xvalue]]的[[glvalue]]。
 - 属于 lvalue 的表达式如下：
@@ -8,15 +8,24 @@ alias:: lvalues
 	  logseq.order-list-type:: number
 	- `a = b`、`a += b`、`a %= b` 以及所有其他 *内置赋值* 和 *复合赋值表达式* 。
 	  logseq.order-list-type:: number
-- `++a` 和 `--a`，内置的前增和前减表达式。
-- `*p`，内置的间接引用表达式。
-- `a[n]` 和 `p[n]`，内置的下标表达式，其中 `a[n]` 中的一个操作数是数组的左值（自 C++11 起）。
-- 对象成员表达式 `a.m`，除非 `m` 是成员枚举器或非静态成员函数，或者 `a` 是右值，`m` 是对象类型的非静态数据成员。
-- 指针成员表达式 `p->m`，除非 `m` 是成员枚举器或非静态成员函数。
-- 对象的指针成员表达式 `a.*mp`，其中 `a` 是左值，`mp` 是数据成员的指针。
-- 指针的指针成员表达式 `p->*mp`，其中 `mp` 是数据成员的指针。
-- 内置逗号表达式 `a, b`，其中 `b` 是左值。
-- 三元条件表达式 `a ? b : c`，对于特定的 `b` 和 `c`（例如，当它们都是相同类型的左值时，但具体定义详见标准文档）。
+	- `++a` 和 `--a`，内置的前增和前减表达式。
+	  logseq.order-list-type:: number
+	- `*p`，内置的[[indirection]]表达式。
+	  logseq.order-list-type:: number
+	- `a[n]` 和 `p[n]`，内置的[[下标]]表达式，其中 `a[n]` 中的一个 *操作数* 是数组的左值。
+	  logseq.order-list-type:: number
+	- *对象成员* 表达式 `a.m`，除非 `m` 是 *成员枚举器* 或 *非静态成员函数* ，或者 `a` 是[[右值]]且 `m` 是对象类型的 *非静态数据成员* 。
+	  logseq.order-list-type:: number
+	- *指针成员* 表达式 `p->m`，除非 `m` 是 *成员枚举器* 或 *非静态成员函数* 。
+	  logseq.order-list-type:: number
+	- *对象的指针成员* 表达式 `a.*mp`，其中 `a` 是[[左值]]，`mp` 是数据成员的指针。
+	  logseq.order-list-type:: number
+	- 指针的指针成员表达式 `p->*mp`，其中 `mp` 是数据成员的指针。
+	  logseq.order-list-type:: number
+	- 内置逗号表达式 `a, b`，其中 `b` 是左值。
+	  logseq.order-list-type:: number
+	- 三元条件表达式 `a ? b : c`，对于特定的 `b` 和 `c`（例如，当它们都是相同类型的左值时，但具体定义详见标准文档）。
+	  logseq.order-list-type:: number
 - 字符串字面值，比如 `"Hello, world!"`。
 - 强制类型转换表达式为左值引用类型，例如 `static_cast<int&>(x)` 或 `static_cast<void(&)(int)>(x)`。
 - 左值引用类型的非类型模板参数。
