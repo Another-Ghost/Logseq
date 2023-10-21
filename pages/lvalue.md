@@ -39,9 +39,10 @@ alias:: lvalues, 左值
 - # 特性
 	- 与 `glvalue`（通用左值）相同的属性。
 	  logseq.order-list-type:: number
-	- 可以通过内置的[[取地址操作符 `&` 取一个 `lvalue` 的地址。例如，`&++i[1]` 和 `&std::endl` 都是有效的表达式。
+	- 可以通过内置的[[取地址操作符]] `&` 取一个 `lvalue` 的[[地址]]。例如，`&++i[1]` 和 `&std::endl` 都是有效的表达式。
 	  logseq.order-list-type:: number
-	- 可修改的 `lvalue` 可以作为内置的赋值和复合赋值操作符的左操作数。
+	- *可修改的* `lvalue` 可以作为内置的[[赋值]]和 *复合赋值操作符* 的 *左操作数* 。
 	  logseq.order-list-type:: number
-	- `lvalue` 可以用来初始化左值引用；这将使新名称与表达式所标识的对象关联起来。
+	- `lvalue` 可以用来初始化[[左值引用]]；这将使新名称与表达式所标识的对象关联起来。
 	  logseq.order-list-type:: number
+-

@@ -12,7 +12,7 @@ alias:: eXpiring value
 	  logseq.order-list-type:: number
 	- [[函数调用]]或[[重载运算符]]表达式，其[[返回类型]]为对象的[[右值引用]]，例如 `std::move(x)`。
 	  logseq.order-list-type:: number
-	- 内置[[下标]]表达式 `a[n]`，其中一个[[运算元]]是数组右值（自[[C++11]]起）。
+	- 内置[[下标]]表达式 `a[n]`，其中一个[[运算元]]是数组右。
 	  logseq.order-list-type:: number
 	- [[类型转换]]表达式为对象类型的右值引用，例如 `static_cast<char&&>(x)`（自[[C++11]]起）。
 	  logseq.order-list-type:: number
