@@ -1,4 +1,4 @@
-alias:: cv-qualifiers, cv-修饰符, cv-qualification
+alias:: cv-qualifiers, cv-修饰符, cv-qualification, cv 限定符
 
 - #C++Keyword
 - # `const`和 `volatile`类型修饰符
