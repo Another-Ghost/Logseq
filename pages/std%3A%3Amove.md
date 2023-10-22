@@ -27,11 +27,11 @@
 - ``` cpp
   std::vector<std::string> v;
   std::string str = "example";
-  v.push_back(std::move(str)); // 现在 str 处于有效但未指定状态
-  str.back(); // 如果 size() == 0，那么是未定义行为：back() 有前提条件 !empty()
+  v.push_back(std::move(str)); // str is now valid but unspecified
+  str.back(); // undefined behavior if size() == 0: back() has a precondition !empty()
   if (!str.empty())
-  str.back(); // OK，empty() 没有前提条件，而 back() 的前提条件已满足
-  str.clear(); // OK，clear() 没有前提条件
+  str.back(); // OK, empty() has no precondition and back() precondition is met
+  str.clear(); // OK，OK, clear() has no preconditions
   ```
 - 此外，使用 `xvalue` 参数调用的标准库函数可能假定参数是对象的唯一引用；如果它是从左值构造而来的，没有进行别名检查。但是，标准库类型的自我移动赋值保证将对象置于有效（通常是未指定）状态：
 - ```
