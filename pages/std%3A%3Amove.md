@@ -23,21 +23,16 @@
   }
   ```
 - 有一个例外情况，当函数参数的类型是类型[[模板参数]]的[[右值引用]]（[[forwarding reference]]或[[universal reference]]）时，此时会使用[[std::forward]]。
-- 除非另有规定，已移动的所有标准库对象都被置于一个[[有效但未指定状态]]，这意味着对象的[[class invariants]]成立（因此不带前提条件的函数，例如 *赋值运算符* ，可以在对象**被移动后**安全使用）。
-- ``` cpp
-  std::vector<std::string> v;
-  std::string str = "example";
-  v.push_back(std::move(str)); // str is now valid but unspecified
+- 除非另有规定，**已被移动的**所有标准库对象都被置于一个[[有效但未指定状态]]，这意味着对象的[[class invariants]]成立（因此不带前提条件的函数，例如 *赋值运算符* ，可以在对象**被移动后**安全使用）。
+  ``` cpp
   str.back(); // undefined behavior if size() == 0: back() has a precondition !empty()
   if (!str.empty())
-  str.back(); // OK, empty() has no precondition and back() precondition is met
+  	str.back(); // OK, empty() has no precondition and back() precondition is met
   str.clear(); // OK，OK, clear() has no preconditions
   ```
-- 此外，使用 `xvalue` 参数调用的标准库函数可能假定参数是对象的唯一引用；如果它是从左值构造而来的，没有进行别名检查。但是，标准库类型的自我移动赋值保证将对象置于有效（通常是未指定）状态：
-- ```
-  cppCopy code
-  - std::vector<int> v = {2, 3, 3};
-  v = std::move(v); // v 的值未指定
+- 此外，使用[[xvalue]]参数调用的标准库函数可能假定参数是对象的**唯一引用**；如果它是从[[左值]]构造而来的，没有进行别名检查。但是，标准库类型的自我移动赋值保证将对象置于有效（通常是未指定）状态：
+  ``` cpp 
+  v = std::move(v); //  the value of v is unspecified
   ```
 - 这是有关 C++ 中移动语义的重要信息，可以帮助有效利用右值引用和移动操作，从而提高性能和资源管理。
 -
