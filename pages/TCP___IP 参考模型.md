@@ -1,1 +1,2 @@
-- ![image.png](../assets/image_1698156526008_0.png)
+- 事实标准。
+- ![image.png](../assets/image_1698156759306_0.png)
