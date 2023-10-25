@@ -40,13 +40,30 @@ alias:: TCP segment
 	- [[同步标志位]] SYN
 	  logseq.order-list-type:: number
 		- 用于TCP“三报文握手”建立连接。
-		- 当[[SYN]]=1 且[[ACK]]=0 时，表明这是一个[[TCP 连接请求报文段]]。
+		- 当 SYN=1 且[[ACK]]=0 时，表明这是一个[[TCP 连接请求报文段]]。
 		- 对方若同意建立连接，则应在响应的[[TCP连接响应报文段]]的首部
-		  中使[[SYN]]=1 且[[ACK]]=1 。
+		  中使 SYN=1 且[[ACK]]=1 。
 		- 综上所述，[[SYN]]为 1 的 TCP 报文段要么是一个连接请求报文段，要么是一个连接响应报文段。
 	- [[终止标志位]] FIN
 	  logseq.order-list-type:: number
 		- 用于TCP“四报文挥手”释放连接。
-		- 当 FIN=1 时，表明此TCP报文段的发送方已经将全部数据
-		  发送完毕，现在要求释放TCP连接。
+		- 当 FIN=1 时，表明此TCP报文段的发送方已经将全部数据发送完毕，现在要求**释放TCP连接**。
+	- [[复位标志位]] RST
+	  logseq.order-list-type:: number
+		- 用于**复位TCP连接**。
+		- 当 RST=1 时，表明TCP连接中出现严重差错，必须**释放连接**，然后再**重新建立连接**。
+		- RST 置 1 还用来拒绝一个 *非法的TCP报文段* 或 **拒绝打开**一个TCP连接。
+	- [[推送标志位]] PSH
+	  logseq.order-list-type:: number
+		- 发送方TCP把PSH置1，并立即创建一个TCP报文段发送出去，而
+		  **不需要积累到足够多的数据再发送**。
+		- 接收方TCP收到PSH为1的TCP报文段，就尽快地交付给 *应用进程* ，
+		  而**不再等到接收到足够多的数据才向上交付**。
+	- [[紧急标志位]] URG
+	  logseq.order-list-type:: number
+		- 当URG=1时，[[紧急指针]]字段有效。
+		- 当URG=0时，紧急指针字段无效。
+	- [[紧急指针]]
+	  logseq.order-list-type:: number
+		- 占16比特，以字节为单位，用来指明[[紧急数据]]的**长度。
 -
