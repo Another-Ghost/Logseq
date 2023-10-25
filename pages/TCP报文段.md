@@ -7,6 +7,7 @@ alias:: TCP segment
 	  logseq.order-list-type:: number
 	- TCP 实现 *可靠传输* 的相关字段
 	  logseq.order-list-type:: number
+	  collapsed:: true
 		- [[序号]]
 		  logseq.order-list-type:: number
 		  占 32 比特，取值范围 0~2^{32}-1。当序号增加到最后一个时，下一个序号又回到 0 。
@@ -27,8 +28,13 @@ alias:: TCP segment
 	  ![image.png](../assets/image_1698241533392_0.png)
 	- [[保留]]
 	  logseq.order-list-type:: number
-	  占 6 比特；保留为今后使用；目前应置为 0 。
-		- 占 16 比特，该字段的取值以[[字节]]为单位。
-		- 指出**发送本报文段的一方**的[[接收窗口]]的大小，即接收缓存的可用空间大小，这用来表征接收方的接收能力。
+	  占 6 比特。保留为今后使用。目前应置为 0 。
 	- [[窗口]]
 	  logseq.order-list-type:: number
+	  collapsed:: true
+		- 占 16 比特，该字段的取值以[[字节]]为单位。
+		- 指出**发送本报文段的一方的[[接收窗口]]的大小**，即[[接收缓存]]的 *可用空间* 大小，这用来表征接收方的接收能力。
+		- 在计算机网络中，经常用接收方的接收能力的大小来控制发送方的数据发送量，这就是所谓的[[流量控制]]。
+	- [[检验和]]
+	  logseq.order-list-type:: number
+	  占 16 比特。用来检查**整个**TCP报文段在传输过程中是否出现了[[误码]]。
