@@ -77,5 +77,9 @@ alias:: TCP segment
 		- [[时间戳选项]]：
 		  logseq.order-list-type:: number
 			- 用于计算[[往返时间]] RTT•
-			- 用于处理序号超范围的情况，又称为防止序号绕回PAWS。
--
+			- 用于处理[[序号]]超范围的情况，又称为防止序号绕回[[PAWS]]。
+		- [[选择确认选项]]：用来实现选择[[确认]]功能。
+		  logseq.order-list-type:: number
+	- [[填充]]
+	  logseq.order-list-type:: number
+	  若选项字段的长度加上20字节固定首部的长度**不能被4字节整除**时，需要填充相应数量的比特 0，以确保 *首部长度* 能被4字节整除。
