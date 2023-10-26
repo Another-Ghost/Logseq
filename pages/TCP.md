@@ -9,3 +9,5 @@ alias:: 传输控制协议, Transmission Control Protocol
 	  logseq.order-list-type:: number
 	- 在数据传输结束后，还要通过[[四报文挥手]]来 *释放TCP连接* 。
 	  logseq.order-list-type:: number
+- ## [[TCP保活计时器]]的作用
+  ![image.png](../assets/image_1698314751184_0.png){:height 295, :width 608}
