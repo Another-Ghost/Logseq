@@ -35,4 +35,17 @@ alias:: RPCs, Remote Procedure Calls, 远程过程调用, replicated function, r
 	  滥用[[可靠]]函数可能导致其[[队列]]溢出，这将导致强制断开连接。若**逐帧调用复制函数**，应将其设为[[不可靠]]。若拥有与玩家[[输入]]绑定的[[可靠]]函数，应**限制玩家调用该函数的频率**。
 	  #+END_WARNING
 - ## Validation
-	- `WithValidation` 说明符表明除函数的实现外，还有 可验证传入函数的 *数据* 的 函数。此 *验证函数* 与其负责的函数使用同一签名，但其将返回布尔而非原本返回值。若返回 `true`，则其允许执行RPC的 `Implementation`；若返回 `false`，则防止执行。
+	- `WithValidation` 说明符表明除函数的实现外，还有 可验证传入函数的 *数据* 的 函数。此 *验证函数* 与其负责的函数使用同一[[签名]]，但其将返回`bool`而非原本 *返回值* 。若返回 `true`，则其允许执行RPC的 `Implementation`；若返回 `false`，则阻止执行。
+	- `ExampleClass.cpp`
+	  ``` cpp
+	  //服务器RPC MyFunction的验证
+	      bool AExampleClass::MyFunction_Validation(int myInt)
+	      {
+	          /*
+	              若myInt的值为负，建议不允许运行MyFunction_Implementation。
+	              因此仅在myInt大于零时返回true。
+	          */
+	          return myInt >= 0;
+	      }
+	  ```
+-
