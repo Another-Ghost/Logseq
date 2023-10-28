@@ -1,1 +1,1 @@
-alias:: 移动赋值
+alias:: 移动复制, 复制移动, Replicate Movement
