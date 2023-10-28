@@ -5,9 +5,11 @@ id:: 6530f3ac-b908-43ce-94f6-6096bdaac577
 
 - ## 使用建议
 	- 尽可能少用[[RPC]]。在合适情况下改用[[RepNotify]]。#why
-	- 组播函数会导致会话中各连接客户端的额外网络流量，需尤其少用。
+	  logseq.order-list-type:: number
+	- [[Multicast]]函数会导致会话中各连接客户端的额外网络流量，需尤其少用。
+	  logseq.order-list-type:: number
 	- 若能保证非复制函数仅在服务器上执行，则服务器RPC中无需包含纯服务器逻辑。
-	- -
+	  logseq.order-list-type:: number
 	- 将可靠RPC绑定到玩家输入时需谨慎。玩家可能会快速反复点击按钮，导致可靠RPC队列溢出。应采取措施限制玩家激活此项的频率。
 	- -
 	- 若游戏频繁调用RPC或复制函数，如tick时，则应将其设为不可靠。
