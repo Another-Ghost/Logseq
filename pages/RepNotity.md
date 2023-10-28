@@ -5,6 +5,6 @@ alias:: RepNotify function, RepNotifies
   在C++中使用变量的 `UPROPERTY` 宏的 `ReplicatedUsing` 说明符可使用此功能，或修改蓝图中变量的 复制设置 以使用RepNotify。
 - id:: 653d0ce8-0355-4f41-8cfc-5ab05f5b4c14
   #+BEGIN_TIP
-  与使用[[RPC]]或[[复制函数]]相比，使用[[RepNotify]]更可取，因为它们可以添加到需要进行复制的变量上，而无论其他gameplay功能如何，这可以节省大量带宽，而无需创建额外的网络调用。
+  与使用[[RPC]]或[[复制函数]]相比，使用[[RepNotify]]更可取，因为它们可以添加到需要进行复制的变量上，而无论其他gameplay功能如何，这可以节省大量[[带宽]]，而无需创建额外的 *网络调用*。
   #+END_TIP
 -
