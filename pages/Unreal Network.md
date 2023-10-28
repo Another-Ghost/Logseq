@@ -20,6 +20,7 @@ id:: 6530f3ac-b908-43ce-94f6-6096bdaac577
 	- 检查Actor的[[network role]]可查看其是否为 `ROLE_Authority`。此方法适用于过滤 同时在服务器和客户端上激活的函数 中的执行。
 	  logseq.order-list-type:: number
 	  id:: 653d2e40-cccd-4cb5-94dc-c077d46d195b
-	- 使用 `IsLocallyControlled` 函数可检查[[Pawn]]是否受本地控制。基于执行是否与 [[owning client]] 相关来过滤函数时，此方法十分拥有。
+	- 使用 `IsLocallyControlled` 函数可检查[[Pawn]]是否受本地控制。对于根据[[owning client]]的情况来过滤执行非常有用。
 	  logseq.order-list-type:: number
-	- 构造期间Pawn可能未被指定控制器，因此避免在构造函数脚本中使用 `IsLocallyControlled`。
+	- 构造期间 Pawn 可能未被指定 Controller ，因此避免在构造函数中使用`IsLocallyControlled`。
+	  logseq.order-list-type:: number
