@@ -17,9 +17,9 @@ id:: 6530f3ac-b908-43ce-94f6-6096bdaac577
 	  logseq.order-list-type:: number
 	- 部分函数可重复使用，可调用其响应 游戏逻辑，然后调用其响[[RepNotify]]，确保客户端和服务器并列执行即可。
 	  logseq.order-list-type:: number
-	- 检查Actor的网络角色可查看其是否为 `ROLE_Authority`。此方法适用于过滤函数中的执行，该函数同时在服务器和客户端上激活。
+	- 检查Actor的[[network role]]可查看其是否为 `ROLE_Authority`。此方法适用于过滤 同时在服务器和客户端上激活的函数 中的执行。
 	  logseq.order-list-type:: number
 	  id:: 653d2e40-cccd-4cb5-94dc-c077d46d195b
-	- 使用C++中的 `IsLocallyControlled` 函数或蓝图中的Is Locally Controlled函数，可检查Pawn是否受本地控制。基于执行是否与拥有客户端相关来过滤函数时，此方法十分拥有。
-	- -
+	- 使用 `IsLocallyControlled` 函数可检查[[Pawn]]是否受本地控制。基于执行是否与 [[owning client]] 相关来过滤函数时，此方法十分拥有。
+	  logseq.order-list-type:: number
 	- 构造期间Pawn可能未被指定控制器，因此避免在构造函数脚本中使用 `IsLocallyControlled`。
