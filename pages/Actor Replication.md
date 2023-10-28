@@ -23,13 +23,13 @@ alias:: Actor复制, 复制Actor, replicated Actor
 	- 按照以下步骤，可创建[[replicated Actor]]：
 		- 将Actor的`Replicated setting`设为True。
 		  logseq.order-list-type:: number
-		- 若复制Actor需要 移动，将[[Replicates Movement]]设为True。
+		- 若复制Actor需要 移动，将[[Replicates Movement]]设为`True`。
 		  logseq.order-list-type:: number
-	- -
-	- 生成或销毁复制Actor时，确保在服务器上执行该操作。
-	- -
-	- 设置必须在机器间共享的变量，以便进行复制。这通常适用于以gameplay为基础的变量。
-	- -
-	- 尽量使用虚幻引擎的预制移动组件，其已针对复制进行构建。
-	- -
-	- 若使用服务器授权模型，需确保玩家可执行的新操作均由服务器函数触发。
+		- 生成 或 销毁 replicated Actor 时，确保**在服务器上执行该操作**。
+		  logseq.order-list-type:: number
+		- 设置必须在机器间**共享**的 变量，以便进行复制。这通常适用于核心的gameplay变量。
+		  logseq.order-list-type:: number
+		- 尽量使用虚幻引擎的 *预制*[[移动组件]]，其已针对复制进行构建。
+		  logseq.order-list-type:: number
+		- 若使用[[server-authoritative]]模型，需确保玩家可执行的新操作均由[[服务器函数]]触发。
+		  logseq.order-list-type:: number
