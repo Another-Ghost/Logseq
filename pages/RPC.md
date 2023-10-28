@@ -23,7 +23,7 @@ alias:: RPCs, Remote Procedure Calls, 远程过程调用, replicated function, r
     }
   ```
 - 欲了解RPC的更多相关详情，参见[远程过程调用](https://docs.unrealengine.com/5.3/zh-CN/rpcs-in-unreal-engine)指南。
-- # #### Reliability
+- ## Reliability
 	- 您必须将[[RPC]]标记为[[reliable]]或[[unreliable]]。
 	  在蓝图中，默认情况下，函数和事件被假定为[[unreliable]]。通过在详细面板中将可靠性设置为 true，您可以将函数标记为可靠。在C++中，您必须在任何[[RPC]]的[[UFUNCTION]]宏中添加[[Reliable]]或[[Unreliable]]修饰符。
 	- [[不可靠]]的RPC**不能保证到达其预定目的地**，但不同于[[可靠]]的RPC，它们可以**更快速**和**更频繁地发送**。
@@ -34,4 +34,5 @@ alias:: RPCs, Remote Procedure Calls, 远程过程调用, replicated function, r
 	- #+BEGIN_WARNING
 	  滥用[[可靠]]函数可能导致其[[队列]]溢出，这将导致强制断开连接。若**逐帧调用复制函数**，应将其设为[[不可靠]]。若拥有与玩家[[输入]]绑定的[[可靠]]函数，应**限制玩家调用该函数的频率**。
 	  #+END_WARNING
--
+- ## Validation
+	- `WithValidation` 说明符表明除函数的实现外，还有 可验证传入函数的 *数据* 的 函数。此 *验证函数* 与其负责的函数使用同一签名，但其将返回布尔而非原本返回值。若返回 `true`，则其允许执行RPC的 `Implementation`；若返回 `false`，则防止执行。
