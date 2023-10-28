@@ -8,17 +8,18 @@ id:: 6530f3ac-b908-43ce-94f6-6096bdaac577
 	  logseq.order-list-type:: number
 	- [[Multicast]]函数会导致会话中各连接客户端的额外网络流量，需尤其少用。
 	  logseq.order-list-type:: number
-	- 若能保证 *非复制函数* 仅在服务器上执行，那么服务器端逻辑不一定非要包含在服务器RPC中。
+	- 若能保证 *非复制函数* 仅在服务器上执行，那么该服务器端逻辑不一定非要包含在 *服务器RPC* 中。
 	  logseq.order-list-type:: number
 	  id:: 653d2985-a09e-4c5b-9786-b1b490a0359e
-	- 将可靠RPC绑定到玩家输入时需谨慎。玩家可能会快速反复点击按钮，导致可靠RPC队列溢出。应采取措施限制玩家激活此项的频率。
-	- -
-	- 若游戏频繁调用RPC或复制函数，如tick时，则应将其设为不可靠。
-	- -
-	- 部分函数可重复使用。调用其响应游戏逻辑，然后调用其响应RepNotify，确保客户端和服务器拥有并列执行即可。
-	- -
+	- 将 *可靠RPC* 绑定到 *玩家输入* 时需谨慎。玩家可能会快速反复点击按钮，导致可靠RPC队列溢出。应采取措施限制玩家激活此项的频率。
+	  logseq.order-list-type:: number
+	- 若游戏频繁调用RPC，如[[tick]]时调用，则应将其设为 *不可靠* 。
+	  logseq.order-list-type:: number
+	- 部分函数可重复使用，可调用其响应 游戏逻辑，然后调用其响[[RepNotify]]，确保客户端和服务器并列执行即可。
+	  logseq.order-list-type:: number
 	- 检查Actor的网络角色可查看其是否为 `ROLE_Authority`。此方法适用于过滤函数中的执行，该函数同时在服务器和客户端上激活。
-	- -
+	  logseq.order-list-type:: number
+	  id:: 653d2e40-cccd-4cb5-94dc-c077d46d195b
 	- 使用C++中的 `IsLocallyControlled` 函数或蓝图中的Is Locally Controlled函数，可检查Pawn是否受本地控制。基于执行是否与拥有客户端相关来过滤函数时，此方法十分拥有。
 	- -
 	- 构造期间Pawn可能未被指定控制器，因此避免在构造函数脚本中使用 `IsLocallyControlled`。
