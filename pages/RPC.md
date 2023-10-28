@@ -6,3 +6,20 @@ alias:: RPCs, Remote Procedure Calls, 远程过程调用, replicated function, r
   |[[Server]]|仅在主持游戏的[[服务器]]上调用。|
   |[[Client]]|仅在拥有 该函数所属Actor 的[[客户端]]上调用。若Actor没有连接，将不会执行此逻辑。|
   |[[NetMulticast]]|在与服务器连接的**所有**[[客户端]]及[[服务器]]本身上调用。|
+- 可以通过在C++中函数的[UFUNCTION]]宏中提供`Server`、`Client`或`NetMulticast`修饰符将其指定为RPC。函数的实现在其名字中添加后缀 `_Implementation`。
+  id:: 653d134a-d1d4-46cc-933e-dd3eeb2d4cfb
+- `ExampleClass.h`
+  ``` cpp 
+  //服务器RPC MyFunction的声明。
+    UFUNCTION(Server, Reliable, WithValidation)
+    void MyFunction(int myInt);
+  ```
+  `ExampleClass.cpp`
+  ```cpp 
+  //服务器RPC MyFunction的实现。
+    void AExampleClass::MyFunction_Implementation(int myInt)
+    {
+        //Gameplay代码
+    }
+  ```
+-
