@@ -22,4 +22,9 @@ alias:: RPCs, Remote Procedure Calls, 远程过程调用, replicated function, r
         //Gameplay代码
     }
   ```
--
+- 欲了解RPC的更多相关详情，参见[远程过程调用](https://docs.unrealengine.com/5.3/zh-CN/rpcs-in-unreal-engine)指南。
+- # #### Reliability
+	- 您必须将[[RPC]]标记为[[reliable]]或[[unreliable]]。
+	  在蓝图中，默认情况下，函数和事件被假定为[[unreliable]]。通过在详细面板中将可靠性设置为 true，您可以将函数标记为可靠。在C++中，您必须在任何[[RPC]]的[[UFUNCTION]]宏中添加[[Reliable]]或[[Unreliable]]修饰符。
+	- [[不可靠]]的RPC**不能保证到达其预定目的地**，但它们可以**更快速**和**更频繁地发送**，而不同于[[可靠]]的RPC。它们最适用于对游戏不关键的功能，或者被非常频繁地调用的功能。例如，Actor的移动使用不可靠的RPC进行复制，因为它可以在每帧中发生变化。
+- 可靠的RPC被保证到达其预定目的地，并将保留在队列中，直到它们成功接收。它们最适用于对游戏关键的功能，但不经常调用的功能。这些功能的示例包括碰撞事件、开始或结束武器射击，或生成Actors。
