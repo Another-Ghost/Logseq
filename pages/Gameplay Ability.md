@@ -49,7 +49,7 @@ alias:: 玩法技能, Ability, 技能
 	- [[Gameplay Ability]]支持[[internal state]]和[[Gameplay Event]]的[[复制]]，或 关闭复制 以节省 网络带宽 和缩短 CPU周期。
 	  id:: 653eb72e-c16e-4d2c-8dcf-cd03faab4190
 	  [[Ability]]的[[Gameplay Ability Replication Policy]]可以设置为`Yes`或`No`，这控制着 Ability 是否[[复制]]自身 *实例*、*更新状态*（update state）或 跨网络发送[[Gameplay Event]]。
-	  对于支持 *复制* *技能* 的多人游戏，有几种处理复制的选项，称为[[Gameplay Net Execution Policy]]：
+	  对于支持 *复制* *技能* 的多人游戏，有几种处理[[复制]]的选项，称为[[Gameplay Net Execution Policy]]：
 		- 本地预测（[[Local Predicted]]）：此选项有助于在 *响应能力* 和 *准确性* 之间实现良好的**平衡**。
 		  在[[本地客户端]]发出命令后，[[Ability]]将立即在 客户端 上运行，但[[服务器]]起着决定性作用，并且可以根据 Ability 的实际影响来 *覆盖* 客户端。
 		  客户端 实际上是从 服务器 请求执行 Ability 的权限，但也在本地进行处理，就好像 服务器 预计会与 客户端 的结果一致。因为客户端在[[本地预测]] Ability 的行为，所以只要 客户端 的 *预测* 与 服务器 不矛盾，它就会非常流畅地运行且 无滞后。
