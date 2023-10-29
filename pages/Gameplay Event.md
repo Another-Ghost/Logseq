@@ -7,6 +7,8 @@ alias:: 玩法事件
   该结构是一种通用结构，不会针对任何特定的 Gameplay Event 或 Ability 进行扩展，但应该能够满足任何用例的要求。*多态[[ContextHandle]]字段* 会根据需要提供其他信息。
 - id:: 653eb7f5-45f9-47b6-9348-ea8047819782
   #+BEGIN_TIP
-  当 Gameplay Event 触发 Ability 时，Ability 不会通过[[Activate Ability]]代码路径运行，而是使用提供附加情境数据作为参数的"从事件激活技能"（Activate Ability From Event）。如果希望技能响应游戏事件，请务必处理此代码路径，同时还应注意，一旦在玩法技能的蓝图中实施，"从事件激活技能"（Activate Ability From Event）将取代"激活技能"（Activate Ability），让所有激活流量通过自身。
+  当 Gameplay Event 触发[[Ability]]时，Ability 不会通过[[Activate Ability]] *代码路径* 运行，而是使用提供附加[[context data]]作为参数的[[Activate Ability From Event]]。
+  如果希望 Ability 响应 Event，请务必处理此 *代码路径* ，同时还应注意，一旦在 Ability 的蓝图中实现，[[Activate Ability From Event]]将取代[[Activate Ability]]，让所有 *激活流程通过自身。
   #+END_TIP
+-
 -
