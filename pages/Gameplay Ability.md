@@ -31,11 +31,15 @@ alias:: 玩法技能, Ability, 技能
 		  id:: 653e60d1-28d1-4716-990a-93ae7008ea8d
 		- 与Actor和组件不同，玩法技能不会使用[[tick]]函数完成主要工作，而是在激活过程中启动[[Ability Task]]，[[异步]]完成大部分工作，然后连接[[Delegate]]（在C++中）以处理这些任务的输出，或者连接节点以输出执行引脚（在蓝图中）。
 		  logseq.order-list-type:: number
-		- 如果从`Activate`中调用[[CommitAbility]]函数，它将处理 执行技能 的[[cost]]，例如从[[Gameplay Attribute]]中减去资源（例如"魔法值"、"体力值"或游戏系统所用的任何其他资源）和应用冷却。
+		- 如果从`Activate`中调用[[CommitAbility]]函数，它将施加 执行技能 的[[cost]]，例如从[[Gameplay Attribute]]中减去资源（例如"魔法值"、"体力值"或游戏系统所用的任何其他资源）和施加[[冷却]]。
 		  logseq.order-list-type:: number
-	- -
-	- `CancelAbility`提供了取消技能的机制，不过技能的`CanBeCanceled`函数可以拒绝请求。与`CommitAbility`不同，该函数可供技能外调用者使用。成功的取消先播放给On Gameplay Ability Cancelled，然后通过标准代码路径结束技能，让技能可运行特殊的清理代码，否则取消时的行为将与自行结束时的行为不同。
-	- -
-	- `TryActivateAbility` 是执行技能的典型方式。该函数调用 `CanActivateAbility` 来确定技能是否可以立即运行，如果可以，则继续调用 `CallActivateAbility`。
-	- -
-	- `EndAbility` （C++）或End Ability节点（蓝图）会在技能执行完毕后将其关闭。如果技能被取消，`UGameplayAbility` 类会将其作为取消流程的一部分自动处理，但其他情况下，开发者都必须调用C++函数或在技能的蓝图图表中添加节点。如果未能正常结束技能，将导致玩法技能系统认为技能仍在运行，从而带来一些影响，例如禁止将来再使用该技能或任何被该技能阻止的技能。例如，如果游戏的"喝生命药剂"玩法技能没有正常结束，那么使用该技能的角色就无法执行任何在喝血量药剂时无法执行的操作（例如喝其他药剂、快跑、爬梯子等）。这种阻碍会一直存在，因为玩法技能系统会认为角色还在喝药剂。
+		  id:: 653e60d1-14d7-41a2-8c31-2dd1d5f469e2
+		- [[CancelAbility]]提供了取消技能的机制，不过 Ability 的`CanBeCanceled`函数可以拒绝请求。与`CommitAbility`不同，该函数可供**技能外调用者**使用。
+		  logseq.order-list-type:: number
+		  成功的取消先[[广播]]`On Gameplay Ability Cancelled`，然后通过标准代码路径 结束技能 ，让技能可运行特殊的 清理代码 ，或者其他的 将与 *自行结束* 时的行为不同的 取消时的行为。
+		- [[TryActivateAbility]]是执行技能的典型方式。该函数调用[[CanActivateAbility]]来确定技能是否可以立即运行，如果可以，则继续调用[[CallActivateAbility]]。
+		  logseq.order-list-type:: number
+		- `EndAbility`会在技能执行完毕后将其关闭。
+		  logseq.order-list-type:: number
+		  id:: 653e60d1-378e-461c-a476-fb62e84dae94
+		  如果技能被取消，`UGameplayAbility` 类会将其作为取消流程的一部分自动处理，但其他情况下，开发者都必须调用C++函数或在技能的蓝图图表中添加节点。如果未能正常结束技能，将导致玩法技能系统认为技能仍在运行，从而带来一些影响，例如禁止将来再使用该技能或任何被该技能阻止的技能。例如，如果游戏的"喝生命药剂"玩法技能没有正常结束，那么使用该技能的角色就无法执行任何在喝血量药剂时无法执行的操作（例如喝其他药剂、快跑、爬梯子等）。这种阻碍会一直存在，因为玩法技能系统会认为角色还在喝药剂。
