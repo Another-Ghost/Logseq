@@ -1,1 +1,1 @@
-- LyraShooterGame体验的核心元素。其中包括用于游戏模式的Gameplay逻辑、特定Gameplay能力（例如"猛冲"）以及适用于各种Actor的蓝图，例如传送点和手雷、机器人、武器和用户界面元素。
+- LyraShooterGame体验的核心元素。其中包括用于[[游戏模式]]的Gameplay逻辑、特定[[Gameplay Ability]]（例如"猛冲"）以及适用于各种Actor的蓝图，例如传送点和手雷、机器人、武器和用户界面元素。
