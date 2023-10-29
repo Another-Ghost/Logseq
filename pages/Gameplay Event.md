@@ -8,7 +8,7 @@ alias:: 玩法事件
 - id:: 653eb7f5-45f9-47b6-9348-ea8047819782
   #+BEGIN_TIP
   当 Gameplay Event 触发[[Ability]]时，Ability 不会通过[[Activate Ability]] *代码路径* 运行，而是使用提供附加[[context data]]作为参数的[[Activate Ability From Event]]。
-  如果希望 Ability 响应 Event，请务必处理此 *代码路径* ，同时还应注意，一旦在 Ability 的蓝图中实现，[[Activate Ability From Event]]将取代[[Activate Ability]]，让所有 *激活流程通过自身。
+  如果希望 Ability 响应 Event，请务必处理此 *代码路径* ，同时还应注意，一旦在 Ability 的蓝图中实现，[[Activate Ability From Event]]将取代[[Activate Ability]]，让所有 激活流程 通过 Activate Ability From Event 处理。
   #+END_TIP
 -
 -
