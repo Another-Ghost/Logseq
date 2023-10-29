@@ -4,9 +4,9 @@ alias:: 玩法标记, 标记
   还有[[Gameplay Tag Container]]和[[Gameplay Tag Query]]，用于支持与其他技能进行交互。
 - |Gameplay Tag Variable|目的|
   |--|--|
-  |Cancel Abilities With Tag|如果任何已在执行的技能带有与 执行此技能时 提供的该 *列表* 匹配的 Tag ，则[取消]([[取消技能]])那些技能。|
-  |Block Abilities With Tag|在执行此技能时，阻止执行具有匹配标记的任何其他技能。|
-  |Activation Owned Tags|在执行此技能时，技能的所有者将被给予这组标记。|
+  |Cancel Abilities With Tag|如果任何已在执行的技能带有与 执行此技能时 提供的 *列表* 匹配的 Tag ，则[取消]([[取消技能]])那些技能。|
+  |Block Abilities With Tag|在 执行此技能时，[[阻止]]执行具有匹配 Tag 的任何其他技能。|
+  |Activation Owned Tags|在 执行此技能时，技能的所有者将被[[授予]]这组 Tag。|
   |Activation Required Tags|只有激活的Actor或组件具有所有这些标记时，技能才会被激活。|
   |Activation Blocked Tags|只有激活的Actor或组件没有任何这些标记时，技能才会被激活|
   |Target Required Tags|只有目标Actor或组件具有所有这些标记时，技能才会被激活。|
