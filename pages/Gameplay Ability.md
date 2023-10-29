@@ -24,16 +24,15 @@ alias:: 玩法技能, Ability, 技能
 		  >此函数是**唯一**不需要[[FGameplayAbilitySpecHandle]]的函数。
 - # 基本用法
 	- 将Gameplay Ability 授予Actor的`Ability System Component`后，[[Ability]]的基本执行生命周期如下：
-		- 即使调用者没有尝试执行某项技能，`CanActivateAbility`也可以让调用者知道是否可执行该技能。
+		- 即使调用者没有尝试执行某项技能，[[CanActivateAbility]]也可以让调用者知道是否可执行该技能。
 		  logseq.order-list-type:: number
-		- `CallActivateAbility`执行技能相关的游戏代码，但不会检查该技能是否可用。通常在 `CanActivateAbility`检查及执行技能之间需要某些逻辑时才会调用该函数。
+		- [[CallActivateAbility]]执行技能相关的游戏代码，但不会检查该技能是否可用。通常在[[CanActivateAbility]]检查 及 执行 技能之间需要某些逻辑时才会调用该函数。
 		  logseq.order-list-type:: number
-	- -
-	- 用户需要使用技能的定制功能覆盖的主代码要么是名为`ActivateAbility`的C++函数，要么是名为Activate Ability的蓝图事件。
-	- -
-	- 与Actor和组件不同，玩法技能不会使用"tick"函数完成主要工作，而是在激活过程中启动技能任务，异步完成大部分工作，然后连接代理（在C++中）以处理这些任务的输出，或者连接节点以输出执行引脚（在蓝图中）。
-	- -
-	- 如果从"激活"中调用`CommitAbility`函数，它将应用执行技能的消耗，例如从玩法属性中减去资源（例如"魔法值"、"体力值"或游戏系统所用的任何其他资源）和应用冷却。
+		  id:: 653e60d1-28d1-4716-990a-93ae7008ea8d
+		- 与Actor和组件不同，玩法技能不会使用[[tick]]函数完成主要工作，而是在激活过程中启动[[Ability Task]]，[[异步]]完成大部分工作，然后连接[[Delegate]]（在C++中）以处理这些任务的输出，或者连接节点以输出执行引脚（在蓝图中）。
+		  logseq.order-list-type:: number
+		- 如果从`Activate`中调用[[CommitAbility]]函数，它将处理 执行技能 的[[cost]]，例如从[[Gameplay Attribute]]中减去资源（例如"魔法值"、"体力值"或游戏系统所用的任何其他资源）和应用冷却。
+		  logseq.order-list-type:: number
 	- -
 	- `CancelAbility`提供了取消技能的机制，不过技能的`CanBeCanceled`函数可以拒绝请求。与`CommitAbility`不同，该函数可供技能外调用者使用。成功的取消先播放给On Gameplay Ability Cancelled，然后通过标准代码路径结束技能，让技能可运行特殊的清理代码，否则取消时的行为将与自行结束时的行为不同。
 	- -
