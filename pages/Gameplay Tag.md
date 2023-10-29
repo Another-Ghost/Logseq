@@ -7,7 +7,7 @@ alias:: 玩法标记, 标记
   |Cancel Abilities With Tag|如果任何已在执行的技能带有与 执行此技能时 提供的 *列表* 匹配的 Tag ，则[取消]([[取消技能]])那些技能。|
   |Block Abilities With Tag|在 执行此技能时，[[阻止]]执行具有匹配 Tag 的任何其他技能。|
   |Activation Owned Tags|在 执行此技能时，技能的所有者将被[[授予]]这组 Tag。|
-  |Activation Required Tags|只有 *激活技能的 Actor 或 Component* **具有所有**这些 Tag 时，技能才会被[[激活]]。|
-  |Activation Blocked Tags|只有 *激活技能的 Actor或 Component* **没有任何** 这些 Tag 时，技能才会被[[激活]]。|
-  |Target Required Tags|只有 *target Actor或 **具有所有**这些 Tag 时，技能才会被[[激活]]。|
-  |Target Blocked Tags|只有目标Actor或组件没有任何这些标记时，技能才会被激活。|
+  |Activation Required Tags|只有 *activating Actor 或 Component* **具有所有**这些 Tag 时，技能才会被[[激活]]。|
+  |Activation Blocked Tags|只有 *activating Actor 或 Component* **没有任何** 这些 Tag 时，技能才会被[[激活]]。|
+  |Target Required Tags|只有 *targeted Actor 或 Component* **具有所有**这些 Tag 时，技能才会被[[激活]]。|
+  |Target Blocked Tags|只有 *targeted  Actor或 Component* **没有任何**这些 Tag 时，技能才会被[[激活]]。|
