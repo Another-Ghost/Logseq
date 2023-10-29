@@ -1,4 +1,13 @@
 alias:: 玩法标记, 标记
 
-- [[Gameplay Tag]]有助于确定玩法技能之间的交互方式。每种技能都拥有一组标记，以可影响其行为的方式识别和分类技能，还有玩法标记容器和游戏标记查询，用于支持与其他技能进行交互。
--
+- 每种 [[Gameplay Ability]] 都拥有一组[[Gameplay Tag]]，以可影响其行为的方式 识别 和 分类 技能。
+  还有[[Gameplay Tag Container]]和[[Gameplay Tag Query]]，用于支持与其他技能进行交互。
+- |Gameplay Tag Variable|目的|
+  |--|--|
+  |Cancel Abilities With Tag|如果任何已在执行的技能带有与 执行此技能时 提供的该 *列表* 匹配的 Tag ，则[取消]([[取消技能]])那些技能。|
+  |Block Abilities With Tag|在执行此技能时，阻止执行具有匹配标记的任何其他技能。|
+  |Activation Owned Tags|在执行此技能时，技能的所有者将被给予这组标记。|
+  |Activation Required Tags|只有激活的Actor或组件具有所有这些标记时，技能才会被激活。|
+  |Activation Blocked Tags|只有激活的Actor或组件没有任何这些标记时，技能才会被激活|
+  |Target Required Tags|只有目标Actor或组件具有所有这些标记时，技能才会被激活。|
+  |Target Blocked Tags|只有目标Actor或组件没有任何这些标记时，技能才会被激活。|
