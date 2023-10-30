@@ -1,3 +1,3 @@
-alias:: microfacets
+alias:: microfacets, 微表面
 
 -
