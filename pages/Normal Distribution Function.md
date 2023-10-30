@@ -1,4 +1,4 @@
-alias:: NDF, 法线分布函数
+alias:: NDF, 法线分布函数, distribution of normals
 
 - ## [[Beckmann NDF]]
 	- 类似于[[正太分布/密度函数]]，但是定义在[[slope space]]：
