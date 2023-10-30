@@ -5,3 +5,4 @@
   \end{aligned}
 - 其中第一部分相当于[[diffuse reflection]]；
   第二部分相当于 [[specular reflection]]，可以应用 [[Split Sum Approximation]]。
+-
