@@ -1,4 +1,4 @@
-alias:: 反射方程
+alias:: 反射方程, reflectance equation
 
 - To compute $L_o(\bold p, \bold v)$, we incorporate the [[BRDF]] into [[the reflectance equation]]:
   $$
