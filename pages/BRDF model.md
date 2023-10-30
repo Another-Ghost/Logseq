@@ -1,4 +1,5 @@
 alias:: BRDF models
 
-- [[Microfacet BRDF]]
 - [[Cook-Torrance BRDF]]
+- 主流模型中[[Specular]]
+- $$f_r=k_df_{Lambert}+k_sf_{Torrance}$$
