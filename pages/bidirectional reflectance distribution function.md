@@ -10,7 +10,7 @@ alias:: BRDF, 双向反射分布函数, BRDFs
   $$L_i(\bold c, -\bold v)=L_o(\bold p, \bold v) \tag{1}$$
   where $p$ is the intersection of the [[view ray]] with the closest object [[surface]].
 - # BRDF
-	- We leave aside the cases of [[transparency]] and [[global subsurface scattering]], focus on [[local reflectance]] phenomena. These *phenomena* include [[surface reflection]] as well as [[local subsurface scattering]], and depend on only the incoming [[light direction]] $\bold l$ and the outgoing [[]view direction]] $\bold v$.
+	- We leave aside the cases of [[transparency]] and [[global subsurface scattering]], focus on [[local reflectance]] phenomena. These *phenomena* include [[surface reflection]] as well as [[local subsurface scattering]], and depend on only the incoming [[light direction]] $\bold l$ and the outgoing [[view direction]] $\bold v$.
 	  [[Local reflectance]] is quantified by the [[bidirectional reflectance distribution function]], denoted as $f(\bold l, \bold v)$. In the general case, the [[BRDF]] is a function of $4$ *scalar variables*.
 	- The *incoming* and *outgoing directions* each have $2$ degrees of freedom. A frequently used parameterization involves $2$ angles: [[elevation]] $θ$ relative to the [[surface normal]] $\bold n$ and [[azimuth]] $φ$ about $\bold n$.
 	  ![image.png](../assets/image_1695100490308_0.png){:width 788/2, :height 408/2}
