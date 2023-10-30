@@ -14,9 +14,10 @@ alias:: geometry term
   $$
   G_{SchlickGGX}(\bold n,\bold v,k)=\frac{\bold n\cdot \bold v}{(\bold n\cdot\bold v)(1-k)+k}
   $$
-- [[Unreal]]用的是[[improved Schlick model]]：
+- [[Unreal]]用的是改进版的[[Schlick model]]：
   \begin{aligned}
   G(\bold l, \bold v, \bold h) = G_1(\bold l)G_1(\bold v) \\
-  G_1(v) = \frac{n \cdot v}{(n \cdot v)(1 - k) + k}
+  G_1(v) =G_{SchlickGGX}
   \end{aligned}
+  其中 $k$ 取决于
 -
