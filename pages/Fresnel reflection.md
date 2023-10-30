@@ -36,7 +36,7 @@ alias:: 菲涅尔反射, Fresnel reflectance, Fresnel function, 菲涅尔反射�
 		- 在渲染领域，通常将在[[掠射角]]处的反射率增加称为[[Fresnel effect]]。
 - # Schlick's Approximation
 	- [[Fresnel]] 等式需要对 *可见光谱* 范围内的[[折射率]]值进行采样，而这些值可能是复数。
-	- Schlick 提供了一种基于[[特征镜面反射颜色]] $F_0$ 的更简单的 [[Fresnel 反射率]]的 *近似公式*：
+	- Schlick 提供了一种基于[[特征镜面反射颜色]] $F_0$ 的更简单的 [[Fresnel 反射率]]的[近似公式]([[Schlick's approximation]])：
 	  $$
 	  F(\mathbf{n},\mathbf{l})\approx F_0+(1-F_0)(1-(\mathbf{n}\cdot\mathbf{l})^+)^5 \tag{1}
 	  $$
