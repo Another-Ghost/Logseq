@@ -1,4 +1,5 @@
 alias:: rendering equation
+id:: 652e6693-e715-4f52-8fd8-4f99396df836
 
 - [[The reflectance equation]] is a restricted special case of the full [[rendering equation]].
 - # Definition
@@ -6,9 +7,7 @@ alias:: rendering equation
 	- $$
 	  L_o(\mathbf{p},\mathbf{v})=L_e(\mathbf{p},\mathbf{v})+\int_{\mathbf{l}\in\Omega}f(\mathbf{l},\mathbf{v})L_o(r(\mathbf{p},\mathbf{l}),-\mathbf{l})(\mathbf{n}\cdot\mathbf{l})^+d\mathbf{l}
 	  $$
-	- where the new elements are $L_e(\bold p, \bold v)$, which is the [[emitted radiance]] from the [[surface location]] $\bold p$ in [[direction]] $\bold v$,
-	- and the
-	  following replacement:
+	- where the new elements are $L_e(\bold p, \bold v)$, which is the [[emitted radiance]] from the [[surface location]] $\bold p$ in [[direction]] $\bold v$, and the following replacement:
 	  $$
 	  L_{i}(\mathbf{p},\mathbf{l})=L_{o}(r(\mathbf{p},\mathbf{l}),-\mathbf{l})
 	  $$
