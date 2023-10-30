@@ -7,7 +7,7 @@ alias:: Lambertian shading model, Lambertian shading, Lambertian reflection, Lam
 - The **simplest** possible [[BRDF]] is [[Lambertian]], which corresponds to the [[Lambertian shading model]].
 - The [[Lambertian BRDF]] has the $(n · l)$ *factor* that distinguishes Lambertian shading is **not part of the BRDF** but rather **part of [[the reflectance equation]]** .
   id:: 6509586d-3a63-4cff-b853-0143834f743a
-- The [[Lambertian BRDF]] is often used in [[real-time rendering]] to represent [[local subsurface scattering]] (though it is being **supplanted by more accurate models** #TODO ).
+- The [[Lambertian BRDF]] is often used in [[real-time rendering]] to represent [[local subsurface scattering]] (though it is being **supplanted by more accurate models** #what ).
 - The [[directional-hemispherical reflectance]] of a [[Lambertian]] surface is also a *constant*:
   id:: 650a4d13-5120-471d-9cbb-178e5af327dd
   \begin{aligned}
