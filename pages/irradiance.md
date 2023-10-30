@@ -1,6 +1,6 @@
 alias:: 辐照度, average energy flow density, wave irradiance
 
-- Irradiance at surface is proportional to *cosine* of angle between [[light direction]] and [[surface normal]].
+- [[Irradiance]] at surface is proportional to *cosine* of angle between [[light direction]] and [[surface normal]].
   $$
   dE(\mathrm{p},\omega)=L_{i}(\mathrm{p},\omega)\cos\theta\:\mathrm{d}\omega 
   $$
