@@ -12,12 +12,17 @@ alias:: geometry term
   ![image.png](../assets/image_1698690506510_0.png)
 - [[Schlick-GGX]]是[[GGX]]与[[Schlick-Beckmann]]近似的结合体：
   $$
-  G_{SchlickGGX}(\bold n,\bold v,k)=\frac{\bold n\cdot \bold v}{(\bold n\cdot\bold v)(1-k)+k}
+  G_{\text{SchlickGGX}}(\bold n,\bold v,k)=\frac{\bold n\cdot \bold v}{(\bold n\cdot\bold v)(1-k)+k}
   $$
 - [[Unreal]]用的是改进版的[[Schlick model]]：
   \begin{aligned}
   G(\bold l, \bold v, \bold h) = G_1(\bold l)G_1(\bold v) \\
-  G_1(v) =G_{SchlickGGX}
+  G_1(v) =G_{\text{SchlickGGX}}
   \end{aligned}
-  其中 $k$ 取决于
+  其中 $k$ 是[[roughness]] $\alpha$ 的 *重映射* ，取决于光源类型。对于[[IBL]]：
+  $$k_{\text{IBL}} = \frac{\alpha^2}{2}$$
+  对于[[analytic light]]：
+- \begin{equation}
+  k_{\text{analytic}} = \frac{(\alpha + 1)^2 + 1}{8}
+  \end{equation}
 -
