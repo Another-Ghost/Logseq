@@ -10,5 +10,13 @@ alias:: geometry term
   G(\bold{i},\bold{o},\bold{m})\approx G_1(\bold{i},\bold{m})G_1(\bold{o},\bold{m})
   $$
   ![image.png](../assets/image_1698690506510_0.png)
-- [[Schlick-GGX]]是[[GGX]]与Schlick-Beckmann近似的结合体
+- [[Schlick-GGX]]是[[GGX]]与[[Schlick-Beckmann]]近似的结合体：
+  $$
+  G_{SchlickGGX}(\bold n,\bold v,k)=\frac{\bold n\cdot \bold v}{(\bold n\cdot\bold v)(1-k)+k}
+  $$
+- [[Unreal]]用的是[[improved Schlick model]]：
+  \begin{aligned}
+  G(\bold l, \bold v, \bold h) = G_1(\bold l)G_1(\bold v) \\
+  G_1(v) = \frac{n \cdot v}{(n \cdot v)(1 - k) + k}
+  \end{aligned}
 -
