@@ -1,4 +1,4 @@
-- [[Split Sum Approximation]]是对于[[the rendering equation]]的近似：
+- [[Split Sum Approximation]]是对于[[the reflectance equation]]的近似：
   \begin{equation}
   L_o(p, \omega_o) \approx \frac{\int_{\Omega_{f_r}} L_i(p, \omega_i)\,\mathrm{d}\omega_i}{\int_{\Omega_{f_r}} (p, \omega_i)\,\mathrm{d}\omega_i}
   \cdot \int_{\Omega^+} f_r(p, \omega_i, \omega _o)\cos\theta_i\,\mathrm{d}\omega_i
@@ -10,4 +10,3 @@
   &+\int_{\Omega^+}\frac{f_r}{F}(1 - \cos\theta )^5 \cos\theta_i \,\mathrm{d}\omega_i
   \end{aligned}
   两个部分都可以[[预计算]]
--
