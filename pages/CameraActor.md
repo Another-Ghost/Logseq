@@ -1,0 +1,1 @@
+- **摄像机（Camera）** 代表了玩家的视角，比如玩家如何查看世界。因此， 摄像机只和玩家控制的人物有关。[PlayerController](https://docs.unrealengine.com/5.3/zh-CN/player-controllers-in-unreal-engine)会指定一个摄像机类， 并实例化一个Camera Actor (`ACameraActor`)，以此计算玩家从哪个位置和角度 观察世界。
