@@ -14,6 +14,49 @@
   所有 成员函数（包括 复制构造函数 和 复制赋值函数 ）可以在不需要额外[[同步]]的情况下由多个[[线程]]调用，即使这些 实例 是 副本 并 共享 相同对象 的拥有权 。
   如果多个 执行线程 在没有 同步 的情况下访问相同的 `shared_ptr` 实例，而这些访问中的任何一个使用了 `shared_ptr` 的 非const成员函数，那么会发生[[数据竞争]]；可以使用 `shared_ptr` 的[原子函数重载]([[std::atomic_...<std::shared_ptr>]])来防止数据竞争 。
 - # Notes
-	- 对象的所有权只能通过将其值[[复制构造]]或 copy assigning 给另一个 `shared_ptr` 来共享给另一个 `shared_ptr`。使用另一个 `shared_ptr` 拥有的原始底层指针来构造新的 `shared_ptr` 会导致 *未定义行为* 。
-	  id:: 65421d71-5cf4-4612-9ae2-423abe7043d6
+	- 对象的所有权只能通过将其值[[复制构造]]或[[复制赋值]]来共享给另一个 `shared_ptr`。使用另一个 `shared_ptr` 拥有的 原始底层指针 来构造新的 `shared_ptr` 会导致 *未定义行为* 。
+	  logseq.order-list-type:: number
+	- 但是，使用原始指针的构造函数（`template<class Y> shared_ptr(Y*)`）和 `template<class Y> void reset(Y*)` 成员函数只能使用 完整类型的指针 调用。
+	  logseq.order-list-type:: number
+	  id:: 65421f2d-ad40-4ec8-920f-8adcaf43c958
+	  #+BEGIN_CAUTION
+	       [[std::unique_ptr]]可以从指向不完整类型的原始指针构造
+	  #+END_CAUTION
+	- logseq.order-list-type:: number
+	  `std::shared_ptr<T>` 中的 `T` 可以是函数类型：在这种情况下，它管理一个指向函数的指针，而不是对象指针。这有时用于在引用其任何函数的情况下保持动态库或插件加载：
+	  ```cpp
+	  void del(void(*)()) {}
+	  
+	  void fun() {}
+	  
+	  int main()
+	  {
+	      std::shared_ptr<void()> ee(fun, del);
+	      (*ee)();
+	  }
+	  ```
+	  
+	  **实现注释：**
+	  
+	  在典型的实现中，`shared_ptr` 仅保存两个指针：
+	  
+	  1. 存储的指针（由 `get()` 返回的指针）。
+	  2. 控制块的指针。
+	  
+	  控制块是一个动态分配的对象，其中包含：
+- 管理的对象的指针或管理的对象本身。
+- 删除器（类型擦除）。
+- 分配器（类型擦除）。
+- 拥有管理的对象的 `shared_ptr` 数。
+- 引用管理的对象的 `weak_ptr` 数。
+  
+  当通过调用 `std::make_shared` 或 `std::allocate_shared` 创建 `shared_ptr` 时，控制块和管理的对象的内存都是通过单个分配创建的。管理的对象在控制块的数据成员中就地构造。当通过 `shared_ptr` 构造函数之一创建 `shared_ptr` 时，必须单独分配管理的对象和控制块。在这种情况下，控制块存储管理的对象的指针。
+  
+  `shared_ptr` 直接持有的指针是由 `get()` 返回的指针，而控制块持有的指针/对象是在共享所有者数达到零时将被删除的指针/对象。这些指针不一定相等。
+  
+  `shared_ptr` 的析构函数会递减控制块的共享所有者数。如果该计数达到零，控制块调用托管对象的析构函数。直到 `std::weak_ptr` 计数也达到零，控制块不会被释放。
+  
+  在现有的实现中，如果有一个共享指向同一个控制块的 `shared_ptr`，则增加弱指针的计数（[1]，[2]）。
+  
+  为满足线程安全性要求，引用计数通常使用 `std::atomic::fetch_add` 的等效方法进行递增，使用 `std::memory_order_relaxed`（递减需要更强的排序来安全地销毁控制块）。
 -
