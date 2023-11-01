@@ -36,6 +36,7 @@
 	  }
 	  ```
 - ## 实现注释
+  id:: 65422260-e6f3-4b1e-81a6-663a9b5f6779
 	- 在典型的实现中，`shared_ptr` 仅保存两个指针：
 		- 存储的指针（由 `get()` 返回的指针）。
 		  logseq.order-list-type:: number
@@ -47,7 +48,7 @@
 		- [[allocator]]（[[type-erased]]）。
 		- 拥有 管理的对象 的 `shared_ptr` 数。
 		- 引用 管理的对象 的[[weak_ptr]]数。
-	- 当通过调用 `std::make_shared` 或 `std::allocate_shared` 创建 `shared_ptr` 时，控制块和管理的对象的内存都是通过单个分配创建的。管理的对象在控制块的数据成员中就地构造。当通过 `shared_ptr` 构造函数之一创建 `shared_ptr` 时，必须单独分配管理的对象和控制块。在这种情况下，控制块存储管理的对象的指针。
+	- 当通过调用 `std::make_shared` 或 `std::allocate_shared` 创建 `shared_ptr` 时，[[control block]]和管理的对象的内存都是通过单次分配创建的。管理的对象在[[control block]]的数据成员中[[就地构造]]。当通过 `shared_ptr` 构造函数之一创建 `shared_ptr` 时，必须单独分配管理的对象和控制块。在这种情况下，控制块存储管理的对象的指针。
 	  
 	  `shared_ptr` 直接持有的指针是由 `get()` 返回的指针，而控制块持有的指针/对象是在共享所有者数达到零时将被删除的指针/对象。这些指针不一定相等。
 	  
