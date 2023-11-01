@@ -3,8 +3,8 @@
   ```
 - `std::shared_ptr` 是一个[[智能指针]]，通过指针实现对象的 *共享拥有权*。多个 `shared_ptr` 对象可以拥有同一个对象。对象在以下情况下会被销毁并其内存被释放：
 	- 拥有对象的最后一个 `shared_ptr` 被销毁。
-	- 拥有对象的最后一个 `shared_ptr` 被分配另一个指针通过 `operator=` 或 `reset()`。
-- 对象的销毁可以使用 `delete` 表达式或在 `shared_ptr` 创建时提供的自定义删除器。
+	- 拥有对象的最后一个 `shared_ptr` 被分配另一个指针（通过[[operator =]]或 `reset()`）。
+- 对象的销毁可以使用[[delete]]表达式或在 `shared_ptr` 创建时提供的自定义。
 - `shared_ptr` 可以共享对象的拥有权，同时存储另一个对象的指针。这个特性可以用于指向成员对象，同时拥有它们所属的对象。存储的指针可以通过 `get()`、解引用和比较操作符来访问。当引用计数（use count）达到零时，托管的指针将传递给删除器。
 - `shared_ptr` 也可以不拥有任何对象，这时称为空（即使空的 `shared_ptr` 可能有一个非空的存储指针，如果使用了别名构造函数来创建它）。
 - `shared_ptr` 的所有特化满足可复制构造（CopyConstructible）、可复制赋值（CopyAssignable）和可比较小于（LessThanComparable）的要求，并在上下文中可转换为布尔类型。
