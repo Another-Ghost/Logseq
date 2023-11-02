@@ -6,13 +6,14 @@
 	- [Effective C++：改善程序与设计的55个具体做法（中文第三版） (Scott Meyers).mobi](../assets/Effective_C++：改善程序与设计的55个具体做法（中文第三版）_(Scott_Meyers)_1697542282322_0.mobi)
 	- [Effective Modern C++ 42 Specific Ways to Improve Your Use of C++11 and C++14.epub](../assets/Effective_Modern_C++_42_Specific_Ways_to_Improve_Your_Use_of_C++11_and_C++14_1697542339173_0.epub)
 	- [Professional C++ (Marc Gregoire).pdf](../assets/Professional_C++_(Marc_Gregoire)_1697802604465_0.pdf)
-	- ![C++ Templates The Complete Guide (David Vandevoorde, Nicolai M. Josuttis etc.).pdf](../assets/C++_Templates_The_Complete_Guide_(David_Vandevoorde,_Nicolai_M._Josuttis_etc.)_1697802611650_0.pdf)
 	- ## 多线程
 		- ![C++ 并发编程实战（第二版） (Anthony Williams 著；chenxiaowei 译) (Z-Library).pdf](../assets/C++_并发编程实战（第二版）_(Anthony_Williams_著；chenxiaowei_译)_(Z-Library)_1698923135710_0.pdf)
 		- ![C++ Concurrency in Action (Anthony Williams) (Z-Library).pdf](../assets/C++_Concurrency_in_Action_(Anthony_Williams)_(Z-Library)_1698923140715_0.pdf)
 	- ## 模板
+		- ![C++ Templates The Complete Guide (David Vandevoorde, Nicolai M. Josuttis etc.).pdf](../assets/C++_Templates_The_Complete_Guide_(David_Vandevoorde,_Nicolai_M._Josuttis_etc.)_1697802611650_0.pdf)
 		- [C++模板元编程实战 一个深度学习框架的初步实现 (李伟) (Z-Library).epub](../assets/C++模板元编程实战_一个深度学习框架的初步实现_(李伟)_(Z-Library)_1698925341804_0.epub)
 		- [C++ Templates中文版 (C和C++实务精选) ( etc.) (Z-Library).epub](../assets/C++_Templates中文版_(C和C++实务精选)_(_etc.)_(Z-Library)_1698925360981_0.epub)
+	- STL
 		- ![C++标准库  第2版 (Nicolai M. Josuttis著；侯捷译) (Z-Library).pdf](../assets/C++标准库_第2版_(Nicolai_M._Josuttis著；侯捷译)_(Z-Library)_1698925394464_0.pdf)
 		-
 		-
