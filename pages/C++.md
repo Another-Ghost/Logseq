@@ -7,3 +7,8 @@
 	- [Effective Modern C++ 42 Specific Ways to Improve Your Use of C++11 and C++14.epub](../assets/Effective_Modern_C++_42_Specific_Ways_to_Improve_Your_Use_of_C++11_and_C++14_1697542339173_0.epub)
 	- [Professional C++ (Marc Gregoire).pdf](../assets/Professional_C++_(Marc_Gregoire)_1697802604465_0.pdf)
 	- ![C++ Templates The Complete Guide (David Vandevoorde, Nicolai M. Josuttis etc.).pdf](../assets/C++_Templates_The_Complete_Guide_(David_Vandevoorde,_Nicolai_M._Josuttis_etc.)_1697802611650_0.pdf)
+	- ## 多线程
+		- ![C++ 并发编程实战（第二版） (Anthony Williams 著；chenxiaowei 译) (Z-Library).pdf](../assets/C++_并发编程实战（第二版）_(Anthony_Williams_著；chenxiaowei_译)_(Z-Library)_1698923135710_0.pdf)
+		- ![C++ Concurrency in Action (Anthony Williams) (Z-Library).pdf](../assets/C++_Concurrency_in_Action_(Anthony_Williams)_(Z-Library)_1698923140715_0.pdf)
+		-
+			-
