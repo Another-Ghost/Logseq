@@ -6,5 +6,5 @@ alias:: std::ios/basic_istream
 	- ## Unformatted Input
 		- |成员函数名|描述|
 		  |--|--|
-		  |get()|获取一个[[字符]]|
-		  |getline()|获取一行数据|
+		  |[[basic_istream::get]]|获取[[字符]]|
+		  |[[basic_istream::getline]]|获取一行数据|

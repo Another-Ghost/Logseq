@@ -1,0 +1,10 @@
+- ``` cpp
+  int_type get();	\\(1)	
+  basic_istream& get( char_type& ch );	\\(2)	
+  basic_istream& get( char_type* s, std::streamsize count );	\\(3)	
+  basic_istream& get( char_type* s, std::streamsize count, char_type delim );	\\(4)	
+  basic_istream& get( basic_streambuf& strbuf );	\\(5)	
+  basic_istream& get( basic_streambuf& strbuf, char_type delim );	\\(6)
+  ```
+	- 1. 读取一个[[字符]]并返回，如果可用。
+	  如果无字符可用，则返回 `Traits::eof()` 并设置[[failbit]]和[[eofbit]]。

@@ -3,10 +3,10 @@
 - C++ iostate类型的常量表
 - |常量|描述|
   |--|--|
-  |`std::ios_base::goodbit`|表示流状态正常|
-  |`std::ios_base::badbit`| 表示流状态坏，造成不确定的状态|
-  |`std::ios_base::failbit`|表示流状态失败|
-  |`std::ios_base::eofbit`|表示流已到达文件结尾[[EOF]]|
+  |[[std::ios_base::goodbit]]|表示流状态正常|
+  |[[std::ios_base::badbit]]| 表示流状态坏，造成不确定的状态|
+  |[[std::ios_base::failbit]]|表示流状态失败|
+  |[[std::ios_base::eofbit]]|表示流已到达文件结尾[[EOF]]|
 - [[goodbit]]被定义为0，因此`goodbit`设置意味着其他 bit 均被清为0。
 - [[failbit]]和[[badbit]]之间的区别在于后者代表了更严重的错误。
   failbit用于表示在操作过程中出现了错误，但流仍然基本可用。通常情况下，这是由于读取的格式错误，例如尝试读取整数时遇到了一个字母。
