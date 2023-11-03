@@ -9,5 +9,3 @@ alias:: istream/cin, cin
 - 除非使用 `sync_with_stdio(false)`，否则可以[安全]([[线程安全]])地从多个 线程 同时访问这些对象，进行 格式化 和 非格式化 的输入。
 - 一旦构造了 `std::cin`，`std::cin.tie()` 返回 `&std::cout`，同样，`std::wcin.tie()` 返回 `&std::wcout`。这意味着 `std::cin` 上的任何[[格式化输入]]操作，如果有待输出的字符，将会强制调用 `std::cout.flush()`。
   id:: 65449bb6-f30d-40a5-8aed-fde717a0376b
-- >
-- 名称中的 'c' 指的是 "character"（来源自 stroustrup.com FAQ）；cin 代表 "character input"，wcin 代表 "wide character input"。
