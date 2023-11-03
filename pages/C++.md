@@ -14,7 +14,7 @@
 		- [C++模板元编程实战 一个深度学习框架的初步实现 (李伟) (Z-Library).epub](../assets/C++模板元编程实战_一个深度学习框架的初步实现_(李伟)_(Z-Library)_1698925341804_0.epub)
 		- [C++ Templates中文版 (C和C++实务精选) ( etc.) (Z-Library).epub](../assets/C++_Templates中文版_(C和C++实务精选)_(_etc.)_(Z-Library)_1698925360981_0.epub)
 	- STL
-		- ![C++标准库  第2版 (Nicolai M. Josuttis著；侯捷译) (Z-Library).pdf](../assets/C++标准库_第2版_(Nicolai_M._Josuttis著；侯捷译)_(Z-Library)_1698925394464_0.pdf)
+		- [C++标准库  第2版 (Nicolai M. Josuttis著；侯捷译) (Z-Library).pdf](../assets/C++标准库_第2版_(Nicolai_M._Josuttis著；侯捷译)_(Z-Library)_1698925394464_0.pdf)
 		-
 		-
 	-
