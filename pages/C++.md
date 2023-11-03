@@ -15,7 +15,7 @@
 		- [C++ Templates中文版 (C和C++实务精选) ( etc.) (Z-Library).epub](../assets/C++_Templates中文版_(C和C++实务精选)_(_etc.)_(Z-Library)_1698925360981_0.epub)
 	- STL
 		- [C++标准库  第2版 (Nicolai M. Josuttis著；侯捷译) (Z-Library).pdf](../assets/C++标准库_第2版_(Nicolai_M._Josuttis著；侯捷译)_(Z-Library)_1698925394464_0.pdf)
-		-
+		- [C++标准库(第2版) (（德）约祖蒂斯（Josuttis，N.M.）) (Z-Library).pdf](../assets/C++标准库(第2版)_(（德）约祖蒂斯（Josuttis，N.M.）)_(Z-Library)_1699001794585_0.pdf)
 		-
 	-
 	-
