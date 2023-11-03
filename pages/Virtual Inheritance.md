@@ -33,3 +33,6 @@ alias:: 虚继承
     return 0;
   }
   ```
+- [[virtual public]]
+- [[virtual protected]]
+- [[virtual private]]
