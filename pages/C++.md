@@ -16,6 +16,6 @@
 	- STL
 		- [C++标准库  第2版 (Nicolai M. Josuttis著；侯捷译) (Z-Library).pdf](../assets/C++标准库_第2版_(Nicolai_M._Josuttis著；侯捷译)_(Z-Library)_1698925394464_0.pdf)
 		- [C++标准库(第2版) (（德）约祖蒂斯（Josuttis，N.M.）) (Z-Library).pdf](../assets/C++标准库(第2版)_(（德）约祖蒂斯（Josuttis，N.M.）)_(Z-Library)_1699001794585_0.pdf)
-		-
+		- [The C++ Standard Library A Tutorial and Reference (Nicolai M. Josuttis) (Z-Library).pdf](../assets/The_C++_Standard_Library_A_Tutorial_and_Reference_(Nicolai_M._Josuttis)_(Z-Library)_1699028341592_0.pdf)
 	-
 	-
