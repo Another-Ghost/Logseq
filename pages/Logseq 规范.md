@@ -40,3 +40,4 @@
 	  #+END_CENTER
 	-
 - 标题可以用 Parent/Child 这种来形成层级结构
+- ctrl+shift+i 打开调试
