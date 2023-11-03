@@ -1,3 +1,5 @@
+alias:: ostream/cout
+
 - ``` cpp
   extern std::ostream cout;
   extern std::wostream wcout;
