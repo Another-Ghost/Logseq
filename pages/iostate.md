@@ -14,7 +14,8 @@
 - 需要注意的是，[[eofbit]]常常与[[failbit]]同时发生，因为在到达文件结束后再次尝试读取数据时，会检测到文件结束状态。
   当读取最后一个字符时，eofbit未被设置，但当再次尝试读取字符时，eofbit和failbit都会被设置，因为读取操作失败了。
 - ## 可用于 Boolean 表达式 的 stream 操作符
-	- |成员函数|描述|
+	- [[stream]]类重写了[[operator bool]]和[[operator !]]：
+	  |成员函数|描述|
 	  |--|--|
 	  |`operator bool ()`|stream 是否未出错（相当于 `!fail()` ）|
 	  |`operator ! ()`|stream 是否已出错（相当于 `fail()` ）|

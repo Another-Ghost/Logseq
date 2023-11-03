@@ -12,3 +12,4 @@ alias:: 流
 	  |[[cerr]]|ostream|将[[报错信息]]写至[[标准 error 通道]]|
 	  |[[clog]]|ostream|将[[日志信息]]写至[[标准 logging 通道]]|
 	- 每一个都有相对应的[[宽字符]]版本，依次为 `wcin`，`wcout`，`cerr`，`clog`。
+-

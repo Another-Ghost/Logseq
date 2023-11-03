@@ -4,4 +4,3 @@ alias:: istream, basic_istream/istream
   typedef basic_istream<char> istream;
   ```
 -
--
