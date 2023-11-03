@@ -1,0 +1,1 @@
+- Prepare stream for input
