@@ -1,0 +1,5 @@
+- [[stream]]定义了一些类型为[[iostate]]的常量，用以反映[[stream]]的状态。
+- [[iostate]]是class [[ios_base]]的一个成员。
+- C++ iostate类型的常量表
+-
+-
