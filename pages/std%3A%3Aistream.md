@@ -9,5 +9,5 @@ alias:: istream, std::ios/istream
 	- ## Unformatted Input
 		- |成员函数名|描述|
 		  |--|--|
-		  |get|获取一个[[字符]]|
-		  |getline|获取一行数据|
+		  |get()|获取一个[[字符]]|
+		  |getline()|获取一行数据|
