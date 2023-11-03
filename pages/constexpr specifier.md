@@ -1,5 +1,6 @@
 alias:: constexpr
 
+- #C++keyword
 - `constexpr` 修饰符用来声明可以在[[编译]]时计算函数或变量的值。指明了变量或函数的值可以出现在[[常量表达式中]]。
   id:: 652d4d17-8c8f-40e1-a702-1e77b3ae8f66
 - 在对象声明或非[[static成员函数]]（直到[[C++14]]）中使用 `constexpr` 修饰符意味着[[const]]。
