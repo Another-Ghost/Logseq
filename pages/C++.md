@@ -6,8 +6,6 @@
 	- [Effective C++：改善程序与设计的55个具体做法（中文第三版） (Scott Meyers).mobi](../assets/Effective_C++：改善程序与设计的55个具体做法（中文第三版）_(Scott_Meyers)_1697542282322_0.mobi)
 	- [Effective Modern C++ 42 Specific Ways to Improve Your Use of C++11 and C++14.epub](../assets/Effective_Modern_C++_42_Specific_Ways_to_Improve_Your_Use_of_C++11_and_C++14_1697542339173_0.epub)
 	- [Professional C++ (Marc Gregoire).pdf](../assets/Professional_C++_(Marc_Gregoire)_1697802604465_0.pdf)
-	- [深度探索C++对象模型 (侯捷) (Z-Library).epub](../assets/深度探索C++对象模型_(侯捷)_(Z-Library)_1699459791484_0.epub)
-	- [深度探索c++对象模型 (Stanley Lippman , 侯捷) (Z-Library).pdf](../assets/深度探索c++对象模型_(Stanley_Lippman_,_侯捷)_(Z-Library)_1699459796712_0.pdf)
 	- ## 多线程
 		- [C++ 并发编程实战（第二版） (Anthony Williams 著；chenxiaowei 译) (Z-Library).pdf](../assets/C++_并发编程实战（第二版）_(Anthony_Williams_著；chenxiaowei_译)_(Z-Library)_1698923135710_0.pdf)
 		- ![C++ Concurrency in Action (Anthony Williams) (Z-Library).pdf](../assets/C++_Concurrency_in_Action_(Anthony_Williams)_(Z-Library)_1698923140715_0.pdf)
@@ -20,5 +18,6 @@
 		- [C++标准库(第2版) (（德）约祖蒂斯（Josuttis，N.M.）) (Z-Library).pdf](../assets/C++标准库(第2版)_(（德）约祖蒂斯（Josuttis，N.M.）)_(Z-Library)_1699001794585_0.pdf)
 		- [The C++ Standard Library A Tutorial and Reference (Nicolai M. Josuttis) (Z-Library).pdf](../assets/The_C++_Standard_Library_A_Tutorial_and_Reference_(Nicolai_M._Josuttis)_(Z-Library)_1699028341592_0.pdf)
 		- ![STL源码剖析 (侯捷) (Z-Library).pdf](../assets/STL源码剖析_(侯捷)_(Z-Library)_1699459822178_0.pdf)
-	-
+		- [深度探索C++对象模型 (侯捷) (Z-Library).epub](../assets/深度探索C++对象模型_(侯捷)_(Z-Library)_1699459791484_0.epub)
+		- [深度探索c++对象模型 (Stanley Lippman , 侯捷) (Z-Library).pdf](../assets/深度探索c++对象模型_(Stanley_Lippman_,_侯捷)_(Z-Library)_1699459796712_0.pdf) 7.1
 	-
