@@ -1,4 +1,4 @@
-alias:: 操作系统
+alias:: 操作系统, OS
 
 - [操作系统导论 (Remzi H. Arpaci-Dusseau etc.) (Z-Library).pdf](../assets/操作系统导论_(Remzi_H._Arpaci-Dusseau_etc.)_(Z-Library)_1699459834569_0.pdf)
 - [operating_systems_three_easy_pieces.pdf](../assets/operating_systems_three_easy_pieces_1699541971746_0.pdf)
