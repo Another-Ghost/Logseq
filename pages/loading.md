@@ -1,3 +1,3 @@
-alias:: 加载
+alias:: 加载, load
 
 -
