@@ -1,3 +1,1 @@
-alias:: Standard Template Library
-
 -
