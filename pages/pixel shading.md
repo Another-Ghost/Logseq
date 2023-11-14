@@ -1,4 +1,4 @@
-alias:: pixel shading stage
+alias:: pixel shading stage, 像素着色阶段
 
 - #RenderingPipelineStage
 - Any per-pixel shading computations are performed here, using the [[interpolated]] [[shading data]] as *input*. 
