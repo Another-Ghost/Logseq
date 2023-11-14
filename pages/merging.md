@@ -3,6 +3,9 @@ alias:: merging stage, ROP, raster operations, render output unit,
 - #RenderingPipelineStage
 - The information for each *pixel* is stored in the [[color buffer]], which is a *rectangular array* of [[colors]]. It is the responsibility of the [[merging stage]] to combine the *fragment color* produced by the [[pixel shading stage]] with the *color* currently stored in the *buffer*.
   Unlike the [[pixel shading stage]], the *GPU subunit* that performs this stage is typically **not fully programmable**. However, it is highly configurable, enabling various effects.
+- 每个[[像素]]的[[颜色值]]信息存储在[[color buffer]]中。
+  [[Merging Stage]]的责任是将[[像素着色阶段]]生成的 *fragment color* 与当前存储在[[color buffer]]中的颜色值相结合。
+  与*像素着色阶段*不同，执行此阶段的*GPU子单元*通常**不是完全可编程的**。然而，它是高度可配置的，能够实现各种效果。
 - ## VIsibility and z-buffer
 	- This stage is also responsible for resolving [[visibility]]. 
 	  This means that when the whole scene has been rendered, the [[color buffer]] should contain the *colors* of the *primitives* in the scene that are [[visible]] from the [[point of view]] of the [[camera]]. 
@@ -21,4 +24,5 @@ alias:: merging stage, ROP, raster operations, render output unit,
 		- The screen displays the contents of the [[color buffer]]. To avoid allowing the human viewer to see the primitives as they are **being rasterized and sent to the screen**, [[double buffering]] is used. This means that the rendering of a scene **takes place** off screen, in a [[back buffer]].
 		  Once the scene has been rendered in the [[back buffer]], the contents of the *back buffer* are **swapped with** the contents of the [[front buffer]] that was previously displayed on the screen. 
 		  The *swapping* often occurs during [[vertical retrace]], a time when it is safe to do so.
+-
 -
