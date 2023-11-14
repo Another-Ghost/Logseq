@@ -24,7 +24,8 @@ alias:: merging stage, ROP, raster operations, render output unit, 合并阶段
 - ## [[Early-Z]]
 	- 想象一下，通过光栅化生成的片元经过像素着色器处理，然后在应用[[z buffer]]时发现被先前渲染的某个片段隐藏。那么在像素着色器中进行的所有处理都是**不必要的**。
 	  为了避免这种浪费，许多GPU在像素着色器执行**之前**执行一些 *合并测试* 。片段的[[z-depth]]（以及其他正在使用的内容，如[[模板缓冲]]或[[scissoring]]）用于 测试[[可见性]]。如果片段被隐藏，该片段将被剔除。这个功能被称为[[early-z]]。
-	- [[像素着色器]]具有更改片元的z深度或完全丢弃片段的能力。如果在像素着色器程序中发现存在任何一种操作类型，则通常无法使用early-z，并且通常会关闭它，从而使流水线的效率降低。DirectX 11和OpenGL 4.2允许像素着色器强制启用early-z测试，但带有一些限制[530]。有关early-z和其他z缓冲优化的更多信息，请参见第23.7节。有效使用early-z对性能有很大的影响，这在第18.4.5节中有详细讨论。
+	- [[像素着色器]]具有更改片元的[[z-depth]]或完全[[丢弃片元]]的能力，如果在像素着色器程序中发现存在**任何一种**操作类型，则通常无法使用[[early-z]]，并且通常会关闭它，从而使流水线的效率降低。 
+	  >DirectX 11 和 OpenGL 4.2 允许像素着色器强制启用early-z测试，但带有一些限制。
 - # Double Buffering
 	- The screen displays the contents of the [[color buffer]]. To avoid allowing the human viewer to see the primitives as they are **being rasterized and sent to the screen**, [[double buffering]] is used. This means that the rendering of a scene **takes place** off screen, in a [[back buffer]].
 	  Once the scene has been rendered in the [[back buffer]], the contents of the *back buffer* are **swapped with** the contents of the [[front buffer]] that was previously displayed on the screen. 
