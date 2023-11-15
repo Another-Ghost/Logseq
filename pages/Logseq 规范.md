@@ -29,7 +29,7 @@
 	  
 	  #+END_CAUTION
 	- #+BEGIN_PINNED
-	  
+	  用于例子
 	  #+END_PINNED
 	- #+BEGIN_WARNING
 	  
