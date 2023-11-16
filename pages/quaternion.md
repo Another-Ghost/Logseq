@@ -1,5 +1,7 @@
 alias:: 四元数
 
+- # Reference
+	- ![quaternion.pdf](../assets/quaternion_1700088327636_0.pdf)
 - # Definition
 	- 四元数形如
 	  logseq.order-list-type:: number

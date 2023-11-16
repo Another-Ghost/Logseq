@@ -1,0 +1,2 @@
+- The [[frame buffer]] generally consists of all the [[buffers]] on a system.
+-

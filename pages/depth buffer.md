@@ -1,4 +1,4 @@
-alias:: z-buffer, 深度缓存
+alias:: z-buffer, 深度缓存, z缓冲
 
 - A [[z-buffer]] is the **same size and shape** as the [[color buffer]], and for each *pixel* it stores the [[z-value]] to the **currently closest primitive**. 
   The *z-buffer* algorithm is simple, has $O(n)$ *convergence* (where $n$ is the number of *primitives* being rendered). 

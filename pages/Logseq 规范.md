@@ -14,8 +14,11 @@
 	  #+END_COMMENT
 - 输入`<`会出现一些模版，如
 	- #+BEGIN_QUOTE
-	  abc
+	  用于参考引用（外连接等）
 	  #+END_QUOTE
+	- #+BEGIN_NOTE
+	  
+	  #+END_NOTE
 	- #+BEGIN_TIP
 	  
 	  #+END_TIP
@@ -26,7 +29,7 @@
 	  
 	  #+END_CAUTION
 	- #+BEGIN_PINNED
-	  
+	  用于例子
 	  #+END_PINNED
 	- #+BEGIN_WARNING
 	  
@@ -41,3 +44,4 @@
 	-
 - 标题可以用 Parent/Child 这种来形成层级结构
 - ctrl+shift+i 打开调试
+- <
