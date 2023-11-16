@@ -1,3 +1,1 @@
-alias:: assemble
-
--
+alias:: assemble, 汇编
