@@ -14,5 +14,10 @@ alias:: 操作数, 运算对象, 运算元, 运算子
 		- #+BEGIN_PINNED
 		  `%rax`，`%r13`
 		  #+END_PINNED
-	- 内存（[[memory]]）:
+	- 内存（[[memory]]）: x64中为由[[寄存器]]给出的[[地址]]上的 8 个连续字节的内存。
 	  logseq.order-list-type:: number
+		- 有多种不同的寻址模式
+		- #+BEGIN_PINNED
+		  `(%rax)`
+		  #+END_PINNED
+- ![image.png](../assets/image_1700145400928_0.png)
