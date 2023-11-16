@@ -20,4 +20,4 @@ alias:: 操作数, 运算对象, 运算元, 运算子
 		- #+BEGIN_PINNED
 		  `(%rax)`
 		  #+END_PINNED
-- ![image.png](../assets/image_1700145400928_0.png)
+- ![image.png](../assets/image_1700145400928_0.png){:height 1185, :width 780}
