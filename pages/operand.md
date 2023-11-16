@@ -1,5 +1,16 @@
 alias:: 操作数, 运算对象, 运算元, 运算子
 
+- C语言数据类型在[[X86-64]]中的大小：
+  |C 声明|Intel 数据类型|汇编代码后缀|大小(字节）|
+  |--|--|--|--|
+  |char|[[byte]]|b|1|
+  |short|[[word]]|w|2|
+  |int|[[double word]]|l|4|
+  |long|[[quad word]]|q|8|
+  |char *|quad word|q|8|
+  |float|[[single precision]]|s|4|
+  |double|[[double precision]]|l|8|
+-
 - 操作数有三种类型：
 	- *立即数*（[[immediate]]）：常量整数数据
 	  logseq.order-list-type:: number
