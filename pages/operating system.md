@@ -18,6 +18,9 @@ alias:: 操作系统, OS
 	  logseq.order-list-type:: number
 		- [[文件]]是对[[I/O 设备]]的 *抽象表示* 。
 		  logseq.order-list-type:: number
-		- [[虚拟内存]]是对[[主存]]和[[磁盘]] I/0 设备的抽象表示，进程则是对处理
+		- [[虚拟内存]]是对[[主存]]和[[磁盘]][[I/0 设备]]的抽象表示。
 		  logseq.order-list-type:: number
-		  器、主存和 I/0 设备的抽象表示。我们将依次讨论每种抽象表示。
+		- [[进程]]是对[[处理器]]、[[主存]]和[[I/O 设备]]的抽象表示。
+		  logseq.order-list-type:: number
+		- ![image.png](../assets/image_1700218945448_0.png)
+-
