@@ -1,4 +1,4 @@
-alias:: 类型转换, explicit conversion, 显式转换, type-casting, type-cast, 显示类型转换, explicit type-casting
+alias:: 类型转换, explicit conversion, 显式转换, type-casting, type-cast, 显示类型转换, explicit type-casting, 强制类型转换, 强制转换
 
 - C++ 是一种强类型语言。许多转换，特别是那些涉及到值不同解释的情况，需要[[显式转换]]，C++ 中称为[[type-casting]]。有两种主要语法用于通用类型转换：[[functional type-casting]]和[[C-like type casting]]：
 - ``` cpp
