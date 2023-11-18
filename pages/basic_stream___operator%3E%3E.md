@@ -40,5 +40,5 @@ alias:: operator >>, >>
 	  basic_istream& operator>>( std::basic_streambuf<CharT, Traits>* sb );
 	  (18)	
 	  ```
-	- 经由 `>>` 读入一个 `char` 或 `wchar_t` 字符时，默认会跳过开头的[[空白字符]]。如果你想读入所有字符（包括空白字符），可清除 `skipws` flag或利用成员函数[[cin::get()。
+	- 经由 `>>` 读入一个 `char` 或 `wchar_t` 字符时，默认会跳过开头的[[空白字符]]。如果你想读入所有字符（包括空白字符），可清除 `skipws` flag或利用成员函数[[basic_istream::get]]。
 	- [[C-string]]（亦即 `char*` ）只读入真正的文字，因此默认情况下读得的开头[[空白字符]]均会跳过，一直读到另一个[[空白字符]]或[[end-of-file]]为止。是否跳过起头的空白字符同样可由flag `skipws` 控制。
