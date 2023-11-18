@@ -52,7 +52,7 @@ alias:: cv-qualifiers, cv-修饰符, cv-qualification, cv 限定符
 			  id:: 652d4472-fec7-428e-9f19-aa0603194441
 - # `mutable`说明符
 	- 声明为[[mutable]]的类成员允许被修改，即使包含这个类成员的对象被声明为 const 。
-	- `mutable`可以在非[[static]]类成员的非引用非 const 类型的声明中出现：
+	- `mutable`可以在非[[static]] 类成员 的非[[引用]]非[[const]]类型的声明中出现：
 	  ```C++
 	  class X
 	  {
