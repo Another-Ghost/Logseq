@@ -1,4 +1,4 @@
-alias:: American Standard Code for Information Interchange
+alias:: American Standard Code for Information Interchange, ASCII码
 
 - |十进制|名称|
   |--|--|
