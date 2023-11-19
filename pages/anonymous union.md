@@ -1,3 +1,3 @@
-alias:: 匿名 union
+alias:: 匿名 union, 匿名联合
 
 -
