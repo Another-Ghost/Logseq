@@ -18,5 +18,5 @@ alias:: 块作用域
   
   ```
 - #+BEGIN_COMMENT
-  `{`和`}`之间 是一个
+  `{`和`}`之间 是一个 块作用域
   #+END_COMMENT
