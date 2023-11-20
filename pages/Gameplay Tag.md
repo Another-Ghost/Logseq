@@ -1,4 +1,4 @@
-alias:: 玩法标记, 标记
+alias:: 玩法标记
 
 - 每种 [[Gameplay Ability]] 都拥有一组[[Gameplay Tag]]，以可影响其行为的方式 识别 和 分类 技能。
   还有[[Gameplay Tag Container]]和[[Gameplay Tag Query]]，用于支持与其他技能进行交互。
