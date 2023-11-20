@@ -17,3 +17,6 @@ alias:: 块作用域
   } // 块结束，外部 i 的作用域结束
   
   ```
+- #+BEGIN_COMMENT
+  `{`和`}`之间 是一个
+  #+END_COMMENT
