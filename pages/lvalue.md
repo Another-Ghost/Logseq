@@ -28,7 +28,7 @@ alias:: lvalues, 左值
 	  logseq.order-list-type:: number
 	- 对于特定的 `b` 和 `c`的 *三元条件* 表达式 `a ? b : c`（例如，当它们都是相同类型的 *左值* 时，但具体定义见[definition](https://en.cppreference.com/w/cpp/language/operator_other#Conditional_operator)）。
 	  logseq.order-list-type:: number
-	- [[string literal]]，比如 `"Hello, world!"`。
+	- [[string literals]]，比如 `"Hello, world!"`。
 	  logseq.order-list-type:: number
 	- [[类型转换]]表达式为 *左值引用* 类型，例如 `static_cast<int&>(x)` 或 `static_cast<void(&)(int)>(x)`。
 	  logseq.order-list-type:: number
