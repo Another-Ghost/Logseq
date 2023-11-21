@@ -11,9 +11,26 @@
 	- [[Script]]
 	- [[FSM]]
 	- [[AI]]
-- [[Resource Layer]]
+- ## [[Resource Layer]]
 	- [[Data and Files]]
 		- [[Scene]] and [[Level]]
-		- Script and Graph]]
+		- [[Script]] and [[Graph]]
 		- Game Logic Data
+- ## [[Core Layer]]
+  Swiss Knife of Game Engine
+	- [[Data Structure]]
+	- [[Garbage Collection]]
+	- [[Math]]
+	- [[Thread Pool]]
+- ## [[Platform Layer]]
+	- Launch on Different Platforms
+	- [[Operation Systems]]
+	- [[Platform File Systems]]
+	- [[Graphics API]]
+	- [[Platform SDK]]
+	- [[Consoles]]
+	- [[Input Devices]]
+	- [[Publishing Platforms]]
+- [[3rd Party Libraries]]
+	- [[Middleware]] and 3rd Party Libraries
 -
