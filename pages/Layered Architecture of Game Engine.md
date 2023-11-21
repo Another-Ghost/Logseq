@@ -1,2 +1,19 @@
-- ![image.png](../assets/image_1700605520635_0.png){:width }
+- ![image.png](../assets/image_1700605520635_0.png){:width 494/2, :height 444/2}
+- ## [[Tool Layer]]
+	- Chain of Editors
+- ## [[Function Layer]]
+	- [[rendering]]
+	- [[Animation]]
+	- [[Physics]]
+	- [[Camera]]
+	- [[HUD]]
+	- [[Input]]
+	- [[Script]]
+	- [[FSM]]
+	- [[AI]]
+- [[Resource Layer]]
+	- [[Data and Files]]
+		- [[Scene]] and [[Level]]
+		- Script and Graph]]
+		- Game Logic Data
 -
