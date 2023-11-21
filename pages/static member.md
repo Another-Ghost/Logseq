@@ -57,58 +57,48 @@
 	- 静态成员函数不能是[[virtual]]的、[[const]]的、[[volatile]]的或[[ref-qualified]]的。
 	- 静态成员函数的地址可以存储在[[普通函数指针]]中，但不能存储在[[成员函数指针]]中。
 - ## [[静态数据成员]]
-	- 静态数据成员不与任何对象关联。即使没有定义该类的对象，它们也存在。整个程序中只有一个静态数据成员的实例，具有静态存储持续期，除非使用了关键字 thread_local，这种情况下每个线程有一个此类对象，具有线程存储持续期（自 C++11 起）。
-	  
-	  静态数据成员不能是 mutable 的。
-	  
-	  命名空间作用域中的类的静态数据成员如果类本身具
-	  
-	  有外部链接（不是未命名命名空间的成员），则具有外部链接。局部类（在函数内部定义的类）和未命名类，包括未命名类的成员类，不能有静态数据成员。
-	  
-	  静态数据成员可以声明为 inline。内联静态数据成员可以在类定义中定义，并且可以指定初始化器。它不需要类外定义：
-	  
+	- 静态数据成员不与任何对象关联。即使没有定义该类的对象，它们也存在。整个程序中只有一个静态数据成员的实例，具有[[静态存储期]]，除非使用了关键字[[thread_local]]，这种情况下每个线程有一个此类对象，具有[[线程存储持续期]]。
+	- 命名空间作用域中的类的静态数据成员如果 类本身具有[[外部链接]]（不是未命名命名空间的成员），则具有外部链接。[[local class]]（在函数内部定义的类）和未命名类，包括未命名类的成员类，不能有静态数据成员。
+	- 静态数据成员可以声明为 inline。内联静态数据成员 可以在类定义中定义，并且可以指定初始化器。它不需要类外定义：
 	  ```cpp
 	  struct X
 	  {
 	    inline static int n = 1;
 	  };
 	  ```
-- #### 常量静态成员
-  如果静态数据成员是整数或枚举类型的 const（且不是 volatile），则可以在类定义中用初始化器初始化，其中每个表达式都是常量表达式：
-  
-  ```cpp
-  struct X
-  {
-    const static int n = 1;
-    const static int m{2}; // 自 C++11 起
-    const static int k;
-  };
-  const int X::k = 3;
-  ```
-  
-  如果静态数据成员是 LiteralType 并声明为 constexpr，则必须在类定义中用初始化器初始化，其中每个表达式都是常量表达式：
-  
-  ```cpp
-  struct X
-  {
-    constexpr static int arr[] = { 1, 2, 3 };        // OK
-    constexpr static std::complex<double> n = {1,2}; // OK
-    constexpr static int k; // 错误：constexpr static 需要初始化器
-  };
-  ```
-  
-  如果 const 非内联（自 C++17 起）静态数据成员或 constexpr 静态数据成员（自 C++11 起）（直到 C++17）被 odr-use，则仍然需要在命名空间作用域进行定义，但不能有初始化器。
-  
-  constexpr 静态数据成员隐式地是内联的，不需要在命名空间作用域重新声明。这种不带初始化器的重新声明（以前是必需的）仍然被允许，但已被弃用。
-  
-  ```cpp
-  struct X
-  {
-    static const int n = 1;
-    static constexpr int m = 4;
-  };
-  
-  const int *p = &X::n, *q = &X::m; // X::n 和 X::m 被 odr-use
-  const int X::n;             // … 因此需要定义
-  constexpr int X::m;         // … （除了 C++17 中的 X::m）
-  ```
+	- ### 常量静态成员
+		- 如果静态数据成员是 整数 或 枚举类型 的[[const]]（且不是[[volatile]]），则可以在类定义中用初始化器初始化，其中每个表达式都是常量表达式：
+		  ```cpp
+		  struct X
+		  {
+		  	const static int n = 1;
+		  	const static int m{2}; // 自 C++11 起
+		  	const static int k;
+		  };
+		  const int X::k = 3;
+		  ```
+		  如果静态数据成员是[[LiteralType]]并声明为[[constexpr]]，则必须在类定义中用初始化器初始化，其中每个表达式都是常量表达式：
+		  ```cpp
+		  struct X
+		  {
+		  	constexpr static int arr[] = { 1, 2, 3 };        // OK
+		  	constexpr static std::complex<double> n = {1,2}; // OK
+		  	constexpr static int k; // 错误：constexpr static 需要初始化器
+		  };
+		  ```
+		  
+		  如果 const 非内联（自 C++17 起）静态数据成员或 constexpr 静态数据成员（自 C++11 起）（直到 C++17）被 odr-use，则仍然需要在命名空间作用域进行定义，但不能有初始化器。
+		  
+		  constexpr 静态数据成员隐式地是内联的，不需要在命名空间作用域重新声明。这种不带初始化器的重新声明（以前是必需的）仍然被允许，但已被弃用。
+		  
+		  ```cpp
+		  struct X
+		  {
+		    static const int n = 1;
+		    static constexpr int m = 4;
+		  };
+		  
+		  const int *p = &X::n, *q = &X::m; // X::n 和 X::m 被 odr-use
+		  const int X::n;             // … 因此需要定义
+		  constexpr int X::m;         // … （除了 C++17 中的 X::m）
+		  ```
