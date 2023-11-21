@@ -5,3 +5,4 @@ alias:: constexpr
   id:: 652d4d17-8c8f-40e1-a702-1e77b3ae8f66
 - 在对象声明或非[[static成员函数]]（直到[[C++14]]）中使用 `constexpr` 修饰符意味着[[const]]。
   在函数或[[static]]数据成员（自[[C++17]]起）声明中使用 `constexpr` 修饰符意味着[[inline]]。
+-
