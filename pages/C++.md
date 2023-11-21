@@ -5,6 +5,7 @@
 	- [Effective C++ (Meyers, Scott).epub](../assets/Effective_C++_(Meyers,_Scott)_1697542234373_0.epub)
 	- [Effective C++：改善程序与设计的55个具体做法（中文第三版） (Scott Meyers).mobi](../assets/Effective_C++：改善程序与设计的55个具体做法（中文第三版）_(Scott_Meyers)_1697542282322_0.mobi)
 	- [Effective Modern C++ 42 Specific Ways to Improve Your Use of C++11 and C++14.epub](../assets/Effective_Modern_C++_42_Specific_Ways_to_Improve_Your_Use_of_C++11_and_C++14_1697542339173_0.epub)
+	- ![Effective Modern C++ 简体中文版  42招独家技巧助您改善C++11和C++14的高效用法 (Scott Meyers 高博 译) (Z-Library).pdf](../assets/Effective_Modern_C++_简体中文版_42招独家技巧助您改善C++11和C++14的高效用法_(Scott_Meyers_高博_译)_(Z-Library)_1700579037218_0.pdf)
 	- [Professional C++ (Marc Gregoire).pdf](../assets/Professional_C++_(Marc_Gregoire)_1697802604465_0.pdf)
 	- ## 多线程
 		- [C++ 并发编程实战（第二版） (Anthony Williams 著；chenxiaowei 译) (Z-Library).pdf](../assets/C++_并发编程实战（第二版）_(Anthony_Williams_著；chenxiaowei_译)_(Z-Library)_1698923135710_0.pdf)
