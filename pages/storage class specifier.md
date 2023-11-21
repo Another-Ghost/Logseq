@@ -23,4 +23,6 @@ id:: 6559c7da-2a23-45d6-888d-095fe33414a8
 	- [[mutable]]
 		- 不影响[[存储期]]或[[链接]]。
 - 在声明中**只能出现一个[[存储类别说明符]]**，但[[thread_local]]可以与 [[static]]或[[extern]] 结合使用。
+- ## [[non-local variable]]
 - ## [[static local variable]]
+-

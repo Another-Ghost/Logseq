@@ -1,3 +1,4 @@
+id:: 655cdcf6-86ed-408b-beb4-bc9c88bcbad0
 alias:: 非局部变量
 
 - 所有具有[[静态存储期]]的[[非局部变量]]都作为[[程序启动]]的一部分进行[[初始化]]，在[[main]]函数的执行开始之前（除非是[[Deferred dynamic initialization]]）。
