@@ -1,6 +1,6 @@
 # Reference
 	- [The C++ Programming Language, Fourth Edition (Bjarne Stroustrup) (Z-Library).epub](../assets/The_C++_Programming_Language,_Fourth_Edition_(Bjarne_Stroustrup)_(Z-Library)_1697542304500_0.epub)
-	- ![C++ Primer (Stanley B. Lippman, Josée Lajoie etc.).pdf](../assets/C++_Primer_(Stanley_B._Lippman,_Josée_Lajoie_etc.)_1697802621032_0.pdf)
+	- ![C++ Primer (Stanley B. Lippman, Josée Lajoie etc.).pdf](../assets/C++_Primer_(Stanley_B._Lippman,_Josée_Lajoie_etc.)_1697802621032_0.pdf) （到C++11）
 	- [C++ Primer中文版：第5版 (王刚  杨巨峰).epub](../assets/C++_Primer中文版：第5版_(王刚_杨巨峰)_1697542323938_0.epub)
 	- [Effective C++ (Meyers, Scott).epub](../assets/Effective_C++_(Meyers,_Scott)_1697542234373_0.epub)
 	- [Effective C++：改善程序与设计的55个具体做法（中文第三版） (Scott Meyers).mobi](../assets/Effective_C++：改善程序与设计的55个具体做法（中文第三版）_(Scott_Meyers)_1697542282322_0.mobi)
@@ -8,7 +8,7 @@
 	- ![Effective Modern C++ 简体中文版  42招独家技巧助您改善C++11和C++14的高效用法 (Scott Meyers 高博 译) (Z-Library).pdf](../assets/Effective_Modern_C++_简体中文版_42招独家技巧助您改善C++11和C++14的高效用法_(Scott_Meyers_高博_译)_(Z-Library)_1700579037218_0.pdf)
 	- [Professional C++ (Marc Gregoire).pdf]（到C++20）(../assets/Professional_C++_(Marc_Gregoire)_1697802604465_0.pdf)
 	- ![C++ 语言导学（原书第2版） (Bjarne Stroustrup) (Z-Library).pdf](../assets/C++_语言导学（原书第2版）_(Bjarne_Stroustrup)_(Z-Library)_1700580541714_0.pdf) （到C++20）
-	- [现代C++语言核心特性解析 (谢丙堃著) (Z-Library).pdf](../assets/现代C++语言核心特性解析_(谢丙堃著)_(Z-Library)_1700580606410_0.pdf)
+	- [现代C++语言核心特性解析 (谢丙堃著) (Z-Library).pdf](../assets/现代C++语言核心特性解析_(谢丙堃著)_(Z-Library)_1700580606410_0.pdf)（到C++20）
 	- ## 多线程
 		- [C++ 并发编程实战（第二版） (Anthony Williams 著；chenxiaowei 译) (Z-Library).pdf](../assets/C++_并发编程实战（第二版）_(Anthony_Williams_著；chenxiaowei_译)_(Z-Library)_1698923135710_0.pdf)
 		- ![C++ Concurrency in Action (Anthony Williams) (Z-Library).pdf](../assets/C++_Concurrency_in_Action_(Anthony_Williams)_(Z-Library)_1698923140715_0.pdf)
