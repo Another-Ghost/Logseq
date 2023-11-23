@@ -1,4 +1,4 @@
-alias:: 向量函数的微分
+alias:: 向量函数的微分, 向量函数的导数
 
 - #UNDONE
   id:: 64fa6aa9-55a2-4c1c-a5c7-6d994f8c96b9
