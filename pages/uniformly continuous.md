@@ -5,7 +5,7 @@ alias:: uniformly continuous mapping, 一致连续映射
   $$d_Y(f(p),f(q)) <\varepsilon$$ 
   for **all** $p$ and $q$ in $X$ for which $d_X(p, q) <\delta$.
 	- #+BEGIN_TIP
-	  [[continuous]]定义是 $p$ 点连续
+	  [[continuous]]关注的是 $x$ 和 指定的 点 $p$， [[uniformly continuous]]关注的是 $X$ 中任意两点 $p$ 和 $q$ 。 
 	  #+END_TIP
 - # Theorem
 	- Let $f$ be a [[continuous]] mapping of a [[compact]] metric space $X$ into a metric space $Y$. Then $f$ is [[uniformly continuous]] on $X$.
