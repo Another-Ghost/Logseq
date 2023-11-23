@@ -28,13 +28,21 @@ alias:: 线性空间, 向量空间
 	- 那么称$V$是域$F$上的一个[[线性空间]]。
 	- 把 $V$ 中 *元素* 称为一个[[向量]]。
 - # Theorem
-- 设$V$是 *域* $F$上的一个线性空间，$\forall\alpha\in V$，$\forall k\in F$具有如下性质：
-- 1. $V$的[[零元]]唯一。
-  2. $\forall\alpha\in V$的[[负元]]唯一。
-  3. $0\alpha=0$。
-  4. $k0=0$。
-  5. 如果$k\alpha=0$，那么$k=0$或$\alpha=0$。
-  6. $(-1)\alpha=-\alpha$ 。
+	- 设$V$是 *域* $F$上的一个线性空间，$\forall\alpha\in V$，$\forall k\in F$具有如下性质：$
+	  logseq.order-list-type:: number
+		- V$的[[零元]]唯一。
+		  logseq.order-list-type:: number
+		- $\forall\alpha\in V$的[[负元]]唯一。
+		  logseq.order-list-type:: number
+		- $0\alpha=0$。
+		  logseq.order-list-type:: number
+		- $k0=0$。
+		  logseq.order-list-type:: number
+		- 如果$k\alpha=0$，那么$k=0$或$\alpha=0$。
+		  logseq.order-list-type:: number
+		- $(-1)\alpha=-\alpha$ 。
+		  logseq.order-list-type:: number
+-
 -
 - # 向量集的线性相关与线性无关
 	- |研究的对象|[[线性相关]]|[[线性无关]]|
