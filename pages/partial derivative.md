@@ -5,13 +5,15 @@ alias:: 偏导数, partial derivatives, partial differentiation, partial differe
   $$
   \bold f(\boldsymbol x)=\sum_{i=1}^{m}f_{i}(\boldsymbol x)\boldsymbol u,\quad(\boldsymbol x\in E),
   $$
-  确定的[[实函数]] $f_1,.,f_{m}$ (24)式还可以等价地写成
-- $$
-  f_{i}(x)=\mathbf{f}(x)\cdot\mathbf{u}_{i}\:,\quad1\:s_{i}\:i\:s_{i}\:m.
+  确定的[[实函数]] $f_1,\cdots,f_{m}$； 
+  上式还可以等价地写成
   $$
-- 材干$x\in E$,1后$i\xi_{0}m,1\xi_{0}j\xi_{0}n$,定义
-- $$
-  (D,f,)(x)=\lim_{i\to0}\frac{f_{i}(x+te_{i})-f_{i}(x)}t.
+  f_{i}(\boldsymbol x)=\mathbf{f}(\boldsymbol x)\cdot\boldsymbol{u}_{i},\quad 1\le i\le m.$$
+- 对于 $\boldsymbol x\in E$, $1\le i\le m$, $1\le j\le n$ 定义
+  id:: 655f66cc-bfc6-4ef8-a450-eb25f2146c8d
+- id:: 655f66cc-ac6c-4bf4-90a8-ab4bb4278dc7
+  $$
+  (D_j f_i)(x)=\lim_{t\to0}\frac{f_{i}(x+te_{i})-f_{i}(x)}t.
   $$
   这里截定此极限存在。把$f_i(x)$写成$f_i(x_1,...,x_i)$,就知道$D_if_i$是$f_i$对于$x_j$
 - 的导数(其他变量保持不变)。所以，经常用记号
