@@ -24,4 +24,4 @@ alias:: 偏导数, partial derivatives, partial differentiation, partial differe
 	  $$
 	  \boldsymbol{f}^{\prime}(\boldsymbol x)\boldsymbol{e}_{j}=\sum_{i=1}^{n}(D_{j}f_{i})(\boldsymbol x)\boldsymbol{u}_{i}, \quad 1\le j\le n .
 	  $$
-	  $\{\boldsymbol e_1,\cdots, \boldsymbol e_n\}$ 及 $\{\boldsymbol u_1,\cdots, \boldsymbol u_m\}$ 分别是 $R^n$ 及 $R^m$ 的[[标准基]].
+	  $\{\boldsymbol e_1,\cdots, \boldsymbol e_n\}$ 及 $\{\boldsymbol u_1,\cdots, \boldsymbol u_m\}$ 分别是 $\mathbb R^n$ 及 $\mathbb R^m$ 的[[标准基]].
