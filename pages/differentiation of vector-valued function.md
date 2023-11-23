@@ -16,7 +16,7 @@ alias:: 向量函数的微分
 		  $$
 		  f\left(\bold{x}\right)-f\left(\bold{x}_{0}\right)=\cal{A}\left(\bold{x-x}_{0}\right)+o\left(\parallel \bold{x-x}_{0}\parallel\right) \tag{1}
 		  $$
-		  或
+		  ([[向量范数]])或
 		  $$
 		  \lim_{\bold{x\to x}_0}\frac{f\left(\bold{x}\right)-f\left(\bold{x}_0\right)-A\left(\bold{x}-\bold{x}_0\right)}{\left\Vert \bold{x-x}_0\right\Vert}=\bold{0}
 		  $$
