@@ -12,17 +12,16 @@ alias:: 偏导数, partial derivatives, partial differentiation, partial differe
 - 对于 $\boldsymbol x\in E$, $1\le i\le m$, $1\le j\le n$ 定义
   id:: 655f66cc-bfc6-4ef8-a450-eb25f2146c8d
   $$
-  (D_j f_i)(x)=\lim_{t\to0}\frac{f_{i}(\boldsymbol x+t\boldsymbol e_{j})-f_{i}(\boldsymbol x)}t,
+  (D_j f_i)(\boldsymbol x)=\lim_{t\to0}\frac{f_{i}(\boldsymbol x+t\boldsymbol e_{j})-f_{i}(\boldsymbol x)}t,
   $$
-  这里假定此[[极限]]存在。把 $f_i(x)$ 写成$f_i(x_1,\cdots,x_i)$，就知道$D_if_i$是$f_i$对于$x_j$ 的[[导数]](其他变量保持不变)。所以，经常用记号
+  这里假定此[[极限]]存在。把 $f_i(x)$ 写成$f_i(x_1,\cdots,x_i)$，就知道 $D_if_i$ 是 $f_i$ 对于 $x_j$ 的[[导数]](其他变量保持不变)。所以，经常用记号
   $$\frac{\partial f_i}{\partial x_j}$$
   代替$D_j,f_i$，而$D_if_i$被叫做[[偏导数]]。
 - # Theorem
-	- 设 $\boldsymbol f$ 把 开集$E\subset \mathbb R^n$ 映入$\mathbb R^m$ 内，$\boldsymbol f$ 在点 $\boldsymbol x\in E$[可微]([可微](可微向量函数)). 斯么，偏导数 D,$f_i(x)$存在，且
+	- 设 $\boldsymbol f$ 把 开集$E\subset \mathbb R^n$ 映入$\mathbb R^m$ 内，$\boldsymbol f$ 在点 $\boldsymbol x\in E$[[可微]]。
 	  logseq.order-list-type:: number
-	- logseq.order-list-type:: number
+	  那么，[[偏导数]] $D_jf_i(\boldsymbol x)$ 存在，且
 	  $$
-	  \mathbf{f}^{\prime}(x)\boldsymbol{e}_{i}=\sum_{i=1}^{n}(D_{i}f_{i})(x)\boldsymbol{u}_{i}\quad(1\le j\le n).
+	  \boldsymbol{f}^{\prime}(\boldsymbol x)\boldsymbol{e}_{j}=\sum_{i=1}^{n}(D_{j}f_{i})(\boldsymbol x)\boldsymbol{u}_{i}, \quad 1\le j\le n .
 	  $$
-	- 这里像§9.16 那样，{$e_1,\cdots,e_i),\langle u_1,\cdots,u_n\rangle$分别是$R^*$及$R^{-}$的标准基.
-	  logseq.order-list-type:: number
+	  $\{\boldsymbol e_1,\cdots, \boldsymbol e_n\}$ 及 $\{\boldsymbol u_1,\cdots, \boldsymbol u_m\}$ 分别是 $R^n$ 及 $R^m$ 的[[标准基]].
