@@ -1,3 +1,5 @@
+alias:: 深入理解计算机系统
+
 - https://www.cs.cmu.edu/~213/schedule.html
 -
 - [深入理解计算机系统 (Randal E. Bryant, David R. O’Hallaron) (Z-Library).pdf](../assets/深入理解计算机系统_(Randal_E._Bryant,_David_R._O’Hallaron)_(Z-Library)_1700213515112_0.pdf)
