@@ -34,11 +34,11 @@ alias:: 偏导数, partial derivatives, partial differentiation, partial differe
 			  $$
 			  说明 数$(D_jf_i)(\boldsymbol x)$ 占有$[\boldsymbol f^{\prime}(\boldsymbol x)]$的第 $i$ 行第 $j$ 列的位置。即是
 			  $$
-			  [\boldsymbol f^{\prime}(\boldsymbol x)]=\begin{bmatrix}(D_1f_1)(\boldsymbol x)&\cdots&(D_*f_1)(\boldsymbol x)\\\cdots&\cdots&\cdots\\(D_1f_n)(\boldsymbol x)&\cdots&(D_nf_n)(\boldsymbol x)\end{bmatrix}.
+			  [\boldsymbol f^{\prime}(\boldsymbol x)]=\begin{bmatrix}(D_1f_1)(\boldsymbol x)&\cdots&(D_nf_1)(\boldsymbol x)\\\cdots&\cdots&\cdots\\(D_1f_m)(\boldsymbol x)&\cdots&(D_nf_m)(\boldsymbol x)\end{bmatrix}.
 			  $$
 			  如果 $\boldsymbol h=\sum\boldsymbol h_j\boldsymbol e_j$ 是$R^n$ 中的任何向量，那么，由 $(1)$ 式说明
 			  $$
-			  \boldsymbol f^{\prime}(\boldsymbol x)\boldsymbol h=\sum_{i=1}^{m}\left\{\sum_{j=1}^{n}(D_{i}f_{i})(\boldsymbol x)\boldsymbol h_{j}\right\}\boldsymbol u_{i}.
+			  \boldsymbol f^{\prime}(\boldsymbol x)\boldsymbol h=\sum_{i=1}^{m}\left\{\sum_{j=1}^{n}(D_{j}f_{i})(\boldsymbol x)\boldsymbol h_{j}\right\}\boldsymbol u_{i}.
 			  $$
 			- logseq.order-list-type:: number
 -
