@@ -3,7 +3,7 @@ alias:: 偏导数, partial derivatives, partial differentiation, partial differe
 - [[函数]]$\boldsymbol f$ 把 [[开集]]$E{\subset}\mathbb{R}^n$ 映入 $\mathbb{R}^m$ . 设 $\{\boldsymbol e_1,\cdots, \boldsymbol e_n\}$ 及 $\{\boldsymbol u_1,\cdots, \boldsymbol u_m\}$分别是 $R^n$ 及 $R^m$ 的[[标准基]]。$\boldsymbol f$ 的[[分量]]是由
   id:: 655f636b-c852-4805-8828-90be940f31ff
   $$
-  \boldsymbol f(\boldsymbol x)=\sum_{i=1}^{m}f_{i}(\boldsymbol x)\boldsymbol u,\quad(\boldsymbol x\in E),
+  \boldsymbol f(\boldsymbol x)=\sum_{i=1}^{m}f_{i}(\boldsymbol x)\boldsymbol u,\quad(\boldsymbol x\in E), \tag{1}
   $$
   确定的[[实函数]] $f_1,\cdots,f_{m}$； 
   上式还可以等价地写成
@@ -26,16 +26,14 @@ alias:: 偏导数, partial derivatives, partial differentiation, partial differe
 	  $$
 	  $\{\boldsymbol e_1,\cdots, \boldsymbol e_n\}$ 及 $\{\boldsymbol u_1,\cdots, \boldsymbol u_m\}$ 分别是 $\mathbb R^n$ 及 $\mathbb R^m$ 的[[标准基]].
 		- ## Corollary
-			- 令$[f^{\prime}(\boldsymbol x)]$是关于上述标准基的$f^{\prime}(\boldsymbol x)$的表现矩阵。那么$f^{\prime}(x)$ e,是$[f^{\prime}(x)]$的第$j$个列向量，前(27)式就说明数($D_jf_i)(x)$占有$[f^{\prime}(x)]$的第$i$行第ز列的位置。即是
+			- 令$[\boldsymbol f^{\prime}(\boldsymbol x)]$是关于上述标准基的$\boldsymbol f^{\prime}(\boldsymbol x)$的表现矩阵。那么$\boldsymbol f^{\prime}(\boldsymbol x)\boldsymbol e$ 是$[\boldsymbol f^{\prime}(\boldsymbol x)]$ 的第 $j$ 个 *列向量* ，$(1)$式说明数 $(D_jf_i)(\boldsymbol x)$ 占有$[\boldsymbol f^{\prime}(\boldsymbol x)]$的第 $i$ 行第 $j$ 列的位置。即是
 			  logseq.order-list-type:: number
-			- logseq.order-list-type:: number
+			  id:: 6560e6d6-984e-4a83-9958-98553ccfbcf7
 			  $$
-			  [f^{\prime}(x)]=\begin{bmatrix}(D_1f_1)(x)&\cdots&(D_*f_1)(x)\\\cdots&\cdots&\cdots\\(D_1f_n)(x)&\cdots&(D_nf_n)(x)\end{bmatrix}.
+			  [\boldsymbol f^{\prime}(\boldsymbol x)]=\begin{bmatrix}(D_1f_1)(\boldsymbol x)&\cdots&(D_*f_1)(\boldsymbol x)\\\cdots&\cdots&\cdots\\(D_1f_n)(\boldsymbol x)&\cdots&(D_nf_n)(\boldsymbol x)\end{bmatrix}.
 			  $$
-			  如果$h=\Sigma h_je_j$ 是$R^*$中的任何向量，那么，由(27)式说明
-			  $\langle30\rangle$ 
+			  如果 $\boldsymbol h=\Sum\boldsymbol h_j\boldsymbol e_j$ 是$R^n$ 中的任何向量，那么，由 $(1)$ 式说明
 			  $$
-			  f^{\prime}(x)h=\sum_{i=1}^{n}\Big\{\sum_{j=1}^{s}(D_{i}f_{i})(x)h_{i}\big\}u_{i}.
+			  \boldsymbol f^{\prime}(\boldsymbol x)h=\sum_{i=1}^{n}\Big\{\sum_{j=1}^{s}(D_{i}f_{i})(\boldsymbol x)h_{i}\big\}\boldsymbol u_{i}.
 			  $$
-- [[雅可比矩阵]]
 -
