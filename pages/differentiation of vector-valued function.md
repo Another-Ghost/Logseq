@@ -18,7 +18,7 @@ alias:: 向量函数的微分, 向量函数的导数
 		  $$
 		  ([[向量范数]])或
 		  $$
-		  \lim_{\bold{x\to x}_0}\frac{f\left(\bold{x}\right)-f\left(\bold{x}_0\right)-A\left(\bold{x}-\bold{x}_0\right)}{\left\Vert \bold{x-x}_0\right\Vert}=\bold{0}
+		  \lim_{\bold{x\to x}_0}\frac{f\left(\bold{x}\right)-f\left(\bold{x}_0\right)-\mathcal A\left(\bold{x}-\bold{x}_0\right)}{\left\Vert \bold{x-x}_0\right\Vert}=\bold{0}
 		  $$
 		  则称[[向量函数]] $f$ 在点 $\bold{x}_0$ [[可微]](或[[可导]]).
 		- 若与上述[[线性变换]] $\cal A$ 相联系的[[矩阵]]为 $\boldsymbol{A}_{_{m\times n}}$ , 则称 
