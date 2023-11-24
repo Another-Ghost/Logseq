@@ -1,4 +1,5 @@
 alias:: 向量函数的微分, 向量函数的导数
+id:: 655cdcf1-0ef5-4b88-a1fb-ec3071d5249e
 
 - # Definition
   id:: 64fa6aa9-55a2-4c1c-a5c7-6d994f8c96b9
