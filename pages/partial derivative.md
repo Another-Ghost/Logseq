@@ -26,14 +26,19 @@ alias:: 偏导数, partial derivatives, partial differentiation, partial differe
 	  $$
 	  $\{\boldsymbol e_1,\cdots, \boldsymbol e_n\}$ 及 $\{\boldsymbol u_1,\cdots, \boldsymbol u_m\}$ 分别是 $\mathbb R^n$ 及 $\mathbb R^m$ 的[[标准基]].
 		- ## Corollary
-			- 令$[\boldsymbol f^{\prime}(\boldsymbol x)]$是关于上述标准基的$\boldsymbol f^{\prime}(\boldsymbol x)$的表现矩阵。那么$\boldsymbol f^{\prime}(\boldsymbol x)\boldsymbol e$ 是$[\boldsymbol f^{\prime}(\boldsymbol x)]$ 的第 $j$ 个 *列向量* ，$(1)$式说明数 $(D_jf_i)(\boldsymbol x)$ 占有$[\boldsymbol f^{\prime}(\boldsymbol x)]$的第 $i$ 行第 $j$ 列的位置。即是
+			- 令 $[\boldsymbol f^{\prime}(\boldsymbol x)]$ 是关于上述标准基的$\boldsymbol f^{\prime}(\boldsymbol x)$的表现矩阵。那么$\boldsymbol f^{\prime}(\boldsymbol x)\boldsymbol e$ 是$[\boldsymbol f^{\prime}(\boldsymbol x)]$ 的第 $j$ 个 *列向量* ，$(1)$式
 			  logseq.order-list-type:: number
 			  id:: 6560e6d6-984e-4a83-9958-98553ccfbcf7
 			  $$
+			  \boldsymbol f(\boldsymbol x)=\sum_{i=1}^{m}f_{i}(\boldsymbol x)\boldsymbol u,\quad(\boldsymbol x\in E)
+			  $$
+			  说明 数$(D_jf_i)(\boldsymbol x)$ 占有$[\boldsymbol f^{\prime}(\boldsymbol x)]$的第 $i$ 行第 $j$ 列的位置。即是
+			  $$
 			  [\boldsymbol f^{\prime}(\boldsymbol x)]=\begin{bmatrix}(D_1f_1)(\boldsymbol x)&\cdots&(D_*f_1)(\boldsymbol x)\\\cdots&\cdots&\cdots\\(D_1f_n)(\boldsymbol x)&\cdots&(D_nf_n)(\boldsymbol x)\end{bmatrix}.
 			  $$
-			  如果 $\boldsymbol h=\Sum\boldsymbol h_j\boldsymbol e_j$ 是$R^n$ 中的任何向量，那么，由 $(1)$ 式说明
+			  如果 $\boldsymbol h=\sum\boldsymbol h_j\boldsymbol e_j$ 是$R^n$ 中的任何向量，那么，由 $(1)$ 式说明
 			  $$
-			  \boldsymbol f^{\prime}(\boldsymbol x)h=\sum_{i=1}^{n}\Big\{\sum_{j=1}^{s}(D_{i}f_{i})(\boldsymbol x)h_{i}\big\}\boldsymbol u_{i}.
+			  \boldsymbol f^{\prime}(\boldsymbol x)\boldsymbol h=\sum_{i=1}^{m}\left\{\sum_{j=1}^{n}(D_{i}f_{i})(\boldsymbol x)\boldsymbol h_{j}\right\}\boldsymbol u_{i}.
 			  $$
+			- logseq.order-list-type:: number
 -
