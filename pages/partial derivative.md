@@ -38,6 +38,6 @@ alias:: 偏导数, partial derivatives, partial differentiation, partial differe
 			  $$
 			  如果 $\boldsymbol h=\sum\boldsymbol h_j\boldsymbol e_j$ 是$R^n$ 中的任何向量，那么，由 $(1)$ 式说明
 			  $$
-			  \boldsymbol f^{\prime}(\boldsymbol x)\boldsymbol h=\sum_{i=1}^{m}\left\{\sum_{j=1}^{n}(D_{j}f_{i})(\boldsymbol x)\boldsymbol h_{j}\right\}\boldsymbol u_{i}.
+			  \boldsymbol f^{\prime}(\boldsymbol x)\boldsymbol e=\sum_{i=1}^{}\left\{\sum_{j=1}^{n}(D_{j}f_{i})(\boldsymbol x)\boldsymbol h_{j}\right\}\boldsymbol u_{i}.
 			  $$
 -
