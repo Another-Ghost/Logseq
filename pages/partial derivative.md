@@ -25,3 +25,17 @@ alias:: 偏导数, partial derivatives, partial differentiation, partial differe
 	  \boldsymbol{f}^{\prime}(\boldsymbol x)\boldsymbol{e}_{j}=\sum_{i=1}^{n}(D_{j}f_{i})(\boldsymbol x)\boldsymbol{u}_{i}, \quad 1\le j\le n .
 	  $$
 	  $\{\boldsymbol e_1,\cdots, \boldsymbol e_n\}$ 及 $\{\boldsymbol u_1,\cdots, \boldsymbol u_m\}$ 分别是 $\mathbb R^n$ 及 $\mathbb R^m$ 的[[标准基]].
+		- ## Corollary
+			- 令$[f^{\prime}(\boldsymbol x)]$是关于上述标准基的$f^{\prime}(\boldsymbol x)$的表现矩阵。那么$f^{\prime}(x)$ e,是$[f^{\prime}(x)]$的第$j$个列向量，前(27)式就说明数($D_jf_i)(x)$占有$[f^{\prime}(x)]$的第$i$行第ز列的位置。即是
+			  logseq.order-list-type:: number
+			- logseq.order-list-type:: number
+			  $$
+			  [f^{\prime}(x)]=\begin{bmatrix}(D_1f_1)(x)&\cdots&(D_*f_1)(x)\\\cdots&\cdots&\cdots\\(D_1f_n)(x)&\cdots&(D_nf_n)(x)\end{bmatrix}.
+			  $$
+			  如果$h=\Sigma h_je_j$ 是$R^*$中的任何向量，那么，由(27)式说明
+			  $\langle30\rangle$ 
+			  $$
+			  f^{\prime}(x)h=\sum_{i=1}^{n}\Big\{\sum_{j=1}^{s}(D_{i}f_{i})(x)h_{i}\big\}u_{i}.
+			  $$
+- [[雅可比矩阵]]
+-

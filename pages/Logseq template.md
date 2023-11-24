@@ -5,6 +5,9 @@ template:: definition
   id:: 64bdad83-1ad6-4a87-affb-ed5fcbddea0d
   template:: theorem
 	- logseq.order-list-type:: number
+- ## Corollary
+  template:: corollary
+	- logseq.order-list-type:: number
 - [[域]] $\mathbb{F}$ 上[[n维线性空间]] $V$
   template:: VofF
 - [[域]] $\mathbb{F}$ 上[[n维矩阵]] $\boldsymbol{A}$
