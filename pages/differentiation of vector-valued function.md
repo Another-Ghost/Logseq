@@ -1,8 +1,7 @@
 alias:: 向量函数的微分, 向量函数的导数
 
-- #UNDONE
-  id:: 64fa6aa9-55a2-4c1c-a5c7-6d994f8c96b9
 - # Definition
+  id:: 64fa6aa9-55a2-4c1c-a5c7-6d994f8c96b9
 	- Let $\mathbf{f}:(a, b) \rightarrow R^{k}$ and $x \in(a, b)$, we say $\mathbf{f}$ is [[differentiable]] at $x$, provided that $\mathbf{f}^{\prime}(x)=\lim _{t \rightarrow x} \frac{\mathbf{f}(t)-\mathbf{f}(x)}{t-x}$ **exists**.
 	  logseq.order-list-type:: number
 		- >Let $f:(a, b) \rightarrow R$ and $c \in(a, b)$.
