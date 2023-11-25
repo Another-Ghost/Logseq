@@ -23,3 +23,4 @@ alias:: value category, 值类别
 - 对于实际编程来说，通常以[[rvalue]]和[[lvalue]]的术语思考已经足够。
   >请注意，每个表达式要么是[[lvalue]]，要么是[[rvalue]]，而不会同时兼具两者。
   并且每个表达式都属于三种主要[[值类别]]中的一种：[[prvalue]]、[[xvalue]]和[[lvalue]]。
+-
