@@ -45,7 +45,7 @@ alias:: 共享库
 	  ``` shell
 	  linux> gcc -shared -fpie -o libveetor.so addvee.e multvee.e
 	  ``` 
-	  `-fpic` 选项指示[[编译器]]生成与[[位置无关的代码]]。
+	  `-fpic` 选项指示[[编译器]]生成与[[位置无关代码]]。
 	  `-shared` 选项指示[[链接器]]创建一个[[共享目标文件]]。一旦创建了这个库，随后就要将它链
 	  接到示例程序`main2`中：
 	  ``` shell
@@ -80,6 +80,9 @@ alias:: 共享库
 		  这两个值中的任意一个都可以和`RTLD_GLOBAL`标志取 或 。
 		  ((65639fe1-09eb-4721-b868-cf4f0ee36a86))
 		  #+END_PINNED
-		-
+		- #+BEGIN_PINNED
+		  [[Java]]定义了一个标准调用规则，叫做 Java本地接口(Java Native Interface, JNI),它允许 Java程序调用“本地的"C和 C++函数。 JNI的基本思想是将本地 C函数（如 foo)编译到一个共享库中（如 foo.so)。当一个正在运行的 Java程序试图调用函数 foo时， Java解释器利用 dlopen接口（或者与其类似的接口）动态链接和加载 foo.so,然后再调用 foo。
+		  #+END_PINNED
+			-
 	-
 -
