@@ -1,0 +1,8 @@
+file:: [深入理解计算机系统_(Randal_E._Bryant,_David_R._O’Hallaron)_(Z-Library)_1700213515112_0.pdf](../assets/深入理解计算机系统_(Randal_E._Bryant,_David_R._O’Hallaron)_(Z-Library)_1700213515112_0.pdf)
+file-path:: ../assets/深入理解计算机系统_(Randal_E._Bryant,_David_R._O’Hallaron)_(Z-Library)_1700213515112_0.pdf
+
+- dlsym函数
+  ls-type:: annotation
+  hl-page:: 524
+  hl-color:: yellow
+  id:: 65639fe1-09eb-4721-b868-cf4f0ee36a86
