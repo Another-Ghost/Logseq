@@ -16,3 +16,6 @@ alias:: 目标文件, object module, 目标模块
 -
 - [[Windows]]使用[[PE]]格式。
   [[Mac OS-X]]使用[[Mach-O]]格式。现代[[x86-64 Linux]]和[[Unix]]系统使用[[ELF]]。
+  #+BEGIN_TIP
+  Linux ((656793b9-9ebc-4072-a1b2-d2defd352560))
+  #+END_TIP
