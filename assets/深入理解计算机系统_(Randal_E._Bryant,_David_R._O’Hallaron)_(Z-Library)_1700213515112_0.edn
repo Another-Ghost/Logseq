@@ -43,5 +43,22 @@
                                    :height 1215.6}),
                           :page 524},
                :content {:text "dlsym函数"},
+               :properties {:color "yellow"}}
+              {:id #uuid "656792f0-1d19-4d89-8a66-e610ae5055a6",
+               :page 528,
+               :position {:bounding {:x1 430.1944580078125,
+                                     :y1 567.15625,
+                                     :x2 463.83331298828125,
+                                     :y2 581.15625,
+                                     :width 805.1999999999999,
+                                     :height 1215.6},
+                          :rects ({:x1 430.1944580078125,
+                                   :y1 567.15625,
+                                   :x2 463.83331298828125,
+                                   :y2 581.15625,
+                                   :width 805.1999999999999,
+                                   :height 1215.6}),
+                          :page 528},
+               :content {:text "例子"},
                :properties {:color "yellow"}}],
- :extra {:page 528}}
+ :extra {:page 532}}

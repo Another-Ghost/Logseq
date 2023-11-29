@@ -6,3 +6,8 @@ file-path:: ../assets/深入理解计算机系统_(Randal_E._Bryant,_David_R._O�
   hl-page:: 524
   hl-color:: yellow
   id:: 65639fe1-09eb-4721-b868-cf4f0ee36a86
+- 例子
+  ls-type:: annotation
+  hl-page:: 528
+  hl-color:: yellow
+  id:: 656792f0-1d19-4d89-8a66-e610ae5055a6
