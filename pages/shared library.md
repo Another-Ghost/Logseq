@@ -38,10 +38,9 @@ alias:: 共享库
 	  linux> gcc -shared -fpie -o libveetor.so addvee.e multvee.e
 	  ``` 
 	  `-fpic` 选项指示[[编译器]]生成与[[位置无关代码]]。
-	  `-shared` 选项指示[[链接器]]创建一个[[共享目标文件]]。一旦创建了这个库，随后就要将它链
-	  接到示例程序`main2`中：
+	  `-shared` 选项指示[[链接器]]创建一个[[共享目标文件]]。一旦创建了这个库，随后就要将它链接到示例程序`main2`中：
 	  ``` shell
-	  linux> gcc -o prog21 main2.e ./libveetor.so
+	  linux> gcc -o prog21 main2.c ./libvector.so
 	  ```
 	  这样就创建了一个[[可执行目标文件]] `prog21`, 而此文件的形式使得它在**运行时**可以和 `libvector.so` 链接。
 	  ![image.png](../assets/image_1701023668102_0.png)
