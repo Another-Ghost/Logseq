@@ -1,7 +1,6 @@
 alias:: 深入理解计算机系统
 
 - https://www.cs.cmu.edu/~213/schedule.html
--
 - ![深入理解计算机系统 (Randal E. Bryant, David R. O’Hallaron) (Z-Library).pdf](../assets/深入理解计算机系统_(Randal_E._Bryant,_David_R._O’Hallaron)_(Z-Library)_1700213515112_0.pdf)
 - [Computer Systems A Programmer’s Perspective (Randal E. Bryant etc.) (Z-Library).pdf](../assets/Computer_Systems_A_Programmer’s_Perspective_(Randal_E._Bryant_etc.)_(Z-Library)_1697561731759_0.pdf)
 -
@@ -19,7 +18,7 @@ alias:: 深入理解计算机系统
 - ![09-memory-hierarchy.pdf](../assets/09-memory-hierarchy_1700091308895_0.pdf)
 - ![10-cache-memories.pdf](../assets/10-cache-memories_1700091312949_0.pdf)
 - ![cprogramming-bootcamp-s23.pdf](../assets/cprogramming-bootcamp-s23_1700091317862_0.pdf)
-- ![11-vm-concepts.pdf](../assets/11-vm-concepts_1700091321547_0.pdf)
+- [11-vm-concepts.pdf](../assets/11-vm-concepts_1700091321547_0.pdf)
 - ![12-vm-details.pdf](../assets/12-vm-details_1700091324967_0.pdf)
 - ![13-malloc-basic.pdf](../assets/13-malloc-basic_1700091328787_0.pdf)
 - ![14-malloc-advanced.pdf](../assets/14-malloc-advanced_1700091331862_0.pdf)
