@@ -36,4 +36,5 @@ alias:: 虚拟内存
 		  下图的示例展示了一个有 8 个虚拟页的小虚拟内存。
 		  ![image.png](../assets/image_1701353480678_0.png)
 		  #+END_PINNED
-		-
+		- ## [[DRAM]]
+			-
