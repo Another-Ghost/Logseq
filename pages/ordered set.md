@@ -1,4 +1,4 @@
-alias:: 有序集
+alias:: 有序集, 有序集合
 
 - # Definition
 	- An [[ordered set]] is a [[set]] $S$ in which an [[order]] is defined.
