@@ -1,4 +1,6 @@
-# Definition
+alias:: 收敛序列, 序列收敛
+
+- # Definition
 	- A [[sequence]] ${p_n}$ in a [[metric space]] $X$ is said to [[converge]] if $\exist$[[point]] $p\in X$ with the following property: 
 	  logseq.order-list-type:: number
 	  $\forall\varepsilon > 0, \exist$[[integer]] $N$ such that $n\ge N$ implies that 
