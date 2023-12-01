@@ -5,6 +5,4 @@ alias:: 相容
   \parallel\boldsymbol A\bold x\parallel\leqslant\parallel\boldsymbol A\parallel\parallel \bold x\parallel
   $$
   这时称[[矩阵范数]]和[[向量范数]][[相容]].
-	- #+BEGIN_TIP
-	  
-	  #+END_TIP
+-
