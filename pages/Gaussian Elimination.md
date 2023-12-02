@@ -23,11 +23,12 @@ alias:: 高斯消元法
 		- 从上到下提取每个变量的解。
 - 高斯消元法可能会遇到[[数值稳定性]]问题，尤其是当[[主元]]很小的时候。
   为了避免这种问题，通常会使用[[部分选主元]]策略，即在每一步选取**当前列绝对值最大的元素**作为[[主元]]。这种方法可以提高算法的[[数值稳定性]]。
-- 记 
-  $$\boldsymbol A^{(1)}=\boldsymbol A=\left(a_{ij}^{(1)}\right)_{n\times n},\boldsymbol{b}^{(1)}=\boldsymbol{b}=\left(\begin{matrix}b_1^{(1)}\\\vdots\\b_n^{(1)}\end{matrix}\right)$$
-- Step 1: 设 $a_{11}^{(1)}\neq0$, [[计算因子]] 
-  $$l_{i1}=a_{i1}^{(1)}/a_{11}^{(1)}\quad(i=2,...,n)$$ 
-  [[将增广矩阵]] 第 $i$ 行 $-l_{i1}\times$ 第1行， 得到
+- # 具体步骤
+	- 记 
+	  $$\boldsymbol A^{(1)}=\boldsymbol A=\left(a_{ij}^{(1)}\right)_{n\times n},\boldsymbol{b}^{(1)}=\boldsymbol{b}=\left(\begin{matrix}b_1^{(1)}\\\vdots\\b_n^{(1)}\end{matrix}\right)$$
+	- Step 1: 设 $a_{11}^{(1)}\neq0$, [[计算因子]] 
+	  $$l_{i1}=a_{i1}^{(1)}/a_{11}^{(1)}\quad(i=2,...,n)$$ 
+	  [[将增广矩阵]] 第 $a_{ij}{i1}\times $ 第1行， 得到
 - \left.$\begin{aligned}\text{其中}\\\left\{\begin{array}{l}\boldsymbol{a}_{ij}^{(2)}=\boldsymbol{a}_{ij}^{(1)}-\boldsymbol{l}_{i1}\boldsymbol{a}_{1j}^{(1)}\\\boldsymbol{b}_i^{(2)}=\boldsymbol{b}_i^{(1)}-\boldsymbol{l}_{i1}\boldsymbol{b}_1^{(1)}\end{array}\right.\right.\end{aligned}$ 
   $(i,j=2,...,n)$
   Step $k: $设$a_kk^{( k) }\neq0$, 计算因子 $l_{ik}=a_{ik}^{(k)}/a_{kk}^{(k)}\quad(i=k+1,...,n)$ 且计算
