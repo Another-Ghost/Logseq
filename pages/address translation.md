@@ -15,4 +15,6 @@ alias:: 地址翻译, 地址翻译硬件
   ![image.png](../assets/image_1701504528221_0.png)
 - [[CPU]]中的一个[[控制寄存器]]，[[页表基址寄存器]](PTBR)指向当前[[页表]]。
 - $n$位的[[虚拟地址]]包含两个部分：一个 p 位的[[虚拟页面偏移]](VPO)和一个 $(n-p)$ 位的[[虚拟页号]](VPN) 。
-  [[MMU]]利用[[VPN]]来选择适当的 PTE。例如， VPN O选择 PTE O, VPN1选择 PTE1,以此类推。将页表条目中物理页号(Physical Page Number, PPN)和虚拟地址中的 VPO串联起来，就得到相应的物理地址。注意，因为物理和虚拟页面都是 P字节的，所以物理页面偏移(Physical Page Offset, PPO)和 VPO是相同的。
+  [[MMU]]利用[[VPN]]来选择适当的[[PTE]]。
+  例如， VPN 0 选择 PTE 0 , VPN 1 选择 PTE 1, 以此类推。
+  将页表条目中[[物理页号]](PPN)和虚拟地址中的 VPO串联起来，就得到相应的物理地址。注意，因为物理和虚拟页面都是 P字节的，所以物理页面偏移(Physical Page Offset, PPO)和 VPO是相同的。
