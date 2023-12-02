@@ -19,4 +19,15 @@ alias:: 地址翻译, 地址翻译硬件
   例如， VPN 0 选择 PTE 0 , VPN 1 选择 PTE 1, 以此类推。
   将页表条目中[[物理页号]](PPN)和[[虚拟地址]]中的[[VPO]]串联起来，就得到相应的[[物理地址]]。
   注意，因为物理和虚拟页面都是 $P$ 字节的，所以物理页面偏移(PPO)和[[VPO]]是相同的。
--
+- 下图展示了当[[页面命中]]时， CPU 硬件执行的步骤。
+	- 处理器生成一个[[虚拟地址]]，并把它传送给[[MMU]]。
+	  logseq.order-list-type:: number
+	- [[MMU]]生成[[PTE]]地址，并从[[高速缓存]]／[[主存]]请求得到它。
+	  logseq.order-list-type:: number
+	- 高速缓存／主存 向 MMU 返回 PTE。
+	  logseq.order-list-type:: number
+	- [[MMU]]构造[[物理地址]]，并把它传送给[[高速缓存]]／[[主存]]。
+	  logseq.order-list-type:: number
+	- [[高速缓存]]／[[主存]]返回所请求的 *数据字* 给[[处理器]]。
+	  logseq.order-list-type:: number
+	  ![image.png](../assets/image_1701522517597_0.png)
