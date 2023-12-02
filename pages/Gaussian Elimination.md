@@ -31,6 +31,12 @@ alias:: 高斯消元法
 	  [[将增广矩阵]] 第 i 行
 	   $\{a_{i1},\cdots,a_{in}\} - l_{i1} \{a_{11}\cdots,a_{1n}\}$
 	  得到
+	  \begin{pmatrix}
+	   a & \begin{matrix} 0 & 0 & \dots & 0 \end{matrix} & b^{(1)}_1\\
+	   \begin{matrix} 0 \\ 0 \\ \vdots \\[1ex] 0 \end{matrix} & \huge{\boldsymbol A^{(2)}} & \huge{\boldsymbol b^{(2)}}
+	  \end{pmatrix}
+	  其中
+	  $$\left\{ a \right.$$
 	- Step $k: $设$a_kk^{( k) }\neq0$, 计算因子 $l_{ik}=a_{ik}^{(k)}/a_{kk}^{(k)}\quad(i=k+1,...,n)$ 且计算
 	  $q_{ij}^{(k+1)}=a_{ij}^{(k)}-l_{ik}a_{kj}^{(k)}$
 	  $$
@@ -44,7 +50,5 @@ alias:: 高斯消元法
   a^{(1)}_{11} & a^{(1)}_{12} & \dots & a^{(1)}_{1n} \\
   \begin{matrix} 0 \\ 0 \\ \vdots \\ 0 \end{matrix} &  \text{\Huge$Q$}
   \end{pmatrix}
-- \begin{bmatrix}
-   a & \begin{matrix} 0 & 0 & \dots & 0 \end{matrix} & b\\
-   \begin{matrix} 0 \\ 0 \\ \vdots \\[1ex] 0 \end{matrix} & \huge{\boldsymbol A^{(2)}} & \huge{\boldsymbol b^{(2)}}
-  \end{bmatrix}
+-
+-
