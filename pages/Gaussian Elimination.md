@@ -31,14 +31,16 @@ alias:: 高斯消元法
 	  [[将增广矩阵]] 第 i 行
 	   $\{a_{i1},\cdots,a_{in}\} - l_{i1} \{a_{11}\cdots,a_{1n}\}$
 	  得到
-	  \begin{matrix}
-- \left.$\begin{aligned}\text{其中}\\\left\{\begin{array}{l}\boldsymbol{a}_{ij}^{(2)}=\boldsymbol{a}_{ij}^{(1)}-\boldsymbol{l}_{i1}\boldsymbol{a}_{1j}^{(1)}\\\boldsymbol{b}_i^{(2)}=\boldsymbol{b}_i^{(1)}-\boldsymbol{l}_{i1}\boldsymbol{b}_1^{(1)}\end{array}\right.\right.\end{aligned}$ 
-  $(i,j=2,...,n)$
-  Step $k: $设$a_kk^{( k) }\neq0$, 计算因子 $l_{ik}=a_{ik}^{(k)}/a_{kk}^{(k)}\quad(i=k+1,...,n)$ 且计算
-  $q_{ij}^{(k+1)}=a_{ij}^{(k)}-l_{ik}a_{kj}^{(k)}$
-- $$
-  \left.\left\{\begin{array}{ll}\boldsymbol{a}_{ij}&-\boldsymbol{a}_{ij}&\boldsymbol{\iota}_{ik}\boldsymbol{a}_{kj}\\\boldsymbol{b}_i^{(k+1)}&=\boldsymbol{b}_i^{(k)}-\boldsymbol{l}_{ik}\boldsymbol{b}_k^{(k)}\end{array}\right.\right.
-  $$
-- $$
-  (i,j=k+1,...,n)
-  $$
+	- Step $k: $设$a_kk^{( k) }\neq0$, 计算因子 $l_{ik}=a_{ik}^{(k)}/a_{kk}^{(k)}\quad(i=k+1,...,n)$ 且计算
+	  $q_{ij}^{(k+1)}=a_{ij}^{(k)}-l_{ik}a_{kj}^{(k)}$
+	  $$
+	  \left.\left\{\begin{array}{ll}\boldsymbol{a}_{ij}&-\boldsymbol{a}_{ij}&\boldsymbol{\iota}_{ik}\boldsymbol{a}_{kj}\\\boldsymbol{b}_i^{(k+1)}&=\boldsymbol{b}_i^{(k)}-\boldsymbol{l}_{ik}\boldsymbol{b}_k^{(k)}\end{array}\right.\right.
+	  $$
+	- $$
+	  (i,j=k+1,...,n)
+	  $$
+-
+- \begin{pmatrix}
+  a^{(1)}_{11} & a^{(1)}_{12} & \cdots & a^{(1)}_{1n} & b^{(1)}_{1} \\
+  \Huge 
+  \end{pmatrix}
