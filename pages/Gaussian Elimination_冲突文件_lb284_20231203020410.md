@@ -44,7 +44,7 @@ alias:: 高斯消元法
   a^{(1)}_{11} & a^{(1)}_{12} & \dots & a^{(1)}_{1n} \\
   \begin{matrix} 0 \\ 0 \\ \vdots \\ 0 \end{matrix} &  \text{\Huge$Q$}
   \end{pmatrix}
-- \begin{bmatrix}
+- \begin{pmatrix}
    a & \begin{matrix} 0 & 0 & \dots & 0 \end{matrix} & b\\
-   \begin{matrix} 0 \\ 0 \\ \vdots \\[1ex] 0 \end{matrix} & \huge{\boldsymbol A^{(2)}} & \huge{\boldsymbol b^{(2)}}
-  \end{bmatrix}
+   \begin{matrix} 0 \\ 0 \\ \vdots \\[1ex] 0 \end{matrix} & \Huge{\boldsymbol A^{(2)}} & \Huge{\boldsymbol b^{(2)}}
+  \end{pmatrix}
