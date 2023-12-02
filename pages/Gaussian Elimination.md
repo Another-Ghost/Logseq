@@ -28,7 +28,10 @@ alias:: 高斯消元法
 	  $$\boldsymbol A^{(1)}=\boldsymbol A=\left(a_{ij}^{(1)}\right)_{n\times n},\boldsymbol{b}^{(1)}=\boldsymbol{b}=\left(\begin{matrix}b_1^{(1)}\\\vdots\\b_n^{(1)}\end{matrix}\right)$$
 	- Step 1: 设 $a_{11}^{(1)}\neq0$, [[计算因子]] 
 	  $$l_{i1}=a_{i1}^{(1)}/a_{11}^{(1)}\quad(i=2,...,n)$$ 
-	  [[将增广矩阵]] 第 $a_{ij}{i1}\times $ 第1行， 得到
+	  [[将增广矩阵]] 第 i 行
+	   $\{a_{i1},\cdots,a_{in}\} - l_{i1} \{a_{11}\cdots,a_{1n}\}$
+	  得到
+	  \begin{matrix}
 - \left.$\begin{aligned}\text{其中}\\\left\{\begin{array}{l}\boldsymbol{a}_{ij}^{(2)}=\boldsymbol{a}_{ij}^{(1)}-\boldsymbol{l}_{i1}\boldsymbol{a}_{1j}^{(1)}\\\boldsymbol{b}_i^{(2)}=\boldsymbol{b}_i^{(1)}-\boldsymbol{l}_{i1}\boldsymbol{b}_1^{(1)}\end{array}\right.\right.\end{aligned}$ 
   $(i,j=2,...,n)$
   Step $k: $设$a_kk^{( k) }\neq0$, 计算因子 $l_{ik}=a_{ik}^{(k)}/a_{kk}^{(k)}\quad(i=k+1,...,n)$ 且计算
