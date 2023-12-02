@@ -41,6 +41,10 @@ alias:: 高斯消元法
 	  $$
 -
 - \begin{pmatrix}
-  a^{(1)}_{11} & a^{(1)}_{12} & \cdots & a^{(1)}_{1n} & b^{(1)}_{1} \\
-  \Huge 
+  a^{(1)}_{11} & a^{(1)}_{12} & \dots & a^{(1)}_{1n} \\
+  \begin{matrix} 0 \\ 0 \\ \vdots \\ 0 \end{matrix} & \Huge{Q} 
   \end{pmatrix}
+- \begin{bmatrix}
+   a & \begin{matrix} 0 & 0 & \dots & 0 \end{matrix} & b\\
+   \begin{matrix} 0 \\ 0 \\ \vdots \\[1ex] 0 \end{matrix} & \text{\Huge$Q$}
+  \end{bmatrix}
