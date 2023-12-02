@@ -48,7 +48,7 @@
 		- [[allocator]]（[[type-erased]]）。
 		- 拥有 管理的对象 的 `shared_ptr` 数。
 		- 引用 管理的对象 的[[weak_ptr]]数。
-	- 当通过调用 `std::make_shared` 或 `std::allocate_shared` 创建 `shared_ptr` 时，[[control block]]和管理的对象的内存都是通过单次分配创建的。管理的对象在[[control block]]的数据成员中[[就地构造]]。当通过 `shared_ptr` 构造函数之一创建 `shared_ptr` 时，必须**分别为 管理的对象 和 控制块 分配内存。在这种情况下，control block 存储管理的对象的指针。
+	- 当通过调用 `std::make_shared` 或 `std::allocate_shared` 创建 `shared_ptr` 时，[[control block]]和管理的对象的内存都是通过单次分配创建的。管理的对象在[[control block]]的数据成员中[[就地构造]]。当通过 `shared_ptr` 构造函数之一创建 `shared_ptr` 时，必须**分别为 管理的对象 和 控制块 分配内存**。在这种情况下，control block 存储管理的对象的指针。
 	  
 	  `shared_ptr` 直接持有的指针是由 `get()` 返回的指针，而控制块持有的 指针/对象 是在 [[sharadowner]]数 达到零时 将被删除的 指针/对象 。这些指针**不一定相等**。
 	  
@@ -57,4 +57,6 @@
 	  在现有的实现中，如果有一个共享指向同一个控制块的 `shared_ptr`，则增加弱指针的计数（[1]，[2]）。
 	  
 	  为满足线程安全性要求，引用计数通常使用 `std::atomic::fetch_add` 的等效方法进行递增，使用 `std::memory_order_relaxed`（递减需要更强的排序来安全地销毁控制块）。
--
+- #+BEGIN_COMMENT
+  https://en.cppreference.com/w/cpp/memory/shared_ptr
+  #+END_COMMENT
