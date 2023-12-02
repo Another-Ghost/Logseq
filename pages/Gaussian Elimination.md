@@ -36,7 +36,10 @@ alias:: 高斯消元法
 	   \begin{matrix} 0 \\ 0 \\ \vdots \\[1ex] 0 \end{matrix} & \huge{\boldsymbol A^{(2)}} & \huge{\boldsymbol b^{(2)}}
 	  \end{pmatrix}
 	  其中
-	  $$\left\{ a^{(2)}_{ij}= a^{(1)}_{ij}-l_{i1}a^{(1)}_{1j}\right.$$
+	  $$\left \{\begin{aligned} 
+	  a^{(2)}_{ij}= a^{(1)}_{ij}-l_{i1}a^{(1)}_{1j} \\ 
+	  b^{(2)}_{ij}= b^{(1)}_{i}-l_{i1}b^{(1)}_{1}
+	  \end{aligned} \right.$$
 	- Step $k: $设$a_kk^{( k) }\neq0$, 计算因子 $l_{ik}=a_{ik}^{(k)}/a_{kk}^{(k)}\quad(i=k+1,...,n)$ 且计算
 	  $q_{ij}^{(k+1)}=a_{ij}^{(k)}-l_{ik}a_{kj}^{(k)}$
 	  $$
