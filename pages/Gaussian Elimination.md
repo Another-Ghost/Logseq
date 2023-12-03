@@ -24,32 +24,29 @@ alias:: 高斯消元法
 - 高斯消元法可能会遇到[[数值稳定性]]问题，尤其是当[[主元]]很小的时候。
   为了避免这种问题，通常会使用[[部分选主元]]策略，即在每一步选取**当前列绝对值最大的元素**作为[[主元]]。这种方法可以提高算法的[[数值稳定性]]。
 - # 具体步骤
-	- 记 
-	  $$\boldsymbol A^{(1)}=\boldsymbol A=\left(a_{ij}^{(1)}\right)_{n\times n},\boldsymbol{b}^{(1)}=\boldsymbol{b}=\left(\begin{matrix}b_1^{(1)}\\\vdots\\b_n^{(1)}\end{matrix}\right)$$
-	- Step 1: 设 $a_{11}^{(1)}\neq0$, [[计算因子]] 
-	  $$l_{i1}=a_{i1}^{(1)}/a_{11}^{(1)}\quad(i=2,...,n)$$ 
-	  [[将增广矩阵]] 第 i 行
-	  $$\{a_{i1},\cdots,a_{in}\} - l_{i1} \{a_{11}\cdots,a_{1n}\}$$
-	  得到
-	  \begin{pmatrix}
-	   a & \begin{matrix} 0 & 0 & \dots & 0 \end{matrix} & b^{(1)}_1\\
-	   \begin{matrix} 0 \\ 0 \\ \vdots \\[1ex] 0 \end{matrix} & \huge{\boldsymbol A^{(2)}} & \huge{\boldsymbol b^{(2)}}
-	  \end{pmatrix}
-	  其中
-	  $$\left \{\begin{aligned} 
-	  a^{(2)}_{ij}= a^{(1)}_{ij}-l_{i1}a^{(1)}_{1j} \\ 
-	  b^{(2)}_{ij}= b^{(1)}_{i}-l_{i1}b^{(1)}_{1}
-	  \end{aligned} \right.$$
-	- Step $k: $设$a_kk^{( k) }\neq0$, 计算因子 $l_{ik}=a_{ik}^{(k)}/a_{kk}^{(k)}\quad(i=k+1,...,n)$ 且计算
-	  $q_{ij}^{(k+1)}=a_{ij}^{(k)}-l_{ik}a_{kj}^{(k)}$
-	  $$
-	  \left.\left\{\begin{array}{ll}\boldsymbol{a}_{ij}&-\boldsymbol{a}_{ij}&\boldsymbol{\iota}_{ik}\boldsymbol{a}_{kj}\\\boldsymbol{b}_i^{(k+1)}&=\boldsymbol{b}_i^{(k)}-\boldsymbol{l}_{ik}\boldsymbol{b}_k^{(k)}\end{array}\right.\right.
-	  $$
-	- $$
-	  (i,j=k+1,...,n)
-	  $$
-- \begin{pmatrix}
-  a^{(1)}_{11} & a^{(1)}_{12} & \dots & a^{(1)}_{1n} \\
-  \begin{matrix} 0 \\ 0 \\ \vdots \\ 0 \end{matrix} &  \text{\Huge$Q$}
-  \end{pmatrix}
+	- ## [[消元]]
+		- 记 
+		  $$\boldsymbol A^{(1)}=\boldsymbol A=\left(a_{ij}^{(1)}\right)_{n\times n},\boldsymbol{b}^{(1)}=\boldsymbol{b}=\left(\begin{matrix}b_1^{(1)}\\\vdots\\b_n^{(1)}\end{matrix}\right)$$
+		- Step 1: 设 $a_{11}^{(1)}\neq0$, [[计算因子]] 
+		  $$l_{i1}=a_{i1}^{(1)}/a_{11}^{(1)}\quad(i=2,...,n)$$ 
+		  [[将增广矩阵]] 第 i 行
+		  $$\{a_{i1},\cdots,a_{in}\} - l_{i1} \{a_{11}\cdots,a_{1n}\}$$
+		  得到
+		  \begin{pmatrix}
+		   a & \begin{matrix} 0 & 0 & \dots & 0 \end{matrix} & b^{(1)}_1\\
+		   \begin{matrix} 0 \\ 0 \\ \vdots \\[1ex] 0 \end{matrix} & \huge{\boldsymbol A^{(2)}} & \huge{\boldsymbol b^{(2)}}
+		  \end{pmatrix}
+		  其中
+		  $$\left \{\begin{aligned} 
+		  a^{(2)}_{ij}= a^{(1)}_{ij}-l_{i1}a^{(1)}_{1j} \\ 
+		  b^{(2)}_{i}= b^{(1)}_{i}-l_{i1}b^{(1)}_{1}
+		  \end{aligned} \right.$$
+		- Step k: 设 $a_{kk}^{(k)}\neq0$ , [[计算因子]] 
+		  $$l_{ik}=a_{ik}^{(k)}/a_{kk}^{(k)}\quad(i=k+1,...,n)$$ 
+		  且计算
+		  $$\left \{\begin{aligned} 
+		  a^{(k+1)}_{ij}= a^{(k)}_{ij}-l_{ik}a^{(k)}_{kj} \\ 
+		  b^{(k+1)}_{i}= b^{(k)}_{i}-l_{ik}b^{(k)}_{k}
+		  \end{aligned} \right.$$
+	-
 -
