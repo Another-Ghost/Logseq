@@ -72,4 +72,10 @@ alias:: 高斯消元法
 		- $$
 		  x_i=\frac{b_i^{(i)}-\sum_{j=i+1}^n a_{ij}^{(i)}x_j}{a_{ii}^{(i)}} \quad(i=n-1,...,1)
 		  $$
-		-
+- # Theorem
+	- 如果 $\boldsymbol A$ 为 $n$ 阶[[非奇异矩阵]]，则可通过[[高斯消去法]]
+	  logseq.order-list-type:: number
+	  (及[[初等变换]]) 将方程组化为三角形方程组。
+	- ## Corollary
+		- 约化的[[主元素]] $a_{ii}^{(i)}\neq0\left(i=1,2,\cdots,k\right)$ 的 充要条件 是矩阵 $\boldsymbol A$ 的[[顺序主子式]] $\boldsymbol D_i\neq0\left(i=1,2,\cdots,k\right)$ 。
+		  logseq.order-list-type:: number
