@@ -68,4 +68,8 @@ alias:: 高斯消元法
 		  b_{n}^{(n)}
 		  \end{array}\right)$$
 	- ## [[回代]]
-		- $$x_n=、b_n^{(n)}
+		- $$x_n=\frac{b_n^{(n)}}{a_{nn}^{(n)}}$$
+		- $$
+		  x_i=\frac{b_i^{(i)}-\sum_{j=i+1}^n a_{ij}^{(i)}x_j}{a_{ii}^{(i)}} \quad(i=n-1,...,1)
+		  $$
+		-
