@@ -27,7 +27,7 @@ alias:: 高斯消元法
 	- ## [[消元]]
 		- 记 
 		  $$\boldsymbol A^{(1)}=\boldsymbol A=\left(a_{ij}^{(1)}\right)_{n\times n},\boldsymbol{b}^{(1)}=\boldsymbol{b}=\left(\begin{matrix}b_1^{(1)}\\\vdots\\b_n^{(1)}\end{matrix}\right)$$
-		- Step 1: 设 $a_{11}^{(1)}\neq0$, [[计算因子]] 
+		- 第 $1$ 步: 设 $a_{11}^{(1)}\neq0$, [[计算因子]] 
 		  $$l_{i1}=a_{i1}^{(1)}/a_{11}^{(1)}\quad(i=2,...,n)$$ 
 		  [[将增广矩阵]] 第 i 行
 		  $$\{a_{i1},\cdots,a_{in}\} - l_{i1} \{a_{11}\cdots,a_{1n}\}$$
@@ -41,12 +41,28 @@ alias:: 高斯消元法
 		  a^{(2)}_{ij}= a^{(1)}_{ij}-l_{i1}a^{(1)}_{1j} \\ 
 		  b^{(2)}_{i}= b^{(1)}_{i}-l_{i1}b^{(1)}_{1}
 		  \end{aligned} \right.$$
-		- Step k: 设 $a_{kk}^{(k)}\neq0$ , [[计算因子]] 
+		- 第 $k$ 步: 设 $a_{kk}^{(k)}\neq0$ , [[计算因子]] 
 		  $$l_{ik}=a_{ik}^{(k)}/a_{kk}^{(k)}\quad(i=k+1,...,n)$$ 
 		  且计算
 		  $$\left \{\begin{aligned} 
 		  a^{(k+1)}_{ij}= a^{(k)}_{ij}-l_{ik}a^{(k)}_{kj} \\ 
 		  b^{(k+1)}_{i}= b^{(k)}_{i}-l_{ik}b^{(k)}_{k}
 		  \end{aligned} \right.$$
-	-
+		- 共进行 $n-1$ 步
+		  \left[\begin{array}{cccc}
+		  a_{11}^{(1)} & a_{12}^{(1)} & \ldots & a_{1 n}^{(1)} \\
+		  & a_{22}^{(2)} & \ldots & a_{2 n}^{(2)} \\
+		  & & \ldots & \vdots \\
+		  & & & a_{n n}^{(n)}
+		  \end{array}\right]\left[\begin{array}{c}
+		  x_{1} \\
+		  x_{2} \\
+		  \vdots \\
+		  x_{n}
+		  \end{array}\right]=\left[\begin{array}{c}
+		  b_{1}^{(1)} \\
+		  b_{2}^{(2)} \\
+		  \vdots \\
+		  b_{n}^{(n)}
+		  \end{array}\right]
 -
