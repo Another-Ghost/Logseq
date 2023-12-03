@@ -49,20 +49,22 @@ alias:: 高斯消元法
 		  b^{(k+1)}_{i}= b^{(k)}_{i}-l_{ik}b^{(k)}_{k}
 		  \end{aligned} \right.$$
 		- 共进行 $n-1$ 步
-		  \left[\begin{array}{cccc}
+		  $$\left(\begin{array}{cccc}
 		  a_{11}^{(1)} & a_{12}^{(1)} & \ldots & a_{1 n}^{(1)} \\
 		  & a_{22}^{(2)} & \ldots & a_{2 n}^{(2)} \\
 		  & & \ldots & \vdots \\
 		  & & & a_{n n}^{(n)}
-		  \end{array}\right]\left[\begin{array}{c}
+		  \end{array}\right)
+		  \left(\begin{array}{c}
 		  x_{1} \\
 		  x_{2} \\
 		  \vdots \\
 		  x_{n}
-		  \end{array}\right]=\left[\begin{array}{c}
+		  \end{array}\right)=
+		  \left(\begin{array}{c}
 		  b_{1}^{(1)} \\
 		  b_{2}^{(2)} \\
 		  \vdots \\
 		  b_{n}^{(n)}
-		  \end{array}\right]
+		  \end{array}\right)$$
 -
