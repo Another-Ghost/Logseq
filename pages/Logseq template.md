@@ -8,6 +8,9 @@ template:: definition
 - ## Corollary
   template:: corollary
 	- logseq.order-list-type:: number
+- # Summary
+  template:: corollary
+	- logseq.order-list-type:: number
 - [[域]] $\mathbb{F}$ 上[[n维线性空间]] $V$
   template:: VofF
 - [[域]] $\mathbb{F}$ 上[[n维矩阵]] $\boldsymbol{A}$

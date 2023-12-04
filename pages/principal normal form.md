@@ -1,7 +1,7 @@
-- # [[principal conjunctive normal form]]
+# [[principal conjunctive normal form]]
 - # [[principal disjunctive normal form]]
 - # 主范式求解定理
-	- 1. 求出该公式所对应的析取范式和合取范式；
+	- 1. 求出该公式所对应的[[析取范式]]或[[合取范式]]；
 	  2. 消去重复出现的[[命题变元]]，[[矛盾式]]或[[重言式]]；可使用如下公式：
 	  {{embed ((bd5aca2d-f9f1-49a0-ad81-40ebe238d804))}}
 	  {{embed ((152bc213-c1d4-4d64-9be0-4d23f095f2f1))}}
