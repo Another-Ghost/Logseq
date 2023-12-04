@@ -19,10 +19,12 @@ alias:: 模板
   [[类模板]]的[[实例化]]**不会**[[实例化]]其任何[[成员函数]]，**除非这些成员函数也被使用**。
   在[[链接]]时，由不同[[翻译单元]]生成的**相同[[实例化]]将会合并**。
 - [[类模板定义]]必须在[[隐式实例化]]的点可见，这就是为什么[[模板库]]通常在[[头文件]]中提供所有[[模板定义]]的原因（例如，大多数 Boost 库都是[[仅头文件]]的）。
-- 关于模板的基本语法包括：
-- 1. 模板定义语法：使用 `template <parameter-list> requires-clause (optional) declaration` 的格式。
-  2. 直到 C++11，支持 `export template <parameter-list> declaration` 形式的定义。
-  3. 从 C++20 开始，使用 `template <parameter-list> concept concept-name = constraint-expression;` 来定义概念。
-- 其中，parameter-list 是一个非空的逗号分隔列表，包含模板参数，每个参数可以是非类型参数、类型参数、模板参数，或者是任何这些的参数包（自 C++11 起）。
+- # 语法
+	- ``` cpp
+	  template <parameter-list> requires-clause(optional) declaration
+	  `template <parameter-list> concept concept-name = constraint-expression; //C++20
+	  ```
+	  其中，
+		- parameter-list 是一个非空的逗号分隔列表，包含模板参数，每个参数可以是非类型参数、类型参数、模板参数，或者是任何这些的参数包（自 C++11 起）。
 - `requires-clause`（自 C++20 起）是一个指定模板参数约束的要求子句。
-- 声明（declaration）可以是类（包括结构体和联合体）、成员类或成员枚举类型、函数或成员函数、在命名空间范围的静态数据成员、在类范围的变量或静态数据成员（自 C++14 起）或别名模板（自 C++11 起）的声明。它也可以定义一个模板特化【12†source】。
+- 声明（declaration）可以是类（包括结构体和联合体）、成员类或成员枚举类型、函数或成员函数、在命名空间范围的静态数据成员、在类范围的变量或静态数据成员（自 C++14 起）或别名模板（自 C++11 起）的声明。它也可以定义一个模板特化【12†source】
