@@ -1,3 +1,3 @@
-alias:: PPO, 物理页号
+alias:: PPO, 物理页面偏移
 
 -

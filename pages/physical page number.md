@@ -1,3 +1,3 @@
-alias:: 物理页面偏移, PPN
+alias:: 物理页号, PPN
 
 -
