@@ -20,11 +20,14 @@ alias:: 模板
   在[[链接]]时，由不同[[翻译单元]]生成的**相同[[实例化]]将会合并**。
 - [[类模板定义]]必须在[[隐式实例化]]的点可见，这就是为什么[[模板库]]通常在[[头文件]]中提供所有[[模板定义]]的原因（例如，大多数 Boost 库都是[[仅头文件]]的）。
 - # 语法
-	- ``` cpp
+	- ``` 
 	  template <parameter-list> requires-clause(optional) declaration
 	  `template <parameter-list> concept concept-name = constraint-expression; //C++20
 	  ```
-	  其中，
 		- `parameter-list` 是一个非空的逗号分隔列表，包含[[模板参数]]，每个参数可以是非类型参数、类型参数、模板参数，或者是任何这些的[[参数包]]。
 		- `requires-clause`（自[[C++20]]起）是一个指定模板参数[[约束]]的[[requires-clause]]。
--
+- # [[template-id]]
+	- ```
+	  template-name <parameter-list>		
+	  ```
+		- `template-name` 可以是命名模板的标识符（这称为[[simple-template-id]]），也可以是重载的操作符模板或用户定义的文字模板的名称。
