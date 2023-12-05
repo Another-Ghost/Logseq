@@ -38,9 +38,10 @@ alias:: C++/语句
 	  logseq.order-list-type:: number
 	- [[跳转语句]]；
 	  logseq.order-list-type:: number
-	- 声明语句；
+	- [[声明语句]]；
 	  logseq.order-list-type:: number
-	- try block；
+	- [[try block]]；
 	  logseq.order-list-type:: number
-	  9) 原子和同步块（TM TS）。【57†source】
+	- [[atomic block]]和[[synchronized block]]（TM TS）。
+	  logseq.order-list-type:: number
 -
