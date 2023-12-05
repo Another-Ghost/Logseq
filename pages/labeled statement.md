@@ -1,3 +1,3 @@
-- [[case]]
-- [[default]]
-- [[goto]]
+- [[case]] label
+- [[default]] label
+- target for [[goto]]

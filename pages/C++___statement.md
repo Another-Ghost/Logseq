@@ -42,6 +42,6 @@ alias:: C++/语句
 	  logseq.order-list-type:: number
 	- [[try block]]；
 	  logseq.order-list-type:: number
-	- [[atomic block]]和[[synchronized block]]（TM TS）。
+	- [[atomic block]]和[[synchronized block]]。
 	  logseq.order-list-type:: number
 -
