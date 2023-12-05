@@ -37,4 +37,18 @@ alias:: 模板
 			  logseq.order-list-type:: number
 			- 用户定义的[[literal template]]的名称。
 			  logseq.order-list-type:: number
+<<<<<<< HEAD
 - # [[templated entity]]
+=======
+- # [[templated entity]]
+	- [[模板实体]]是在[[模板定义]]中定义的（或对于[[lambda 表达式]]来说，创建的）任何[[实体]]。
+	  id:: 656dfb3a-e215-424c-82fa-d3777cbcf9dd
+	  以下都是模板实体：
+		- [[类模板]]/[[函数模板]]/[[变量模板]]
+		- [[concept]]
+	- 模板实体的成员（如类模板的非模板成员函数）
+	- 枚举的成员，如果枚举是模板实体
+	- 在模板实体内定义或创建的任何实体：局部类、局部变量、友元函数等
+	- 在模板实体的声明中出现的 lambda 表达式的闭包类型（自 C++11 起）
+	- 例如，在下面的代码中，`A::f` 函数不是函数模板，但仍然被认为是模板化的。
+>>>>>>> 81614d5fbdd137895c185ced7ef1bbfd3a4979bc
