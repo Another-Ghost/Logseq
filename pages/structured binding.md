@@ -1,0 +1,2 @@
+- #C++17
+- https://en.cppreference.com/w/cpp/language/structured_binding
