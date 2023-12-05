@@ -20,11 +20,31 @@ alias:: 模板
   在[[链接]]时，由不同[[翻译单元]]生成的**相同[[实例化]]将会合并**。
 - [[类模板定义]]必须在[[隐式实例化]]的点可见，这就是为什么[[模板库]]通常在[[头文件]]中提供所有[[模板定义]]的原因（例如，大多数 Boost 库都是[[仅头文件]]的）。
 - # 语法
-	- ``` cpp
+	- ``` 
 	  template <parameter-list> requires-clause(optional) declaration
 	  `template <parameter-list> concept concept-name = constraint-expression; //C++20
 	  ```
-	  其中，
 		- `parameter-list` 是一个非空的逗号分隔列表，包含[[模板参数]]，每个参数可以是非类型参数、类型参数、模板参数，或者是任何这些的[[参数包]]。
-		- `requires-clause`（自[[C++20]]起）是一个指定模板参数约束的要求[[子句]]。
-- 声明（declaration）可以是类（包括结构体和联合体）、成员类或成员枚举类型、函数或成员函数、在命名空间范围的静态数据成员、在类范围的变量或静态数据成员（自 C++14 起）或别名模板（自 C++11 起）的声明。它也可以定义一个模板特化【12†source】。
+		- `requires-clause`（自[[C++20]]起）是一个指定模板参数[[约束]]的[[requires-clause]]。
+- # [[template-id]]
+	- ```
+	  template-name <parameter-list>		
+	  ```
+		- `template-name` 可以是：
+			- 命名模板的标识符（这称为[[simple-template-id]]）。
+			  logseq.order-list-type:: number
+			- [[重载操作符模板]]。
+			  logseq.order-list-type:: number
+			- 用户定义的[[literal template]]的名称。
+			  logseq.order-list-type:: number
+- # [[templated entity]]
+	- [[模板实体]]是在[[模板定义]]中定义的（或对于[[lambda 表达式]]来说，创建的）任何[[实体]]。
+	  id:: 656dfb3a-e215-424c-82fa-d3777cbcf9dd
+	  以下都是模板实体：
+		- [[类模板]]/[[函数模板]]/[[变量模板]]
+		- [[concept]]
+	- 模板实体的成员（如类模板的非模板成员函数）
+	- 枚举的成员，如果枚举是模板实体
+	- 在模板实体内定义或创建的任何实体：局部类、局部变量、友元函数等
+	- 在模板实体的声明中出现的 lambda 表达式的闭包类型（自 C++11 起）
+	- 例如，在下面的代码中，`A::f` 函数不是函数模板，但仍然被认为是模板化的。
