@@ -1,4 +1,4 @@
-alias:: 链接
+alias:: 链接, 链接性
 
 - # C++中的链接
   collapsed:: true
