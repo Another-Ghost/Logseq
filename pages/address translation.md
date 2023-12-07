@@ -49,4 +49,4 @@ alias:: 地址翻译, 地址翻译硬件
 - # ((6571be71-648c-451e-b6a1-38d22e85525f))
 	- ![Core i7 的内存系统.png](../assets/image_1701954252198_0.png)
 	- ![Core i7地址翻译的概况。为了简化，没有显示 i cache、 i-TLB和 L2统 -TLB.png](../assets/image_1701954346525_0.png)
-	-
+	- ![第一级、第二级和第三级页表条目格式。每个条目引用一个4KB子页表.png](../assets/image_1701955250184_0.png)
