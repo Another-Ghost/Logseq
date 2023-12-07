@@ -21,3 +21,8 @@ file-path:: ../assets/深入理解计算机系统_(Randal_E._Bryant,_David_R._O�
   hl-page:: 609
   hl-color:: yellow
   id:: 6570b370-d6a2-4ada-9a42-95582cdb3852
+- 案例研究： Intel Core i7/Linux内存系统
+  ls-type:: annotation
+  hl-page:: 612
+  hl-color:: yellow
+  id:: 6571be71-648c-451e-b6a1-38d22e85525f
