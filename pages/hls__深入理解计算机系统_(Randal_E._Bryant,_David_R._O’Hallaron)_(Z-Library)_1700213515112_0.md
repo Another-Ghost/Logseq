@@ -16,3 +16,8 @@ file-path:: ../assets/深入理解计算机系统_(Randal_E._Bryant,_David_R._O�
   hl-page:: 532
   hl-color:: yellow
   id:: 656793b9-9ebc-4072-a1b2-d2defd352560
+- 端到端的地址翻译
+  ls-type:: annotation
+  hl-page:: 609
+  hl-color:: yellow
+  id:: 6570b370-d6a2-4ada-9a42-95582cdb3852

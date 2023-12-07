@@ -77,5 +77,22 @@
                                    :height 1215.6}),
                           :page 532},
                :content {:text "处理目标文件的工具"},
+               :properties {:color "yellow"}}
+              {:id #uuid "6570b370-d6a2-4ada-9a42-95582cdb3852",
+               :page 609,
+               :position {:bounding {:x1 196.65188598632812,
+                                     :y1 267.171875,
+                                     :x2 398.0494079589844,
+                                     :y2 287.171875,
+                                     :width 1074,
+                                     :height 1621.4038748137107},
+                          :rects ({:x1 196.65188598632812,
+                                   :y1 267.171875,
+                                   :x2 398.0494079589844,
+                                   :y2 287.171875,
+                                   :width 1074,
+                                   :height 1621.4038748137107}),
+                          :page 609},
+               :content {:text "端到端的地址翻译"},
                :properties {:color "yellow"}}],
- :extra {:page 609}}
+ :extra {:page 613}}

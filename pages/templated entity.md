@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 alias:: 模板化实体, temploid, templated, 模板化
 
 - [[模板化实体]]是在[[模板定义]]中定义的（或对于[[lambda 表达式]]来说，创建的）任何[[实体]]。
@@ -26,6 +25,3 @@ alias:: 模板化实体, temploid, templated, 模板化
 	- [[templated function]]是指[[函数模板]]或 *被[[模板化]]的函数* 。
 	- [[templated class]]是指[[类模板]]或 *被模板化的类* 。
 	- [[templated variable]]是指[[变量模板]]或 *被模板化的变量* 。
-=======
-alias:: 模板实体, temploid
->>>>>>> 81614d5fbdd137895c185ced7ef1bbfd3a4979bc
