@@ -28,9 +28,9 @@ alias:: 虚拟内存
 	- 在任意时刻，[[虚拟页面]]的集合都分为三个不相交的子集：
 		- [[未分配页]]： VM 系统还未分配（或者创建）的页 。 未分配的块没有任何数据和它们相关联，因此也就**不占用任何[[磁盘]]空间**。
 		  logseq.order-list-type:: number
-		- [[缓存页]]：当前已缓存在[[物理内存]]中的已分配页 。
+		- [[缓存页]]：当前已缓存在[[物理内存]]中的[[已分配页]]。
 		  logseq.order-list-type:: number
-		- [[未缓存页]]：未缓存在[[物理内存]]中的已分配页 。
+		- [[未缓存页]]：未缓存在[[物理内存]]中的[[已分配页]]。
 		  logseq.order-list-type:: number
 		- logseq.order-list-type:: number
 		  #+BEGIN_PINNED
