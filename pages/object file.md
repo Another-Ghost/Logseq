@@ -1,4 +1,4 @@
-alias:: 目标文件, object module, 目标模块
+alias:: 目标文件, object module, 目标模块, 目标
 
 - 目标文件有三种形式：
 	- [[可重定位目标文件]]
