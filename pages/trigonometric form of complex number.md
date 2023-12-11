@@ -39,15 +39,17 @@ alias:: 复数的三角形式
 	- 设
 	  $$\omega^n=z = r\left[\cos(\theta+2k\pi)+i\sin(\theta+2k\pi)\right]$$
 	  $$w=\rho(\cos\varphi+i\sin\varphi)$$
+	  根据[[棣莫弗公式]]有
 	  $$\rho^n=r$$
 	  $$n\varphi=\theta+2k\pi$$
 	  可得
 	- $$w=\left|z\right|^{\frac{1}{n}}\left\{\cos\left[\frac{1}{n}(\arg z+2k\pi)\right]+\mathrm{i}\sin\left[\frac{1}{n}(\arg z+2k\pi)\right]\right\},\quad k=0,1,\cdots,n-1$$
 	- $$\rho=r^{\frac{1}{n}}$$
 	  $$\quad\varphi=\frac{1}{n}(\arg z+2k\pi)$$
-	- 此处$\rho=r^{\frac{1}{n}}$是$r$在[[实数]]意义下的$n$次根，即[[算数根]]。
-	- 其中$\varphi$的任意两个值相差不是$2\pi$的*整数倍*，所以任意一个不为$0$的*复数* 开$n$[[次方]]有$n$个[[根]]。
-	  $w$ 的 $n$ 个*根*会**均匀**的分布在以$\rho$为[[模长]]的圆周（$2\pi$）上。
-		- >[例子](https://www.bilibili.com/video/BV1w54y1m7Wb?t=662.6&p=12)
+		- 此处$\rho=r^{\frac{1}{n}}$是$r$在[[实数]]意义下的$n$次根，即[[算数根]]。
+		- 其中$\varphi$的任意两个值相差不是$2\pi$的*整数倍*，所以任意一个不为$0$的*复数* 开$n$[[次方]]有$n$个[[复根]]。
+		  id:: 6568a71b-1012-47fa-8de5-1370353cf8c6
+		  $w$ 的 $n$ 个*根*会**均匀**的分布在以$\rho$为[[模长]]的圆周（$2\pi$）上。
+			- >[例子](https://www.bilibili.com/video/BV1w54y1m7Wb?t=662.6&p=12)
 	-
 -
