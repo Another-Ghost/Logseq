@@ -6,7 +6,7 @@ alias:: 复数的三角形式
 	- 设点$Z$到[[原点]]$O$的距离为$r$, 称为$z$的[[模]]，记作$\left |z\right |$。容易算出
 	  $$r=\left |z\right |=\sqrt{x^2+y^2}$$
 	- 从**实轴**$x$轴的正方向到向量$OZ$的转角为$\theta$, 称为$z$的一个[[辐角]]。辐角有无穷多个值，其中任意两个值相差$2\pi$的整数倍。我们用$\mathrm{Arg}\ z$表示。
-	  $\mathrm{arg}\ z$称为[[主辐角]], $-\pi<\mathrm{arg}\ z\le\pi$, 表示$z$的*辐角*中介于$-\pi$与$\pi$之间的那一个, 其值为：
+	  $\mathrm{arg}\ z$ 称为[[主辐角]], $-\pi<\mathrm{arg}\ z\le\pi$, 表示$z$的*辐角*中介于$-\pi$与$\pi$之间的那一个, 其值为：
 	  $$
 	  \arg z=\theta=\begin{cases}\arctan\frac{-y}{x},&x>0,y\text{ 为任意实数},
 	  \\\\\frac{\pi}{2},&x=0,y>0,
