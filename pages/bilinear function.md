@@ -22,7 +22,7 @@ alias:: 双线性函数
 		  $$
 		  设 $f$ 是 $V$ 上的一个[[双线性函数]], 则
 		  $$
-		  f(\alpha,\beta)=f(\sum_{i=1}^{n}x_{i}\alpha_{i},\sum_{j=1}^{n}y_{j}\alpha_{j})=\sum_{i=1}^{n}\sum_{j=1}^{n}x_{i}y_{j}\:f(a_{i},a_{j}) \tag{1}
+		  f(\alpha,\beta)=f(\sum_{i=1}^{n}x_{i}\alpha_{i},\sum_{j=1}^{n}y_{j}\alpha_{j})=\sum_{i=1}^{n}\sum_{j=1}^{n}x_{i}y_{j}\:f(\alpha_{i},\alpha_{j}) \tag{1}
 		  $$
 		- 令
 		  id:: 64fa6aa7-929c-4e99-9fb2-a00528b6832f
