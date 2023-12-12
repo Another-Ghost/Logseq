@@ -28,4 +28,3 @@ alias:: 深入理解计算机系统
 - ![18-ecf.pdf](../assets/18-ecf_1700091349086_0.pdf)
 - ![19-system-io.pdf](../assets/19-system-io_1700091352905_0.pdf)
 - ![20-netprog1.pdf](../assets/20-netprog1_1700091357289_0.pdf)
--
