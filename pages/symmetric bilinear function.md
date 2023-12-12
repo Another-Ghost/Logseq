@@ -14,7 +14,7 @@ alias:: 对称双线性函数
 	  $$
 	  那么称 $f$ 是[斜对称]([[skew symmetric bilinear function]])的.
 - # Theorem
-	- 设 $f$ 是[[域]] $\mathbb{F}$ 上[[n维线性空间]] $V$ 上的一个[[双线性函数]], $f$ 在 $V$ 的一个[[基]] $\alpha_{1},\alpha_{2},\cdots,\alpha_n$ 下的[[度量矩阵]]为 $\boldsymbol{A}$,则
+	- 设 $f$ 是[[域]] $\mathbb{F}$ 上[[n维线性空间]] $V$ 上的一个[[双线性函数]], $f$ 在 $V$ 的一个[[基]] $\alpha_{1},\alpha_{2},\cdots,\alpha_n$ 下的[[度量矩阵]]为 $\boldsymbol{A}$, 则
 	  logseq.order-list-type:: number
 		- $f$ 是[对称]([[symmetric bilinear function]])的
 		  logseq.order-list-type:: number

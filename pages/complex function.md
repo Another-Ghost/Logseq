@@ -22,7 +22,7 @@ alias:: 复变量函数, 复变函数, 复变量
 	  logseq.order-list-type:: number
 		- $e^z$是 *周期函数* ，*周期* 为 $2k\pi i\ (k=0,\pm 1, \pm 2,\cdots)$。
 		  logseq.order-list-type:: number
-		- $ln(-1)=i\pi$，$\operatorname{Ln} z= \ln z + 2k\pi i\ (i=0,\pm 1\pm 2,\cdots)$
+		- $\ln(-1)=i\pi$，$\operatorname{Ln} z= \ln z + 2k\pi i\ (i=0,\pm 1\pm 2,\cdots)$
 		  logseq.order-list-type:: number
 		- $\operatorname{Ln} z^2\ne 2\operatorname{Ln}z$。
 		  logseq.order-list-type:: number
@@ -32,3 +32,4 @@ alias:: 复变量函数, 复变函数, 复变量
 		  logseq.order-list-type:: number
 		- $\sqrt[3]{-27}$是三个值。
 		  logseq.order-list-type:: number
+-

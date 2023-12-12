@@ -22,7 +22,7 @@ alias:: 双线性函数
 		  $$
 		  设 $f$ 是 $V$ 上的一个[[双线性函数]], 则
 		  $$
-		  f(\alpha,\beta)=f(\sum_{i=1}^{n}x_{i}\alpha_{i},\sum_{j=1}^{n}y_{j}\alpha_{j})=\sum_{i=1}^{n}\sum_{j=1}^{n}x_{i}y_{j}\:f(a_{i},a_{j}) \tag{1}
+		  f(\alpha,\beta)=f(\sum_{i=1}^{n}x_{i}\alpha_{i},\sum_{j=1}^{n}y_{j}\alpha_{j})=\sum_{i=1}^{n}\sum_{j=1}^{n}x_{i}y_{j}\:f(\alpha_{i},\alpha_{j}) \tag{1}
 		  $$
 		- 令
 		  id:: 64fa6aa7-929c-4e99-9fb2-a00528b6832f
@@ -44,10 +44,10 @@ alias:: 双线性函数
 		  $$
 		  f(\alpha_{i},\alpha_{j})=\boldsymbol{\varepsilon}_{i}^{\prime}\boldsymbol{A}\boldsymbol{\varepsilon}_{j}=a_{ij}
 		  $$
-		  ($\boldsymbol{\varepsilon_i}$ 是除 $i$ [[分量]] 为 $1$, 其余为 $0$ 的 *列向量*)
+		  ( $\boldsymbol{\varepsilon_i}$ 是除 $i$ [[分量]] 为 $1$, 其余为 $0$ 的 *列向量* )
 			- 由于用 $(4)$ 式定义的[[双线性函数]]的[[度量矩阵]]恰好是 $\boldsymbol{A}$, 因此若 $\boldsymbol{x^{\prime}Ay} =\boldsymbol{x^{\prime}By}$，则$\boldsymbol{A}=\boldsymbol{B}$.
 		- $(4)$ 式右端的表达式 $\boldsymbol{x^{\prime}Ay}$ 称为 $x_1,x_2, \cdots,x_n$与 $y_{1},y_{2},\cdots, y_n$ 的[[双线性型]].
-		- 上述表明: 利用向量 $\alpha,\beta$ 的 *坐标* $x_1,x_2\cdots,x_n$ 与$y_1,y_2,\cdots, y_n$ 的[[双线性型]]可以[[诱导]]出 $V$ 上的一个[[双线性函数]].
+			- 上述表明: 利用向量 $\alpha,\beta$ 的 *坐标* $x_1,x_2\cdots,x_n$ 与$y_1,y_2,\cdots, y_n$ 的[[双线性型]]可以[[诱导]]出 $V$ 上的一个[[双线性函数]].
 - # Theorem
 	- 设 $f$ 是 $\mathbb{F}$ 上[[n维线性空间]] $V$ 上的一个[[双线性函数]], $V$ 中取两个[[基]] $a_{1},a_2,\cdots,a_n$ 与 $\beta_1,\beta_2,\cdots,\beta_n$, 设
 	  logseq.order-list-type:: number

@@ -6,7 +6,7 @@ alias:: 复数的三角形式
 	- 设点$Z$到[[原点]]$O$的距离为$r$, 称为$z$的[[模]]，记作$\left |z\right |$。容易算出
 	  $$r=\left |z\right |=\sqrt{x^2+y^2}$$
 	- 从**实轴**$x$轴的正方向到向量$OZ$的转角为$\theta$, 称为$z$的一个[[辐角]]。辐角有无穷多个值，其中任意两个值相差$2\pi$的整数倍。我们用$\mathrm{Arg}\ z$表示。
-	  $\mathrm{arg}\ z$称为[[主辐角]], $-\pi<\mathrm{arg}\ z\le\pi$, 表示$z$的*辐角*中介于$-\pi$与$\pi$之间的那一个, 其值为：
+	  $\mathrm{arg}\ z$ 称为[[主辐角]], $-\pi<\mathrm{arg}\ z\le\pi$, 表示$z$的*辐角*中介于$-\pi$与$\pi$之间的那一个, 其值为：
 	  $$
 	  \arg z=\theta=\begin{cases}\arctan\frac{-y}{x},&x>0,y\text{ 为任意实数},
 	  \\\\\frac{\pi}{2},&x=0,y>0,
@@ -35,19 +35,21 @@ alias:: 复数的三角形式
 	- $$\left|\frac{z_1}{z_2}\right|=\frac{\mid z_1\mid}{\mid z_2\mid}$$
 	  $$\text{Arg}\frac{z_1}{z_2}=\text{Arg}z_1-\text{Arg}z_2$$
 	- > 此即为[[向量除法]]。
-- ## 方根
+- ## [[方根]]
 	- 设
-	  $$\omega^n=z$$
+	  $$\omega^n=z = r\left[\cos(\theta+2k\pi)+i\sin(\theta+2k\pi)\right]$$
+	  $$w=\rho(\cos\varphi+i\sin\varphi)$$
+	  根据[[棣莫弗公式]]有
 	  $$\rho^n=r$$
-	  $$n\phi=\theta+2k\pi$$
+	  $$n\varphi=\theta+2k\pi$$
 	  可得
 	- $$w=\left|z\right|^{\frac{1}{n}}\left\{\cos\left[\frac{1}{n}(\arg z+2k\pi)\right]+\mathrm{i}\sin\left[\frac{1}{n}(\arg z+2k\pi)\right]\right\},\quad k=0,1,\cdots,n-1$$
 	- $$\rho=r^{\frac{1}{n}}$$
 	  $$\quad\varphi=\frac{1}{n}(\arg z+2k\pi)$$
-	- 此处$\rho=r^{\frac{1}{n}}$是$r$在[[实数]]意义下的$n$次根，即[[算数根]]。
-	- 其中$\phi$的任意两个值相差不是$2\pi$的*整数倍*，所以任意一个不为$0$的*复数* 开$n$[[次方]]有$n$个[[根]]。
-	  w的n个*根*会**均匀**的分布在以$\rho$为[[模长]]的圆周（$2\pi$）上。
-		- >[例子](https://www.bilibili.com/video/BV1w54y1m7Wb?t=662.6&p=12)
+		- 此处$\rho=r^{\frac{1}{n}}$是$r$在[[实数]]意义下的$n$次根，即[[算数根]]。
+		- 其中$\varphi$的任意两个值相差不是$2\pi$的*整数倍*，所以任意一个不为$0$的*复数* 开$n$[[次方]]有$n$个[[复根]]。
+		  id:: 6568a71b-1012-47fa-8de5-1370353cf8c6
+		  $w$ 的 $n$ 个*根*会**均匀**的分布在以$\rho$为[[模长]]的圆周（$2\pi$）上。
+			- >[例子](https://www.bilibili.com/video/BV1w54y1m7Wb?t=662.6&p=12)
 	-
--
 -
