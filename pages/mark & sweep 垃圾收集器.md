@@ -1,3 +1,5 @@
+alias:: mark & sweep
+
 - [[Mark&Sweep 垃圾收集器]]由 *标记* (mark) 阶段和 *清除* (sweep) 阶段组成，
 	- 标记阶段 标记出 *根节点* 的所有 *可达的* 和 *已分配的后继* ，
 	- 而后面的 清除阶段 释放每个 *未被标记的已分配块*。
@@ -30,12 +32,25 @@
   在标记阶段的末尾，任何未标记的已分配块都被认定为是不可达的，是垃圾，可以在清除阶段回收。
 - 清除阶段是对如下 `sweep` 函数的一次调用。 
   ``` c
-  void sweep(ptrb,ptr end){
-  while (b<end) 
-  {if(blockMarked(b))unmarkBlock(b);
-  else if (blockAllocated(b))free(b);
-  b=nextBlock(b);
-  }
+  void sweep(ptr b, ptr end)
+  {
+  	while (b<end) 
+  	{
+  		if(blockMarked(b))
+  			unmarkBlock(b);
+  		else if (blockAllocated(b))
+  			free(b);
+  		b=nextBlock(b);
+      }
   return;
-  ``` 
+  }
+  ```
   `sweep` 函数在堆中每个块上反复循环，释放它所遇到的所有未标记的已分配块（也就是垃圾）。
+- # C程序的保守 Mark & Sweep
+	- Mark&Sweep 对 C程序的[[垃圾收集]]是一种合适的方法，因为它可以就地工作，而不需要移动任何块。然而， C语言为 `isPtr` 函数的实现造成了一些有趣的挑战。
+		- C 不会用任何[[类型信息]]来标记 *内存位置* 。因此，对 `isPtr` 没有一种明显的方式来判断它的输入参数 `p` 是不是一个指针。
+		  logseq.order-list-type:: number
+		- 即使我们知道 `p` 是一个指针，对 `isPtr` 也没有明显的方式来判断 `p` 是否指向一个[[已分配块]]的[[有效载荷]]中的某个位置。
+		  logseq.order-list-type:: number
+		  id:: 6579d484-b7e0-404d-9c0c-17c3acab9ddb
+	-
