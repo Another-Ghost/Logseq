@@ -11,7 +11,8 @@
 	- `ptr nextBlock (ptr b)` 。返回堆中块 `b` 的后继。
 - *标记阶段* 为每个 *根节点* 调用一次 `mark` 函数：
   ``` c
-  void mark(ptrp){
+  void mark(ptrp)
+  {
   	if((b=isPtr(p)) == NULL)
   		return;
   	if(blockMarked(b))
@@ -20,8 +21,21 @@
   	len =length(b);
   	for(i=0；i<len；i++)
       {
-  		mark(b[i]);
+  		mark(b[i]); //对块中的每个字递归地调用自身
       }
   	return;
+  }
   ```
-  如果 `p` 不指向一个已分配并且未标记的堆块， `mark` 函数就立即返回。否则，它就标记这个块，并对块中的每个字递归地调用它自己。每次对 mark 函数的调用都标记某个根节点的所有未标记并且可达的后继节点。在标记阶段的末尾，任何未标记的已分配块都被认定为是不可达的，是垃圾，可以在清除阶段回收。清除阶段是对图 9-5lb 所示的 sweep 函数的一次调用。 sweep 函数在堆中每个块上反复循环，释放它所遇到的所有未标记的已分配块（也就是垃圾）。图 9-52 展示了一个小堆的 Mark&Sweep 的图形化解释。块边界用粗线条表示。每个方块对应千内存中的一个字。每个块有一个字的头部，要么是已标记的，要么是未标记的。
+  每次对 `mark` 函数的调用都标记某个根节点的所有未标记并且可达的后继节点。
+  在标记阶段的末尾，任何未标记的已分配块都被认定为是不可达的，是垃圾，可以在清除阶段回收。
+- 清除阶段是对如下 `sweep` 函数的一次调用。 
+  ``` c
+  void sweep(ptrb,ptr end){
+  while (b<end) 
+  {if(blockMarked(b))unmarkBlock(b);
+  else if (blockAllocated(b))free(b);
+  b=nextBlock(b);
+  }
+  return;
+  ``` 
+  `sweep` 函数在堆中每个块上反复循环，释放它所遇到的所有未标记的已分配块（也就是垃圾）。
