@@ -76,7 +76,7 @@ alias:: 高斯消元法, 高斯消去法
 		- ## Corollary
 			- 约化的[[主元素]] $a_{ii}^{(i)}\neq0\left(i=1,2,\cdots,k\right)$ 的 充要条件 是矩阵 $\boldsymbol A$ 的[[顺序主子式]] $D_i\neq0\left(i=1,2,\cdots,k\right)$ 。
 			  logseq.order-list-type:: number
-			- 如果A的[[顺序主子式]]$D_k\neq0\quad(k=1,2,\cdots,n-1)$ 则 
+			- 如果 $A$ 的[[顺序主子式]]$D_k\neq0\ (k=1,2,\cdots,n-1)$ 则 
 			  logseq.order-list-type:: number
 			  $$
 			  \begin{cases}a_{11}^{(1)}=D_1\\a_{kk}^{(k)}=D_k/D_{k-1}&\end{cases}
