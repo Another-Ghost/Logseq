@@ -17,9 +17,24 @@ template:: definition
   template:: VofF
 - [[域]] $\mathbb{F}$ 上[[n维矩阵]] $\boldsymbol{A}$
   template:: MofF
-- $$\left[\begin{aligned}\begin{array}{c}
+- $$\left[\begin{array}{c}
   
-  \end{array}\end{aligned}\right]$$
+  \end{array}\right]$$
   template:: mat
 - template:: imat
   \begin{bmatrix}1&0&\cdots&0\\0&1&\cdots&0\\\vdots&\vdots&\ddots&\vdots\\0&0&\cdots&1\end{bmatrix}
+- template:: mat_L
+  $$\begin{bmatrix}
+  1 \\
+  l_{21} & 1 \\
+  \vdots & \vdots & \ddots \\
+  l_{n1} & l_{n2} & \cdots & 1
+  \end{bmatrix}$$
+- template: mat_U
+  $$\begin{bmatrix}
+  u_{11} & u_{12} & \cdots & u_{1n} \\
+  & u_{22} & \cdots & u_{2n} \\
+  & & \ddots & \vdots \\
+  & & & u_{nn} 
+  \end{bmatrix}$$
+-
