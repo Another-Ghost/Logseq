@@ -24,17 +24,17 @@ template:: definition
 - template:: imat
   \begin{bmatrix}1&0&\cdots&0\\0&1&\cdots&0\\\vdots&\vdots&\ddots&\vdots\\0&0&\cdots&1\end{bmatrix}
 - template:: mat_L
-  $$\begin{bmatrix}
+  \begin{bmatrix}
   1 \\
   l_{21} & 1 \\
   \vdots & \vdots & \ddots \\
   l_{n1} & l_{n2} & \cdots & 1
-  \end{bmatrix}$$
+  \end{bmatrix}
 - template:: mat_U
-  $$\begin{bmatrix}
+  \begin{bmatrix}
   u_{11} & u_{12} & \cdots & u_{1n} \\
   & u_{22} & \cdots & u_{2n} \\
   & & \ddots & \vdots \\
   & & & u_{nn} 
-  \end{bmatrix}$$
+  \end{bmatrix}
 -
