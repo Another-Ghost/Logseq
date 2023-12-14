@@ -30,7 +30,7 @@ template:: definition
   \vdots & \vdots & \ddots \\
   l_{n1} & l_{n2} & \cdots & 1
   \end{bmatrix}$$
-- template: mat_U
+- template:: mat_U
   $$\begin{bmatrix}
   u_{11} & u_{12} & \cdots & u_{1n} \\
   & u_{22} & \cdots & u_{2n} \\
