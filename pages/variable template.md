@@ -7,5 +7,6 @@ alias:: 变量模板
   template <parameter-list> variable-declaration
   ```
 	- `variable-declaration`：变量的声明，声明的**变量名**成为**模板名**。
-	-
-	-
+	- `parameter-list`：一个非空的模板参数列表，用逗号分隔，每个参数可以是[[非类型参数]]、[[类型参数]]、[[模板参数]]或 其中任何一个的[[参数包]]。
+- ## 解释
+	- 从变量模板实例化的变量称为 。从静态数据成员模板实例化的静态数据成员称为 。
