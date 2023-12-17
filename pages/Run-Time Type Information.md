@@ -30,26 +30,22 @@ alias:: RTTI, 运行时类型信息
 	  ```
 	  
 	  在这个示例中，即使`base`是一个`Base`类型的指针，但由于它实际上指向`Derived`对象，`typeid(*base)`将返回`Derived`的类型信息。
-- #### 使用`dynamic_cast`
-  
-  ```cpp
-  Base* base = new Derived;
-  Derived* derived = dynamic_cast<Derived*>(base);
-  
-  if (derived) {
-    // 成功转换
-  } else {
-    // 转换失败
-  }
-  ```
-  
-  在这个例子中，`dynamic_cast`尝试将`Base`类型的指针`base`转换为`Derived`类型的指针。如果`base`实际上指向一个`Derived`对象，转换成功，否则`derived`将为`nullptr`。
+	- #### 使用`dynamic_cast`
+	  
+	  ```cpp
+	  Base* base = new Derived;
+	  Derived* derived = dynamic_cast<Derived*>(base);
+	  
+	  if (derived) {
+	    // 成功转换
+	  } else {
+	    // 转换失败
+	  }
+	  ```
+	  
+	  在这个例子中，`dynamic_cast`尝试将`Base`类型的指针`base`转换为`Derived`类型的指针。如果`base`实际上指向一个`Derived`对象，转换成功，否则`derived`将为`nullptr`。
 - ### 注意事项
-  
-  1. **性能影响**：RTTI的使用可能会带来性能上的开销，尤其是`dynamic_cast`运算符，因为它在运行时需要进行类型检查。
-  
-  2. **类型安全**：`dynamic_cast`比较安全，因为它在类型转换不正确时不会产生不确定的行为。
-  
-  3. **多态类**：`typeid`和`dynamic_cast`通常在涉及多态的类（即包含虚函数的类）中使用。
-  
-  总之，RTTI在C++中提供了一种机制，允许程序在运行时检查和确定对象的类型。虽然它非常有用，特别是在需要处理复杂的多态关系时，但它也可能带来一定的性能成本，因此应谨慎使用。
+	- 1. **性能影响**：RTTI的使用可能会带来性能上的开销，尤其是`dynamic_cast`运算符，因为它在运行时需要进行类型检查。
+	- 2. **类型安全**：`dynamic_cast`比较安全，因为它在类型转换不正确时不会产生不确定的行为。
+	- 3. **多态类**：`typeid`和`dynamic_cast`通常在涉及多态的类（即包含虚函数的类）中使用。
+	- 总之，RTTI在C++中提供了一种机制，允许程序在运行时检查和确定对象的类型。虽然它非常有用，特别是在需要处理复杂的多态关系时，但它也可能带来一定的性能成本，因此应谨慎使用。
