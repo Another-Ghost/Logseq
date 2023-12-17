@@ -1,5 +1,5 @@
 - UObject类提供了以下功能：
-	- [[garbage collection]] 垃圾收集
+	- [[Unreal/garbage collection]] 垃圾收集
 	  logseq.order-list-type:: number
 	- [[reference updating]] 引用自动更新
 	  logseq.order-list-type:: number
@@ -17,4 +17,3 @@
 	  logseq.order-list-type:: number
 	- [[network replication]] 网络复制
 	  logseq.order-list-type:: number
--
