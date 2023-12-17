@@ -36,4 +36,49 @@ alias:: Lambda
   3. **替代小型函数对象**：在需要定义小型函数对象时，使用Lambda表达式可以减少代码冗余。
   
   Lambda表达式提高了C++代码的灵活性和表达力，使得编写现代C++代码更加方便和高效。
-- # 函数式编程
+- # C++函数式编程
+	- 在C++中实现函数式编程风格主要依赖于一些关键特性，如Lambda表达式、标准模板库（STL）中的算法和函数对象。下面我将通过一个示例展示如何在C++中应用函数式编程风格。
+	- ### 示例：使用STL算法和Lambda表达式
+	  
+	  假设我们有一个任务：给定一个整数向量，我们需要过滤出所有偶数，并将它们的值加倍，最后输出结果。在C++中，我们可以利用`std::vector`、`std::copy_if`和Lambda表达式来实现这一功能。
+	  
+	  ```cpp
+	  #include <iostream>
+	  #include <vector>
+	  #include <algorithm>
+	  #include <iterator>
+	  
+	  int main() {
+	    // 初始化一个整数向量
+	    std::vector<int> nums = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+	  
+	    // 存储过滤和变换后的结果
+	    std::vector<int> results;
+	  
+	    // 使用copy_if和Lambda表达式进行过滤和变换
+	    std::copy_if(nums.begin(), nums.end(), std::back_inserter(results), 
+	        [](int x) { return x % 2 == 0; }); // 过滤出偶数
+	  
+	    // 使用transform和Lambda表达式将值加倍
+	    std::transform(results.begin(), results.end(), results.begin(), 
+	        [](int x) { return x * 2; });
+	  
+	    // 输出结果
+	    std::cout << "Transformed numbers: ";
+	    for (int n : results) {
+	        std::cout << n << " ";
+	    }
+	    std::cout << std::endl;
+	  
+	    return 0;
+	  }
+	  ```
+	  
+	  在这个示例中：
+	  
+	  1. 我们首先创建了一个`std::vector<int>`来存储原始的整数。
+	  2. 使用`std::copy_if`结合Lambda表达式来过滤出所有的偶数。
+	  3. 接着，使用`std::transform`和另一个Lambda表达式将过滤后的每个数加倍。
+	  4. 最后，我们遍历并打印出变换后的结果。
+	  
+	  这个示例展示了如何使用C++中的STL算法和Lambda表达式来实现函数式编程风格。通过这种方式，我们可以编写出更加简洁、模块化和可读的代码。
