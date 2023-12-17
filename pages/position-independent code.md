@@ -47,11 +47,11 @@ alias:: PIC, 位置无关代码
 	- 图a 展示的是  GOT 和 PLT 如何协同工作，在 `addvec` 被第一次调用时，延迟解析它的运行时地址的步骤：
 		- 不直接调用 `addvec` , 程序调用进入`addvec` 的 PLT条目 `PLT[2]` 。
 		  logseq.order-list-type:: number
-		- 第一条PLT指令通过`GOT[4]`进行 *间接跳转* 。因为每个 GOT条目 初始时都指向它对应的 PLT条目的第二条指令，这个间接跳转只是简单地把控制传送回 `PLT[2]` 中的下一条指令。
+		- 第一条PLT指令通过`GOT[4]`进行[[间接跳转]]。因为每个 GOT条目 初始时都指向它对应的 PLT条目的第二条指令，这个间接跳转只是简单地把控制传送回 `PLT[2]` 中的下一条指令。
 		  logseq.order-list-type:: number
 		- 在把 `addvec` 的 ID (`0x1`) 压入**栈**中之后， `PLT[2]` **跳转到** `PLT[0]` 。
 		  logseq.order-list-type:: number
-		- `PLT[0]` 通过 `GOT[1]` 间接地把 动态链接器的一个参数 压入**栈**中，然后通过 `GOT[2]` 间接跳转进动态链接器中。动态链接器使用 两个栈条目（`addvec`的ID 和 `动态链接器的一个参数`）来确定 `addvec` 的 *运行时位置* ，用这个地址**重写** `GOT [4]` , 再把**控制传递给** `addvec` 。
+		- `PLT[0]` 通过 `GOT[1]` 间接地把 动态链接器的一个参数 压入**栈**中，然后通过 `GOT[2]` 间接跳转进动态链接器中。动态链接器使用 两个栈条目（`addvec`的ID 和 动态链接器的一个参数 ）来确定 `addvec` 的 *运行时位置* ，用这个地址**重写** `GOT [4]` , 再把**控制传递给** `addvec` 。
 		  logseq.order-list-type:: number
 	- 图 b 给出的是后续再调用 `addvec` 时的控制流：
 	  logseq.order-list-type:: number
