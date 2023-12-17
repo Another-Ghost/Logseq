@@ -1,3 +1,5 @@
+alias:: dynamic_cast operator
+
 - `dynamic_cast` 只能用于**类的指针和引用**（或 `void*`）。它的目的是确保类型转换的结果指向目标指针类型的有效完整对象。
 - 这自然包括[[pointer upcast]]（从指向派生类的指针转换到指向基类的指针），就像[[隐式转换]]一样允许的。
 - 但是 `dynamic_cast` 也可以将[[多态类]]（具有[[virtual members]]的类）的指针从基类向派生类进行[[pointer downcast]]，但**仅当**指向的对象是**目标类型的**有效完整对象时。例如：
