@@ -51,6 +51,42 @@
 - ### 使用场景
   
   `std::function` 在需要将函数作为参数传递、存储回调函数或者实现信号与槽机制等场景中特别有用。它是实现高级抽象、如事件驱动编程或函数式编程风格等功能的重要工具。
+- ## 存储 Lambda 表达式
+	- 在C++中，`std::function` 可以存储Lambda表达式，包括那些使用了隐式捕获（Implicit Capture）的Lambda表达式。当Lambda表达式捕获了它所在作用域中的变量时，这些变量的值或引用会被存储在Lambda对象中。`std::function` 对象则持有这个Lambda对象，包括它所捕获的所有内容。
+	- ### 示例
+	  
+	  假设你有一个局部变量，并想在Lambda表达式中使用它，你可以这样做：
+	  
+	  ```cpp
+	  #include <functional>
+	  #include <iostream>
+	  
+	  int main() {
+	    int value = 42;
+	  
+	    // 使用隐式捕获的Lambda表达式
+	    auto lambda = [value]() {
+	        std::cout << "The value is " << value << std::endl;
+	    };
+	  
+	    // 存储Lambda表达式在 std::function 对象中
+	    std::function<void()> func = lambda;
+	  
+	    // 调用 std::function 对象，间接调用Lambda表达式
+	    func();  // 输出: The value is 42
+	  
+	    return 0;
+	  }
+	  ```
+	  
+	  在这个例子中，Lambda表达式隐式地捕获了局部变量 `value`。当这个Lambda表达式被存储到 `std::function<void()>` 类型的 `func` 中时，捕获的变量也随之存储在 `func` 中。
+	- ### 注意事项
+	- **捕获方式**：Lambda表达式可以通过值（`[=]`）或引用（`[&]`）捕获变量。通过值捕获的变量在Lambda表达式创建时被复制，而引用捕获的变量则保留对原变量的引用。
+	- **生命周期**：确保Lambda表达式捕获的变量在 `std::function` 调用时仍然有效。特别是对于引用捕获，被捕获的变量必须在Lambda被调用时仍然存在。
+	- **性能考虑**：使用 `std::function` 存储Lambda表达式引入了类型擦除和间接调用，这可能导致性能开销。对于性能敏感的应用，请考虑这一点。
+	  
+	  总结来说，`std::function` 是存储和使用Lambda表达式的强大工具，尤其是当Lambda表达式需要在创建它们的作用域之外被调用时。这提供了极大的灵活性，使得可以方便地传递和存储复杂的操作。
 - ## 和 [[函数指针]]如何选择
 	- 当你需要指向特定类型的函数，并且关心性能时，使用**函数指针**。
 	- 当你需要更大的灵活性，或者要存储不仅仅是普通函数的可调用对象时，使用**`std::function`**。
+-
