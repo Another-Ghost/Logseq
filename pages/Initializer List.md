@@ -32,7 +32,7 @@ alias:: 初值列, 初始化列表
 - **清晰**：初始化列表提供了一种更直观的初始化方式。
 - **效率**：对于某些类型，使用初始化列表可能比逐个赋值更有效率。
 - **防止窄化转换**：初始化列表禁止窄化转换，有助于避免数据丢失的错误。
-- ### [[]std::initializer_list`
+- ### [[std::initializer_list]]
   C++11还引入了`std::initializer_list`类型，这是一种特殊的容器，用于表示初始化列表。它允许构造函数或函数接受任意数量的参数。
   ```cpp
   void myFunction(std::initializer_list<int> list) {
