@@ -25,7 +25,7 @@ alias:: 链接, 链接性
 				  logseq.order-list-type:: number
 					- 它们是[[内联]]的（自[[C++17]]起）；
 					  logseq.order-list-type:: number
-					- 它们在[[module interface unit]]的范围内声明（如果有的话）或模块分区之外（自[[C++20]]起）；
+					- 它们在[[module interface unit]]的范围内声明（如果有的话）或模块分区之外；
 					  logseq.order-list-type:: number
 					- 它们被显式声明为 extern；
 					  logseq.order-list-type:: number
@@ -38,7 +38,7 @@ alias:: 链接, 链接性
 			- 该名称可以从其他[[translation unit]]的[[作用域]]引用。
 			  id:: 655af3ab-dafe-41d1-aae6-e3493f4aa250
 			  具有[[外部链接]]的变量和函数还具有[[language linkage]]，这使得能够 链接 使用不同 编程语言 编写的[[翻译单元]]。
-			- 在[[命名空间作用域]]声明的以下 名称 具有[[外部链接]]（除非它们在**未命名**的命名空间中声明，或者它们的声明附加到命名模块并且未导出（自[[C++20]]起）)：
+			- 在[[命名空间作用域]]声明的以下 名称 具有[[外部链接]]（除非它们在**未命名**的命名空间中声明，或者它们的声明附加到[[命名模块]]并且未导出 )：
 				- 未在上述列出的函数和变量（包括**未声明为[[static]]**的函数、**未声明为static** 的 **非const** 变量，以及任何 声明为[[extern]]的变量）；
 				  logseq.order-list-type:: number
 				- [[枚举]]；
