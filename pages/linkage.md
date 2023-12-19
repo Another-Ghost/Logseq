@@ -25,7 +25,7 @@ alias:: 链接, 链接性
 				  logseq.order-list-type:: number
 					- 它们是[[内联]]的（自[[C++17]]起）；
 					  logseq.order-list-type:: number
-					- 它们在[[module interface unit]]的范围内声明（如果有的话）或模块分区之外（自[[C++20]]起）；
+					- 它们在[[module interface unit]]的范围内声明（如果有的话）或模块分区之外；
 					  logseq.order-list-type:: number
 					- 它们被显式声明为 extern；
 					  logseq.order-list-type:: number
