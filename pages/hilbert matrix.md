@@ -17,6 +17,9 @@ alias:: 希尔伯特矩阵
 	  logseq.order-list-type:: number
 	- **条件数：** 希尔伯特矩阵的条件数随着阶数 \( n \) 的增加而迅速增大。这使得在数值计算中使用希尔伯特矩阵时需要特别小心，因为矩阵的条件数大可能导致数值稳定性的问题。
 	  logseq.order-list-type:: number
+	  #+BEGIN_PINNED
+	  ![image.png](../assets/image_1703105709659_0.png) 
+	  #+END_PINNED
 	- **插值性质：** 希尔伯特矩阵在插值问题中具有重要应用。对于给定的函数值，通过求解线性方程组 \( H_n \mathbf{c} = \mathbf{f} \)，其中 \( \mathbf{c} \) 是待定系数向量，可以得到一个多项式插值。
 	  logseq.order-list-type:: number
 	- **逆矩阵：** 希尔伯特矩阵的逆矩阵也可以通过分析表达式给出，但由于其特殊结构，逆矩阵的元素包含大量的整数和分数，因此通常不直接用于计算。
