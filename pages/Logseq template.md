@@ -1,16 +1,16 @@
-# Definition
+## Definition
 template:: definition
 	- logseq.order-list-type:: number
-- # Theorem
+- ## Theorem
   id:: 64bdad83-1ad6-4a87-affb-ed5fcbddea0d
   template:: theorem
 	- logseq.order-list-type:: number
-- ## Corollary
+- ### Corollary
   template:: corollary
 	- logseq.order-list-type:: number
 - ## Proof
   template:: proof
-- # Summary
+- ## Summary
   template:: Summary
 	- logseq.order-list-type:: number
 - [[域]] $\mathbb{F}$ 上[[n维线性空间]] $V$
