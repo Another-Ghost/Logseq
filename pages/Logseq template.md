@@ -8,7 +8,7 @@ template:: definition
 - ### Corollary
   template:: corollary
 	- logseq.order-list-type:: number
-- ## Proof
+- ### Proof
   template:: proof
 - ## Summary
   template:: Summary

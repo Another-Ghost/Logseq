@@ -1,4 +1,4 @@
-alias:: 相容
+alias:: 相容, 子相容性, 相容性
 
 - 对任何[[向量]] $\bold x\in\mathbb{R}^n$ 及 $\boldsymbol A\in\mathbb{R}^{n\times n}$ 都成立
   $$

@@ -8,7 +8,7 @@ alias:: 若尔当标准型, Jordan 标准型
 	  $$
 	  那么 $V$ 中存在一个[[基]], 使得 $\cal A$ 在此[[基下的矩阵]] $\boldsymbol{A}$ 为[[Jordan 形矩阵]], 其全部 *主对角元* 是 $\cal A$ 的全部[[特征值]]; 
 	  特征值 $\lambda_i$ 在 *主对角线* 上出现的 *次数* 等于 $\lambda$ 的[[代数重数]], 
-	  *主对角元* $\lambda_i$ 的[[Jordan块]]的总数 $N_{j}$ 为
+	  *主对角元* $\lambda_i$ 的[[Jordan 块]]的总数 $N_{j}$ 为
 	  $$
 	  N_{j}=n-\operatorname{rank}(\mathcal{A}-\lambda_{j}I)
 	  $$
@@ -17,7 +17,7 @@ alias:: 若尔当标准型, Jordan 标准型
 	  N_{j}(t)=\operatorname{rank}(\mathcal{A}-\lambda_{j}I)^{t+1}+\operatorname{rank}(\mathcal{A}-\lambda_{j}I)^{t-1}-2\operatorname{rank}(\mathcal{A}-\lambda_{j}I)^{t}
 	  $$
 	  $1\leqslant t\leqslant l_{j}, j=1,2,\cdots,s$. 这个 [[Jordan 形矩阵]] $A$称为 $\cal A$ 的[[Jordan 标准形]]; 
-	  除去[[Jordan 块]]的 *排列次序* 外, $\cal A$ 的*Jordan标准形* 是**唯一**的.
+	  除去[[Jordan 块]]的 *排列次序* 外, $\cal A$ 的 *Jordan标准形* 是**唯一**的.
 		- ## Corollary
 			- $\mathbb{F}$ 上 [[n级矩阵]] $\boldsymbol{A}$ [[相似]]于一个[[Jordan 标准型]] $\Longleftrightarrow \boldsymbol{A}$ 的[[最小多项式]] $m(\lambda)$ 或 [[特征多项式]] $f(\lambda)$ 在 $F(\lambda)$ 中可分解成[[一次因式]]的[[乘积]].
 			  logseq.order-list-type:: number
