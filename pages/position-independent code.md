@@ -59,3 +59,4 @@ alias:: PIC, 位置无关代码
 		- 这次通过 `GOT[4]` 的间接跳转会将控制直接转移到 `addvec` 。
 		  logseq.order-list-type:: number
 		- ![image.png](../assets/image_1701284043158_0.png)
+-
