@@ -15,6 +15,7 @@
 	  >This is still true when $f$ is a [[complex]] function.
 	- Suppose $f$ and $g$ are defined on $[a, b]$ and are [[differentiable]] at a
 	  logseq.order-list-type:: number
+	  collapsed:: true
 	  point $x\in [a, b]$. Then $f+ g$, $fg$, and $f/g$ are **differentiable** at $x$, and
 		- $(f + g)'(x) = f'(x) + g'(x)$;
 		  logseq.order-list-type:: number
@@ -24,15 +25,18 @@
 		  logseq.order-list-type:: number
 	- Suppose $f$ is continuous on $[a, b]$, $f'(x)$ exists at some point $x\in [a, b]$, $g$ is defined on an [[interval]] $I$ which contains the [[range]] of $f$, and $g$ is [[differentiable]] at the point $f(x)$. If 
 	  logseq.order-list-type:: number
+	  collapsed:: true
 	  $$h(t) = g(f(t)),\quad a\le t\le b$$
 	  then $h$ is [[differentiable]] at $x$, and
 	  $$h'(x)=g'(f(x))f'(x)$$
+	  ([[composition]])
 		- > [proof](https://www.bilibili.com/video/BV1px411C7bL?t=1673.7&p=21)
 	- Let $f$ be defined on $[a, b]$; if $f$ has a [[local maximum]] at a point $x\in (a, b)$, and if $f'(x)$ **exists**([[differentiable]]), then $f'(x) = 0$.
 	  logseq.order-list-type:: number
 	  The analogous statement for [[local minima]] is of course also true.
 	- Suppose $f$ is [[differentiable]] in $(a, b)$.
 	  logseq.order-list-type:: number
+	  collapsed:: true
 		- If $f'(x)\ge 0$ for all $x\in (a, b)$, then $f$ is [[monotonically increasing]].
 		  logseq.order-list-type:: number
 		- If $f'(x) = 0$ for all $x\in (a, b)$, then $f$ is [[constant]].
@@ -41,6 +45,7 @@
 		  logseq.order-list-type:: number
 	- [[Darboux's Theorem]]
 	  logseq.order-list-type:: number
+	  collapsed:: true
 	  Suppose $f$ is a [[real]] [[differentiable]] function on $[a, b]$ and suppose
 	  $f'(a) <\lambda <f'(b)$. Then there is a point $x\in (a, b)$ such that $f'(x) = \lambda$.
 	  A similar result holds of course if $f'(a) > f'(b)$.
@@ -50,6 +55,7 @@
 		  If $f$ is [[differentiable]] on $[a, b]$, then $f'$ cannot have any [[simple discontinuities]] on $[a, b]$.
 	- [[L'Hospital's rule]]
 	  logseq.order-list-type:: number
+	  collapsed:: true
 	  $f$ and $g$ are [[real]] and [[differentiable]] in $(a, b)$, and $g^{\prime}(x) \neq 0$ for all $x \in(a, b)$, where $-\infty \leq a<b \leq+\infty$. Suppose 
 	  $$\frac{f^{\prime}(x)}{g^{\prime}(x)}\rightarrow A \text { as } x \rightarrow a\text{.}$$
 	  If
