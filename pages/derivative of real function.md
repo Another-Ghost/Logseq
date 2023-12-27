@@ -27,9 +27,9 @@
 	  logseq.order-list-type:: number
 	  collapsed:: true
 	  $$h(t) = g(f(t)),\quad a\le t\le b$$
+	  ([[([[composition]])]])
 	  then $h$ is [[differentiable]] at $x$, and
 	  $$h'(x)=g'(f(x))f'(x)$$
-	  ([[composition]])
 		- > [proof](https://www.bilibili.com/video/BV1px411C7bL?t=1673.7&p=21)
 	- Let $f$ be defined on $[a, b]$; if $f$ has a [[local maximum]] at a point $x\in (a, b)$, and if $f'(x)$ **exists**([[differentiable]]), then $f'(x) = 0$.
 	  logseq.order-list-type:: number
