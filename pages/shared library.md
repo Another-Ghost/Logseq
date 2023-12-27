@@ -1,4 +1,4 @@
-alias:: 共享库
+alias:: 共享库, shared object
 
 - ## [[静态库]]的缺点
   id:: 65636720-f9e9-46a4-90ec-00bccc6469dc
@@ -74,3 +74,11 @@ alias:: 共享库
 		- #+BEGIN_PINNED
 		  [[Java]]定义了一个标准调用规则，叫做 Java本地接口(Java Native Interface, JNI),它允许 Java程序调用“本地的"C和 C++函数。 JNI的基本思想是将本地 C函数（如 foo)编译到一个共享库中（如 foo.so)。当一个正在运行的 Java程序试图调用函数 foo时， Java解释器利用 dlopen接口（或者与其类似的接口）动态链接和加载 foo.so,然后再调用 foo。
 		  #+END_PINNED
+- ## Summary
+	- **动态加载**:
+	  logseq.order-list-type:: number
+		- 当一个程序启动并且需要某个共享库时，动态链接器（如Linux中的ld.so）会将该库加载到进程的地址空间中。如果同一库已被其他进程加载，则操作系统可能只会映射该库到新进程的地址空间中，而不是重新加载它。
+	- **地址映射**:
+	  logseq.order-list-type:: number
+		- 共享库的[[代码段]]（即只读部分，如函数实现）在物理内存中通常只有一份拷贝，但会映射到每个使用它的进程的虚拟地址空间中。每个进程中的映射地址可能不同，这取决于进程的地址空间布局和其他已加载模块的位置。
+-
