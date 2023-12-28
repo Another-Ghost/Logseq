@@ -1,4 +1,4 @@
-alias:: 差商
+alias:: 差商, 均差
 
 - ## Definition
 	- 对于[[函数]] \( f : \mathbb{R} \to \mathbb{R} \)，[[差商]]定义为：
