@@ -1,6 +1,12 @@
 alias:: 逼近, 函数逼近, function approximation
 
 - 逼近（Approximation）是数学和数值分析中的一个重要概念，指的是使用某种**简化的数学表达式**来近似表示一个**复杂的函数或数据集**。逼近的目的是在保持一定精度的同时简化问题，使其更易于分析和计算。
+- 可用一组在$C[a,b]$上线性无关的函数集合$\left\{\varphi_i(x)\right\}_{i=0}^n$来逼近 $f(x)\in C[a$, $b$],元素 $\varphi(x)\in\Phi= \mathrm{span}\{\varphi_0(x),\varphi_1(x),\cdots,\varphi_n(x)\}\subset\mathbb{C}[a,b]$,表示为
+  $$
+  \varphi(x)=a_0\varphi_0(x)+a_1\varphi_1(x)+\cdots+a_n\varphi_n(x).
+  $$
+  函数逼近问题就是对任何 $f\in C[a,b]$,在子空间 $\Phi$ 中找一个元素 $\varphi^*(x)\in\Phi$,使 $f(x)$ 一
+  $\varphi^*(x)$在某种意义下最小。
 - ### 方法
   逼近方法的选择取决于问题的性质、所需的精度以及可用的计算资源。常见的逼近方法包括：
 	- 1. **[[多项式逼近]]**：
