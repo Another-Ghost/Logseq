@@ -6,16 +6,14 @@ alias:: 自伴随矩阵, self-adjoint matrix
   其中，\(\boldsymbol{A}^*\) 是 \(\boldsymbol{A}\) 的共轭转置。
 - ### 性质
 	- 1. **对称性**：
-	   Hermite 矩阵是[对称]()的，即 \(\boldsymbol{A}_{ij} = \overline{\boldsymbol{A}_{ji}}\)，这里 \(\overline{\boldsymbol{A}_{ji}}\) 表示 \(\boldsymbol{A}_{ji}\) 的共轭。
+	   Hermite 矩阵是[对称]([[对称矩阵]])的，即 \(\boldsymbol{A}_{ij} = \overline{\boldsymbol{A}_{ji}}\)，这里 \(\overline{\boldsymbol{A}_{ji}}\) 表示 \(\boldsymbol{A}_{ji}\) 的[[共轭]]。
 	- 2. **实数对角线**：
-	   Hermite矩阵的对角元素都是实数。
+	   Hermite 矩阵的[[对角元素]]都是实数。
 	- 3. **特征值是实数**：
-	   Hermite矩阵的所有特征值都是实数。
-	- 4. **酉对角化**：
-	   每个Hermite矩阵都可以被一个酉矩阵对角化。这意味着存在一个酉矩阵 \(\boldsymbol{U}\) 和一个实数对角矩阵 \(\boldsymbol{D}\)，使得 \(\boldsymbol{A} = \boldsymbol{U}\boldsymbol{D}\boldsymbol{U}^*\)。
+	   Hermite矩阵的所有[[特征值]]都是实数。
 - ### 相关定理
-  1. **谱定理（Spectral Theorem）**：
-   对于任何Hermite矩阵 \(\boldsymbol{A}\)，都存在一个酉矩阵 \(\boldsymbol{U}\)，使得 \(\boldsymbol{A}\) 可以被对角化为 \(\boldsymbol{U}\boldsymbol{D}\boldsymbol{U}^*\)，其中 \(\boldsymbol{D}\) 是对角矩阵，且对角线上的元素是 \(\boldsymbol{A}\) 的特征值。
+  1. **[[谱定理]]**：
+   对于任何Hermite矩阵 \(\boldsymbol{A}\)，都存在一个[[酉矩阵]] \(\boldsymbol{U}\)，使得 \(\boldsymbol{A}\) 可以被[[对角化]]为 \(\boldsymbol{U}\boldsymbol{D}\boldsymbol{U}^*\)，其中 \(\boldsymbol{D}\) 是[[对角矩阵]]，且对角线上的元素是 \(\boldsymbol{A}\) 的[[特征值]]。
   
   2. **正定性**：
    如果对于所有非零向量 \(\boldsymbol{v}\)，都有 \(\boldsymbol{v}^*\boldsymbol{A}\boldsymbol{v} > 0\)，则Hermite矩阵 \(\boldsymbol{A}\) 是正定的。
