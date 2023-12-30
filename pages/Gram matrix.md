@@ -22,10 +22,11 @@ alias:: Gram 矩阵, 格拉姆矩阵
 	  logseq.order-list-type:: number
 	- **[[谱定理]]**：
 	  logseq.order-list-type:: number
-		- 由于Gram矩阵是实对称矩阵（或在复数域上是Hermite矩阵），根据谱定理，它可以被对角化。这意味着存在一个正交（或酉）矩阵 \( Q \) 和一个对角矩阵 \( D \)，使得 \( G = QDQ^T \)（或在复数域上为 \( G = QDQ^* \)），其中 \( D \) 的对角线元素是 \( G \) 的特征值。
+		- 由于Gram矩阵是实对称矩阵（或在复数域上是Hermite矩阵），根据[[谱定理]]，它可以被[[对角化]]。这意味着存在一个[[正交矩阵]]（或[[酉矩阵]]）矩阵 \( Q \) 和一个对角矩阵 \( D \)，使得 \( G = QDQ^T \)（或在复数域上为 \( G = QDQ^* \)），其中 \( D \) 的对角线元素是 \( G \) 的特征值。
 		  logseq.order-list-type:: number
 		  
 		  5. **正交分解定理**：
 		- 对于任何向量 \( \mathbf{u} \) 和Gram矩阵对应的向量空间，都存在唯一的分解，使得 \( \mathbf{u} \) 可以写成空间中向量的线性组合和垂直于该空间的部分之和。
 		  logseq.order-list-type:: number
+-
 -
