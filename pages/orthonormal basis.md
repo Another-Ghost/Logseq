@@ -1,4 +1,4 @@
-alias:: 标准正交基
+alias:: 标准正交基, 正交归一基
 
 - # Definition
   id:: 64ebfcb7-a5b2-4178-a125-fe9da35ddc19

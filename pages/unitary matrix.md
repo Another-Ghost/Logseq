@@ -1,7 +1,9 @@
-## 定义
-一个 \( n \times n \) 的[[复数矩阵]] \(\boldsymbol  U \) 被称为[[酉矩阵]]，如果它满足以下条件：
-$$ \boldsymbol U^*\boldsymbol U = \boldsymbol {UU}^* =\boldsymbol  I $$
-其中，\(\boldsymbol  U^* \) 表示 \(\boldsymbol  U \) 的[[共轭转置]]（也称[[伴随矩阵]]），\(\boldsymbol  I \) 是 \( n \times n \) 的单位矩阵。
+alias:: 酉矩阵
+
+- ## 定义
+  一个 \( n \times n \) 的[[复数矩阵]] \(\boldsymbol  U \) 被称为[[酉矩阵]]，如果它满足以下条件：
+  $$ \boldsymbol U^*\boldsymbol U = \boldsymbol {UU}^* =\boldsymbol  I $$
+  其中，\(\boldsymbol  U^* \) 表示 \(\boldsymbol  U \) 的[[共轭转置]]（也称[[伴随矩阵]]），\(\boldsymbol  I \) 是 \( n \times n \) 的单位矩阵。
 - ### 相关定理
 	- **列向量和行向量构成正交基**：
 	  logseq.order-list-type:: number
