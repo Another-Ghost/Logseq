@@ -1,4 +1,4 @@
-alias:: 施密特正交化
+alias:: 施密特正交化, Gram–Schmidt process, Schmidt orthogonalization
 
 - [[施密特正交化]]是从一组[[线性独立]]的向量出发，逐步构造出一组[[正交]]向量的方法。
   这个过程基于一个简单的想法：从给定的向量集合中减去它们在已生成的正交向量上的[[投影]]，从而产生一个新的正交向量。
@@ -15,6 +15,7 @@ alias:: 施密特正交化
 	  $$ \text{proj}_{\boldsymbol{u}_j}(\boldsymbol{v}_k) = \frac{\langle \boldsymbol{v}_k, \boldsymbol{u}_j \rangle}{\langle \boldsymbol{u}_j, \boldsymbol{u}_j \rangle} \boldsymbol{u}_j$$
 	  
 	  4. **结果**：经过上述步骤，我们得到一组正交向量 \(\{ \boldsymbol{u}_1, \boldsymbol{u}_2, \ldots, \boldsymbol{u}_n \}\)。
+	- ![Gram-Schmidt_orthonormalization_process.gif](../assets/Gram-Schmidt_orthonormalization_process_1704072551602_0.gif)
 - ### 直观解释
   直观上，施密特正交化的每一步都在确保新生成的向量与之前生成的所有向量正交。通过减去在已有正交向量上的投影，新向量被“校正”为与已有正交向量集合正交。
 - ### 应用
