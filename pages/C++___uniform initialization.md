@@ -41,4 +41,3 @@ alias:: 统一初始化, uniform initialization
 	- **减少代码歧义（Reduces Code Ambiguity）**：传统的初始化方式在某些情况下可能产生歧义，而统一初始化减少了这种可能性。
 	- **提高代码清晰度（Improves Code Clarity）**：使用统一的语法来初始化所有类型的数据，使得代码更加一致和清晰。
 	- **增强类型安全（Enhances Type Safety）**：统一初始化不允许隐式的窄化转换（Narrowing Conversions），这意味着在某些可能导致数据丢失的情况下，编译器会产生错误。
--
