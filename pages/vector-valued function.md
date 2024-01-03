@@ -2,9 +2,9 @@ alias:: 多元函数
 
 - ### 定义
   
-  设 \( f \) 是一个定义在 \( \mathbb{R}^n \) 上的函数，其中 \( \mathbb{R}^n \) 是 \( n \) 维[[实数空间]]。则 \( f \) 可表示为：
+  设 \( f \) 是一个定义在 \( \mathbb{R}^n \) 上的[[函数]]]，其中 \( \mathbb{R}^n \) 是 \( n \) 维[[实数空间]]。则 \( f \) 可表示为：
   $$ f: \mathbb{R}^n \rightarrow \mathbb{R}, \quad f(x_1, x_2, \ldots, x_n) = y $$
-  其中，\( x_1, x_2, \ldots, x_n \in \mathbb{R} \) 是自变量，\( y \in \mathbb{R} \) 是因变量。
+  其中，\( x_1, x_2, \ldots, x_n \in \mathbb{R} \) 是[[自变量]]，\( y \in \mathbb{R} \) 是[[因变量]]。
 - ### 性质
   
   1. **连续性**：若对于任意 \( \epsilon > 0 \)，存在 \( \delta > 0 \) 使得当 \( ||(x_1, x_2, \ldots, x_n) - (a_1, a_2, \ldots, a_n)|| < \delta \) 时，有 \( |f(x_1, x_2, \ldots, x_n) - f(a_1, a_2, \ldots, a_n)| < \epsilon \)，则 \( f \) 在点 \( (a_1, a_2, \ldots, a_n) \) 连续。
