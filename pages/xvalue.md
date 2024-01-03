@@ -1,4 +1,4 @@
-alias:: eXpiring value
+alias:: eXpiring value, 将亡值
 
 - `xvalue` 表达式的特点如下：
 	- 对象成员表达式 `a.m`，其中 `a` 是[[右值]]，`m` 是对象类型的 *非静态数据成员* 。
