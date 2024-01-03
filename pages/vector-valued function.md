@@ -24,4 +24,5 @@ alias:: 多元函数
 	  } \frac{\partial g_i}{\partial x_j} $$
 	- 3. **[[极值定理]]**：若函数 \( f \) 在点 \( \mathbf{a} \) 取得[[局部极值]]且在该点[[可微]]，则 \( \nabla f(\mathbf{a}) = \mathbf{0} \)。
 	- 4. **[[拉格朗日乘数法]]**：用于求解在约束条件 \( g(x_1, x_2, \ldots, x_n) = 0 \) 下 \( f(x_1, x_2, \ldots, x_n) \) 的极值问题。如果 \( f \) 和 \( g \) 在点 \( \mathbf{a} \) [[可微]]且 \( \nabla g(\mathbf{a}) \neq \mathbf{0} \)([[梯度]])，则存在 \( \lambda \in \mathbb{R} \) 使得 \( \nabla f(\mathbf{a}) = \lambda \nabla g(\mathbf{a}) \)。
-	- 5. **[[隐函数定理]]**：若函数 \( F(x_1, x_2, \ldots, x_n, y) = 0 \) 在点 \( (a_1, a_2, \ldots, a_n, b) \) [[可微]]且 \( \frac{\partial F}{\partial y} \neq 0 \)，则存在一个[[局部函数]] \( y = f(x_1, x_2, \ldots, x_n) \) 使得 \( F(x_1, x_2, \ldots, x_n, f(x_1, x_2, \ldots, x_n)) = 0 \)。
+	- 5. **[[隐函数定理]]**：若函数 \( F(x_1, x_2, \ldots, x_n, y) = 0 \) 在点 \( (a_1, a_2, \ldots, a_n, b) \) [[可微]]且 \( \frac{\partial F}{\partial y} \neq 0 \)，则存在一个[[局部函数]] \( y = f(x_1, x_2, \ldots, x_n) \) 使得 
+	  $$ F(x_1, x_2, \ldots, x_n, f(x_1, x_2, \ldots, x_n)) = 0 $$。
