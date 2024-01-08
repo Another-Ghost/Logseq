@@ -76,7 +76,7 @@ alias:: 向量函数的微分, 向量函数的导数, 多元函数的导数, 多
 		  $$\operatorname{grad} f(x) = \boldsymbol J f(x)$$
 		  称为数量函数 $f$ 的[[梯度]].
 - # Theorem
-	- Let $\mathbf{f}=\left(f_{1}, \ldots, f_{k}\right)$, then $\mathbf{f}$ then $\mathbf{f}$ is [[differentiable at a point]]  $x$  **if and only if** each of the component functions  $f_{1}, \ldots, f_{k}$ is **differentiable** at $x$, and
+	- Let $\mathbf{f}=\left(f_{1}, \ldots, f_{k}\right)$, then $\mathbf{f}$ is [[differentiable at a point]]  $x$  **if and only if** each of the component functions  $f_{1}, \ldots, f_{k}$ is **differentiable** at $x$, and
 	  logseq.order-list-type:: number
 	  $$\mathbf{f}^{\prime}=\left(f_{1}^{\prime}, \ldots, f_{k}^{\prime}\right)$$
 	- Suppose $\mathbf{f}$ and $\mathbf{g}$ are defined on $[a, b]$ and are [[differentiable]] at a point $x\in [a, b]$. Then $\mathbf{f}+ \mathbf{g}$, $\mathbf{f}\cdot\mathbf{g}$([[inner product]]), and are **differentiable** at $x$, and

@@ -6,7 +6,6 @@
 - `\mathcal` 和 `\mathscr` 其实是同一个东西——它们都是手写体，只不过 `\mathcal` 是「非正式的书法体」，而 `\mathscr` 则更接近于铜板体
 - `\ `, `\:`, `~`都是空格。
 - 远大于 $\gg$
--
 - 分块矩阵增广
   \begin{pmatrix}
    a & \begin{matrix} 0 & 0 & \dots & 0 \end{matrix} & b^{(1)}_1\\

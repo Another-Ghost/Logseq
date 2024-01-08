@@ -13,12 +13,7 @@
 	  abc
 	  #+END_COMMENT
 - 输入`<`会出现一些模版，如
-	- #+BEGIN_QUOTE
-	  用于参考引用（外连接等）
-	  #+END_QUOTE
-	- #+BEGIN_NOTE
-	  
-	  #+END_NOTE
+	-
 	- #+BEGIN_TIP
 	  
 	  #+END_TIP
@@ -34,14 +29,20 @@
 	- #+BEGIN_WARNING
 	  
 	  #+END_WARNING
-	- id:: 652d29aa-61ab-49b4-99a9-e70f15881321
-	  #+BEGIN_EXAMPLE
+	- #+BEGIN_NOTE
+	  
+	  #+END_NOTE
+	- #+BEGIN_EXAMPLE
 	  abc
 	  #+END_EXAMPLE
+	- #+BEGIN_QUOTE
+	   用于参考引用（外连接等）
+	  #+END_QUOTE
 	- #+BEGIN_CENTER
 	  abc
 	  #+END_CENTER
-	-
+-
+-
 - 标题可以用 Parent/Child 这种来形成层级结构
 - ctrl+shift+i 打开调试
-- <
+-
