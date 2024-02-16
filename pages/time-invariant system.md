@@ -15,4 +15,4 @@ alias:: 时不变系统
 	  https://www.zhihu.com/question/25311824/answer/77292034
 	- $y(n)=x(n^2)$ 为什么是时变系统？
 		- 对于延迟输入的信号 $a'(n) = a(n-n_0)$ ，
-		  因为 $T[x(n-n_0)]$=T(
+		  因为 $T[x(n-n_0)]=x(n^2)$ ，所以 $T[x(n-n_0)]
