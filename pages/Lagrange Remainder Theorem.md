@@ -1,3 +1,5 @@
+alias:: 插值余项定理
+
 - # Theorem
   Suppose $f$ is a [[real]] function on $[a, b]$, $n$ is a **positive integer**, f^{(n-1)} is [[continuous]] on $[a, b]$, $f^{(n)}(x)$ exists for every $t\in(a, b)$. Let $\alpha$, $\beta$ be *distinct points* of $[a, b]$, and define
   $$P(x)=\sum_{k=0}^{n-1}\frac{f^{(k)}(\alpha)}{k!}(x-\alpha)^k$$

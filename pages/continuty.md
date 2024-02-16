@@ -42,7 +42,7 @@ alias:: continuous, 连续
 - # Continuity and Connectedness
 	- If $f$ is a [[continuous mapping]] of a metric space $X$ into a metric space $Y$, and if $E$ is a [[connected]] subset of $X$, then $f(E)$ is **connected**.
 	  logseq.order-list-type:: number
-	- [[intermediate value theorem]]
+	- ### [[intermediate value theorem]]
 	  logseq.order-list-type:: number
 	  Let $f$ be a [[real continuous function]] on the [[interval]] $[a, b]$. If $f(a)<f(b)$ and if $c$ is a [[number]] such that $f(a)<c<f(b)$, then there exists a point $x \in(a, b)$ such that $f(x)=c$.
 	  A similar result holds, of course, if $f(a)>f(b)$.
