@@ -10,4 +10,5 @@ alias:: 时不变系统
 	- 检查一个系统是否是时不变系统, 就是检查其是否满足 $(1)$ 式。
 	- > 主要看 $n$ 是否经过运算。
 - ![image.png](../assets/image_1708093988485_0.png)
--
+- 请问y(n)=x(-n)是时变系统还是时不变的？ - Maple的回答 - 知乎
+  https://www.zhihu.com/question/25311824/answer/77292034
