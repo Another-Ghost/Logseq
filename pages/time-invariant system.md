@@ -13,3 +13,4 @@ alias:: 时不变系统
 - ## 例子
 	- 请问y(n)=x(-n)是时变系统还是时不变的？ - Maple的回答 - 知乎
 	  https://www.zhihu.com/question/25311824/answer/77292034
+	-
