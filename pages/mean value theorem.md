@@ -1,3 +1,5 @@
+alias:: 中值定理, 微分中值定理
+
 - [[Rolle's theorem]]
   logseq.order-list-type:: number
   If $f$ is a [[continuous]] [[real]] function on $[a, b]$ which  are [[differentiable]] in $(a, b)$ and $f(a)=f(b)$, then there is a point $c\in(a,b)$ at which $f'(c) = 0$.

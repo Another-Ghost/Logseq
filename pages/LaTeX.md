@@ -11,3 +11,4 @@
    a & \begin{matrix} 0 & 0 & \dots & 0 \end{matrix} & b^{(1)}_1\\
    \begin{matrix} 0 \\ 0 \\ \vdots \\[1ex] 0 \end{matrix} & \huge{\boldsymbol A^{(2)}} & \huge{\boldsymbol b^{(2)}}
   \end{pmatrix}
+- $\textcircled{i}$

@@ -42,4 +42,5 @@
 	- C++标准库中有一个特性可以在这里提供帮助，那就是 `std:thread::hardware_concurrency` 。这个函数返回一个指示，显示在程序的给定执行过程中，真正能够并行运行的线程数量。
 	  collapsed:: true
 		- >例如，在多核系统中，这可能是CPU核心的数量。这只是一个提示，如果这个信息不可用，函数可能会返回0，但它可以作为在线程之间划分任务的有用指南。
+- ## [[std::thread::id]]
 - ## [[sharing data between threads]]

@@ -1,6 +1,5 @@
-alias:: infinite series, 级数
+alias:: infinite series, 级数, 无穷级数
 
--
 - # Definition
   #SameForComplex
 	- Given a [[sequence]] $\{a_n\}$ (of [[complex numbers]]), we associate a **sequence** $\{s_n\}$, where

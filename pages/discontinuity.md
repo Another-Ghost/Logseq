@@ -1,4 +1,4 @@
-alias:: discontinuous, discontinuities
+alias:: discontinuous, discontinuities, partition point, 分段点
 
 - # Definition
 	- If $x$ is a **point** in the [[domain of definition]] of the [[function]] $f$ at which $f$ is not [[continuous]], we say that $f$ is [[discontinuous]] at $x$, or that $f$ has a [[discontinuity]] at $x$.

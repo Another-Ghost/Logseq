@@ -1,9 +1,9 @@
-alias:: 泰勒级数
+alias:: 泰勒级数, Taylor expansion, 泰勒展开
 
 - The [[Taylor series]] of a [[real]] or [[complex]] *function* $f$ that is [[infinitely]] [[differentiable]] **at** a [[real]] or [[complex]] number $a$ is the [[power series]]:
   $$\sum_{n=0}^{\infty}\frac{f^{(n)}(a)}{n!}(x-a)^n$$
 - With $a=0$, The [[Maclaurin series]] takes the form:
-  $$\sum_{n=0}^{infty}\frac{f^{(n)}(0)}{n!}x^n$$
+  $$\sum_{n=0}^{\infty}\frac{f^{(n)}(0)}{n!}x^n$$
 - # Examples
 	- The Taylor series of any [[polynomial]] is the polynomial itself.
 	  logseq.order-list-type:: number
@@ -32,7 +32,7 @@ alias:: 泰勒级数
 	  $$\sum_{n=0}^\infty \frac{(-1)^n}{(2n)!}x^{2n}=x-\frac{x^2}{2!}+\frac{x^4}{4!}-\cdots$$
 - # Taylor series of complex function
 	- ## Theorem
-	  设函数 $f(z)$ 在简单闭曲线 $C$ 所围成的[[region]] $\text{D}$ 内[[解析]]。$f(z)$展开成[[泰勒级数]]：
+	  设函数 $f(z)$ 在简单闭曲线 $C$ 所围成的[[region]] $\text{D}$ 内[[解析]]。$f(z)$ 展开成[[泰勒级数]]：
 	  $$f(z)=\sum_{n=0}^{\infty}\frac{f^{(n)}(z_0)}{n!}(z-z_0)^n$$
 	  有：
 	  $$\frac{f^{(n)}(z_0)}{n!}= \frac{1}{2\pi\mathrm{i}}\oint_{C}\frac{f(z)}{\left(z-z_0\right)^{n+1}}\mathrm{d}z$$
@@ -48,4 +48,5 @@ alias:: 泰勒级数
 		- The [[Maclaurin series]] of
 		  logseq.order-list-type:: number
 		  $$\frac{1}{1-z}=\sum_{n=0}^{\infty}z^{n},\quad \left|z\right|<1$$
+- ## [[多元函数泰勒展开]]
 -

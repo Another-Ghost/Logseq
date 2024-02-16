@@ -97,10 +97,11 @@ alias:: 向量函数的微分, 向量函数的导数, 多元函数的导数, 多
 	  $$\beta_{i}(\boldsymbol{h})\to0\quad(i=1,2,...,n).$$
 	- 设 $\boldsymbol f$ 在 $\boldsymbol x_0$ 处[[可微]]，则 $\boldsymbol f$  必在 $\boldsymbol x_0$ 处[[连续]]。
 	  logseq.order-list-type:: number
-	- 设[[开集]] $D\subset\mathbb{R}^n,f{:}D\to\mathbb{R}, \boldsymbol x_0\in D$.如果 $\mathrm{D}_if(x)(i=1,2,\cdots,n)$ 在 $x_0$ 的一个[[邻域]]中 *存在* 且在点 $\boldsymbol x_{0}$ 处[[连续]]，则 $f$ 在点 $x_{0}$ 处[[可微]].
+	- 设[[开集]] $D\subset\mathbb{R}^n,f{:}D\to\mathbb{R}, \boldsymbol x_0\in D$.如果 $\mathrm{D}_if(x)(i=1,2,\cdots,n)$ 在 $x_0$ 的一个[[邻域]]中 *存在* 且在点 $x_{0}$ 处[[连续]]，则 $f$ 在点 $x_{0}$ 处[[可微]].
 	  logseq.order-list-type:: number
-	- 多元函数[[偏导数]][[连续]]是其[[可微]]的 充分不必要条件 。
+	- ### [[偏导数连续定理]]
 	  logseq.order-list-type:: number
+	  多元函数[[偏导数]][[连续]]是其[[可微]]的 充分不必要条件 。
 		- #+BEGIN_PINNED
 		  一个著名的例子是函数 \( f(x, y) = \sqrt{x^2 + y^2} \)。这个函数在整个 \( \mathbb{R}^2 \) 上定义，并且在除了原点 \( (0, 0) \) 以外的所有地方都有连续的偏导数。在原点，偏导数存在并且为零，因为函数在任意方向接近原点时的变化率都是零。
 		  但是，当 \( (x, y) \) 接近 \( (0, 0) \) 时，偏导数并不连续，因为它们的值取决于接近原点的路径。例如，如果我们沿着直线 \( y = mx \) 接近原点，函数 \( f(x, y) \) 变成 \( f(x, mx) = \sqrt{1+m^2} |x| \)，其导数随 \( m \) 而变。这意味着，偏导数作为 \( (x, y) \) 的函数在原点附近不连续。

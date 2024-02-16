@@ -1,4 +1,4 @@
-alias:: 复数域
+alias:: 复数域, complex numbers, complex, 复数
 
 - # Definition
 	- A [[complex number]] is an [[ordered pair]] $(a, b)$ of [[real numbers]].

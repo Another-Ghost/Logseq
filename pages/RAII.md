@@ -1,4 +1,4 @@
-alias:: Resource Acquisition Is Initialization
+alias:: Resource Acquisition Is Initialization, 资源获取即初始化
 
 - 在C++中，[[RAII]]是一种管理资源生命周期的编程技术。它的核心思想是**利用C++对象的构造和析构机制来自动获取和释放资源**。这种方法尤其适用于管理如[[内存]]、[[文件句柄]]、[[互斥锁]]等资源，能够有效防止资源泄露和异常安全问题。
 - RAII的工作原理主要依赖于两个方面：
