@@ -2,7 +2,15 @@ alias:: 罗德里格斯公式
 
 - ### 罗德里格斯公式的一般形式
   对于某些正交多项式 \( P_n(x) \)，罗德里格斯公式可以表示为：
+<<<<<<< HEAD
   $$ P_n(x) = \frac{1}{w(x) \cdot k_n} \frac{d^n}{dx^n} [q(x)^n w(x)] $$
+=======
+<<<<<<< HEAD
+  $$ P_n(x) = \frac{1}{w(x) \cdot k_n} \frac{d^n}{dx^n} [q(x)^n w(x)] $$
+=======
+  \[ P_n(x) = \frac{1}{w(x) \cdot k_n} \frac{d^n}{dx^n} [q(x)^n w(x)] \]
+>>>>>>> a248c038068cac24d7081fb376bc97464feb5673
+>>>>>>> f06c40ce77eed7015b880d0efee03cab2bbde75f
   其中：
 	- \( n \) 是多项式的阶数。
 	- \( w(x) \) 是与多项式相关的权函数。

@@ -31,6 +31,7 @@
   	scoped_thread t(std::thread(func(some_local_state))); // 4
   	do_something_in_current_thread();
   } // 5
+<<<<<<< HEAD
   ```
 - 下面是一个类似于 `std:thread` 的 `joining_thread` 类，它会在析构函数中自动加入，就像 `scoped_thread` 样。
 - ``` cpp
@@ -105,3 +106,6 @@
 -
 -
 -
+=======
+  ```
+>>>>>>> a248c038068cac24d7081fb376bc97464feb5673
