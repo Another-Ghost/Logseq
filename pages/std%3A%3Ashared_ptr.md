@@ -12,7 +12,7 @@
 - ## Multi-thread
   id:: 6541eb27-d1a2-4366-9088-c5a410762c37
   所有 成员函数（包括 复制构造函数 和 复制赋值函数 ）可以在不需要额外[[同步]]的情况下由多个[[线程]]调用，即使这些 实例 是 副本 并[[共享]]相同对象 的拥有权 。
-  如果多个 执行线程 在没有 同步 的情况下访问相同的 `shared_ptr` 实例，而这些访问中的任何一个使用了 `shared_ptr` 的 非const成员函数，那么会发生[[数据竞争]]；可以使用 `shared_ptr` 的[原子函数重载]([[std::atomic_...<std::shared_ptr>]])来防止数据竞争 。
+  如果多个 执行线程 在没有 同步 的情况下访问相同的 `shared_ptr` 实例，而这些访问中的任何一个使用了 `shared_ptr` 的 非 const 成员函数，那么会发生[[数据竞争]]；可以使用 `shared_ptr` 的[原子函数重载]([[std::atomic_...<std::shared_ptr>]])来防止数据竞争 。
 - # Notes
 	- 对象的所有权只能通过将其值[[复制构造]]或[[复制赋值]]来共享给另一个 `shared_ptr`。使用另一个 `shared_ptr` 拥有的 原始底层指针 来构造新的 `shared_ptr` 会导致 *未定义行为* 。
 	  logseq.order-list-type:: number
@@ -48,7 +48,7 @@
 		- [[allocator]]（[[type-erased]]）。
 		- 拥有 管理的对象 的 `shared_ptr` 数。
 		- 引用 管理的对象 的[[weak_ptr]]数。
-	- 当通过调用 `std::make_shared` 或 `std::allocate_shared` 创建 `shared_ptr` 时，[[control block]]和管理的对象的内存都是通过单次分配创建的。管理的对象在[[control block]]的数据成员中[[就地构造]]。当通过 `shared_ptr` 构造函数之一创建 `shared_ptr` 时，必须**分别为 管理的对象 和 控制块 分配内存**。在这种情况下，control block 存储管理的对象的指针。
+	- 当通过调用[[std::make_shared]]或 `std::allocate_shared` 创建 `shared_ptr` 时，[[control block]]和管理的对象的内存都是通过单次分配创建的。管理的对象在[[control block]]的数据成员中[[就地构造]]。当通过 `shared_ptr` 构造函数之一创建 `shared_ptr` 时，必须**分别为 管理的对象 和 控制块 分配内存**。在这种情况下，control block 存储管理的对象的指针。
 	  
 	  `shared_ptr` 直接持有的指针是由 `get()` 返回的指针，而控制块持有的 指针/对象 是在 [[sharadowner]]数 达到零时 将被删除的 指针/对象 。这些指针**不一定相等**。
 	  

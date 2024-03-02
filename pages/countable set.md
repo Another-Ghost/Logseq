@@ -5,4 +5,3 @@ alias:: enumerable, denumerable, 可数, countable, countable sets
 		- Speaking more loosely, we may say that the elements of any countable set can be ''arranged in a sequence".
 - # Theorem
 -
--

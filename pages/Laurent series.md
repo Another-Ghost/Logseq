@@ -37,7 +37,7 @@ alias:: 洛朗级数, Laurent expansion, 洛朗展开式
 	  $$
 	  f(z)=\sum_{n=-\infty}^{\infty}c_{n}(z-z_0)^{n}\tag{2}
 	  $$ 
-	  on $V,$ where
+	  on $V$ ([[Laurent expansion]]) , where
 	  $$
 	  c_{n}=\frac{1}{2\pi i}\oint_C\frac{f(\zeta)d\zeta}{(\zeta-z_0)^{n+1}}$$
 	  where $C$ is any [[simple closed curve]] around $z_0$ in $V$.

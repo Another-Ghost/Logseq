@@ -52,4 +52,6 @@ alias:: 欧拉公式
 	  $$e^{bi}=\cos b+i\sin b$$
 	  Finally, we get
 	  $$e^{xi}=\cos x+i\sin x$$
--
+- ## 欧拉公式的逆变换
+	- $$\cos(\theta) = \frac{e^{i\theta} + e^{-i\theta}}{2}$$
+	- $$\sin(\theta) = \frac{e^{i\theta} - e^{-i\theta}}{2i}$$

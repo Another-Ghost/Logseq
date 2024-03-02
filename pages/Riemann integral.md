@@ -1,8 +1,7 @@
 alias:: 黎曼积分, \mathscr{R}
 
 - # definition
-	- Suppose $f$ is a [[bounded]] [[real]] function defined on $[a, b]$. Corresponding to
-	  each [[partition]] P of $[a, b]$ we put
+	- Suppose $f$ is a [[bounded]] [[real]] function defined on $[a, b]$. Corresponding to each [[partition]] P of $[a, b]$ we put
 	  \begin{aligned}
 	  M_{i} =\sup f(x),\quad x_ {t-1}\le x \le x_ {i} \\
 	  m_{i} =\inf f(x),\quad x_{i-1}\leq x\leq x_{i}

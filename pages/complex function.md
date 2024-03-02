@@ -15,8 +15,6 @@ alias:: 复变量函数, 复变函数, 复变量
   $$u = u(x,y), D =v(x,y)$$
   这样，一个[[complex function]] $w=f(z)$ 就相当于一对*二元*[[实变函数]].
 	- > $w=f(z)$的性质就取决于 $u=u\left(x,y\right)$ 与$v=v\left(\begin{matrix}x,y\end{matrix}\right)$ 的性质。
-- # Theorem
-	-
 - # [[复变函数]]与[[实变函数]]
 	- 不同点：
 	  logseq.order-list-type:: number
