@@ -1,4 +1,4 @@
-alias:: 几何级数, 等比级数
+alias:: 几何级数, 等比级数, 等比数列
 
 - # Theorem
 	- logseq.order-list-type:: number

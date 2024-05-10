@@ -1,12 +1,12 @@
 - #C++Concurrency
 - `std::promise` 是 C++11 引入的一个模板类，用于在某个线程中存储一个值或异常，这个值或异常稍后可以通过一个与之关联的 `std::future` 对象在另一个线程中被检索。这使得 `std::promise` 和 `std::future` 一起，成为在不同线程间传递数据的一种重要机制。
 - ### 基本用法
-  
-  1. **创建 `std::promise` 对象**：首先，你需要创建一个 `std::promise` 对象。这个对象将被用来设置一个值或异常。
-  
-  2. **获取 `std::future` 对象**：通过调用 `std::promise` 对象的 `get_future()` 方法，你可以获得一个与该 `promise` 对象[[共享状态]]的[[std::future]]对象。这个 `future` 对象可以在另一个线程中用来访问 `promise` 中设置的值或异常。
-  
-  3. **设置值或异常**：你可以通过调用 `std::promise` 的 `set_value()` 方法来存储一个值，或者调用 `set_exception()` 方法来存储一个异常。**一旦设置了值或异常，与该 `promise` 相关联的 `future` 对象将变为[[就绪状态]]**。
+	- **创建 `std::promise` 对象**：首先，你需要创建一个 `std::promise` 对象。这个对象将被用来设置一个值或异常。
+	  logseq.order-list-type:: number
+	- **获取 `std::future` 对象**：通过调用 `std::promise` 对象的 `get_future()` 方法，你可以获得一个与该 `promise` 对象[[共享状态]]的[[std::future]]对象。这个 `future` 对象可以在另一个线程中用来访问 `promise` 中设置的值或异常。
+	  logseq.order-list-type:: number
+	- **设置值或异常**：你可以通过调用 `std::promise` 的 [[set_value()]] 方法来存储一个值，或者调用 `set_exception()` 方法来存储一个异常。**一旦设置了值或异常，与该 `promise` 相关联的 [[future]] `对象将变为[[就绪状态]]**。
+	  logseq.order-list-type:: number
 - ### 示例
   以下是一个使用 `std::promise` 和 `std::future` 在不同线程间传递数据的示例：
   ```cpp

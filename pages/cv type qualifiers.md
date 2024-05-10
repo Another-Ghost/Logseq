@@ -1,7 +1,7 @@
 alias:: cv-qualifiers, cv-修饰符, cv-qualification, cv 限定符
 
 - #C++Keyword
-- # `const`和 `volatile`类型修饰符
+- ## `const`和 `volatile`类型修饰符
 	- [[const]] 和 [[volatile]] [[类型修饰符]]出现在任何[[类型说明符]]中，包括声明语法，以指定正在声明的对象或正在命名的类型的constness（常量性）或volatility（易变性）。
 	- ## 解释
 		- 任何类型，除了[[函数]]类型或[[引用]]类型，都属于以下四种不同但相关的类型之一：
@@ -50,18 +50,8 @@ alias:: cv-qualifiers, cv-修饰符, cv-qualification, cv 限定符
 			  具有不同[[cv-修饰符]]序列的函数具有不同的类型，因此可以相互[[重载]]。
 			- 在具有 cv-修饰符序列的成员函数体内，`*this`是带有 cv-修饰符的，例如，在具有 const 修饰符的成员函数中，**只有**具有 const 修饰符的其他成员函数可以被正常调用。如果应用了[[const_cast]]或者通过不涉及 this 的访问路径，没有 const 修饰符的成员函数仍然可以被调用。
 			  id:: 652d4472-fec7-428e-9f19-aa0603194441
-- # `mutable`说明符
-	- 声明为[[mutable]]的类成员允许被修改，即使包含这个类成员的对象被声明为 const 。
-	- `mutable`可以在非[[static]] 类成员 的非[[引用]]非[[const]]类型的声明中出现：
-	  ```C++
-	  class X
-	  {
-	      mutable const int* p; // 可行（底层 const, p 本身类型不是 const, p 所指的对象类型为 const）
-	      mutable int* const q; // 非法
-	      mutable int& r;      // 非法
-	  };
-	  ```
-- # 类型之间的转换
+- ## [[mutable]]说明符
+- ## 类型之间的转换
 	- 对于引用和指针，可以隐式转换为更多 cv-修饰符的引用和指针，参阅 [qualification conversions](https://en.cppreference.com/w/cpp/language/implicit_cast#Qualification_conversions)
 	- 要将对 cv 修饰的引用或指针转换为对更少 cv-修饰符的引用或指针，必须使用[[const_cast]]。
 -

@@ -1,0 +1,14 @@
+- AGameMode是4.14版本之前的游戏模式基类，它仍然存在并且功能如旧，但现在是AGameModeBase的子类。
+- AGameMode更适合标准游戏类型，如多人射击游戏，因为它实现了 [[match state]] 的概念。
+-
+- ### AGameMode
+  `AGameMode` 是 `AGameModeBase` 的子类，拥有一些额外的功能支持多人游戏和旧行为。所有新建项目默认使用 `AGameModeBase`。如果需要此额外行为，可切换到从 `AGameMode` 进行继承。如从 `AGameMode` 进行继承，也可从 `AGameState` 继承游戏状态（其支持[[比赛状态机]]）。
+- `AGameMode` 包含一个跟踪比赛状态或整体游戏流程的状态机。可使用 `GetMatchState` 或 `HasMatchStarted`、`IsMatchInProgress` 和 `HasMatchEnded` 之类的封装器查询当前的状态。以下是可能的比赛状态：
+	- `EnteringMap` 是初始状态。Actor 尚未进行 tick，世界场景尚未完整初始化。内容完整加载后将过渡到下个状态。
+	- `WaitingToStart` 是下个状态，进入时将调用 `HandleMatchIsWaitingToStart`。Actor 正在进行 tick，但玩家尚未生成。如 `ReadyToStartMatch` 返回 *true* 或 `StartMatch` 被调用，它将过渡到下个状态。
+	- `InProgress` 是游戏主体所发生的状态。进入此状态时将调用 `HandleMatchHasStarted`，然后在所有 Actor 上调用 `BeginPlay`。此时，正常游戏进程已在进行中。`ReadyToEndMatch` 返回 *true* 或调用 `EndMatch` 时比赛将过渡到下个状态。
+	- `WaitingPostMatch` 是倒数第二个状态，进入时将调用 `HandleMatchHasEnded`。Actor 仍在 tick，但新玩家无法加入。地图转换开始时它将过渡到下个状态。
+	- `LeavingMap` 是正常流程中的最后一个状态，进入时将调用 `HandleLeavingMap`。转换到新地图时比赛将保持在此状态中，进入新地图时将过渡回到 `EnteringMap`。
+	- `Aborted` 是失败状态，调用 `AbortMatch` 可开始此状态。出现无法恢复的错误时将进行此设置。
+- 游戏状态将固定为 `InProgress`，因为这是调用 `BeginPlay`、actor 开始 `tick` 的状态。然而，个体游戏可能覆盖这些状态的行为，用更复杂的规则构建一个多人游戏，如在一款多人射击游戏中等待其他玩家加入时允许玩家在关卡中自由飞行。
+-

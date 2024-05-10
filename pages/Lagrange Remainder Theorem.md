@@ -10,5 +10,5 @@ alias:: 插值余项定理
 	- >If $f$ is a [[polynomial]], then:
 	  $$f(x)=\sum_{k=0}^{n}\frac{f^{(k)}(0)}{k!}x^k,\quad n=1,2,\cdots$$
 - # Corollary
-  Let $f$ is a [[real]] function on $[a, b]$ Suppose for each  $n\in N$, $f^{(n)}(x)$ exists for every $x \in[a, b]$ and there exists $M>0$ such that $\left|f^{(n)}(x)\right| \leq M$, for all $x \in[a, b]$, $n \in N$. Then the [[Taylor series]] $\sum_{n=0}^{\infty} \frac{f^{(n)}(\alpha)}{n !}(x-\alpha)^{n}$  [[converges]] to $f(x)$, for all $x \in[a, b]$.
+  Let $f$ is a [[real]] function on $[a, b]$ Suppose for each  $n\in N$, $f^{(n)}(x)$ exists for every $x \in[a, b]$ and there exists $M>0$ such that $\left|f^{(n)}(x)\right| \leq M$, for all $x \in[a, b]$, $n \in N$. Then the [[Taylor series]] $\sum_{n=0}^{\infty} \frac{f^{(n)}(\alpha)}{n !}(x-\alpha)^{n}$  [converges]([[series converges]]) to $f(x)$, for all $x \in[a, b]$.
 	- > Function $f$ is called [[analytic function]] if its Taylor series converges to itself.

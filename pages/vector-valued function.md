@@ -18,27 +18,11 @@ alias:: 多元函数
 	  
 	   则称 \( f \) 在点 \( \mathbf{a} \) [[可微]]。
 - ### 相关定理
-<<<<<<< HEAD
 	- 1. **[[偏导数连续定理]]**。
 	- 2. **[[链式法则]]**：若 \( f: \mathbb{R}^n \rightarrow \mathbb{R} \) 且 \( g_i: \mathbb{R}^m \rightarrow \mathbb{R} \)（\( i = 1, 2, \ldots, n \)），则[[复合函数]] \( h = f(g_1, g_2, \ldots, g_n) \) 的导数为：
 	   $$ \frac{\partial h}{\partial x_j} = \sum_{i=1}^{n} \frac{\partial f}{\partial y_i
 	  } \frac{\partial g_i}{\partial x_j} $$
 	- 3. **[[极值定理]]**：若函数 \( f \) 在点 \( \mathbf{a} \) 取得[[局部极值]]且在该点[[可微]]，则 \( \nabla f(\mathbf{a}) = \mathbf{0} \) ([[梯度]])。
-=======
-<<<<<<< HEAD
-	- 1. **[[偏导数连续定理]]**。
-	- 2. **[[链式法则]]**：若 \( f: \mathbb{R}^n \rightarrow \mathbb{R} \) 且 \( g_i: \mathbb{R}^m \rightarrow \mathbb{R} \)（\( i = 1, 2, \ldots, n \)），则[[复合函数]] \( h = f(g_1, g_2, \ldots, g_n) \) 的导数为：
-	   $$ \frac{\partial h}{\partial x_j} = \sum_{i=1}^{n} \frac{\partial f}{\partial y_i
-	  } \frac{\partial g_i}{\partial x_j} $$
-	- 3. **[[极值定理]]**：若函数 \( f \) 在点 \( \mathbf{a} \) 取得[[局部极值]]且在该点[[可微]]，则 \( \nabla f(\mathbf{a}) = \mathbf{0} \) ([[梯度]])。
-=======
-	- 1. **[[偏导数连续定理]]**：若函数 \( f \) 在点 \( \mathbf{a} \) 的所有偏导数存在且在 \( \mathbf{a} \) 连续，则 \( f \) 在 \( \mathbf{a} \) [[可微]]。
-	- 2. **[[链式法则]]**：若 \( f: \mathbb{R}^n \rightarrow \mathbb{R} \) 且 \( g_i: \mathbb{R}^m \rightarrow \mathbb{R} \)（\( i = 1, 2, \ldots, n \)），则[[复合函数]] \( h = f(g_1, g_2, \ldots, g_n) \) 的导数为：
-	   $$ \frac{\partial h}{\partial x_j} = \sum_{i=1}^{n} \frac{\partial f}{\partial y_i
-	  } \frac{\partial g_i}{\partial x_j} $$
-	- 3. **[[极值定理]]**：若函数 \( f \) 在点 \( \mathbf{a} \) 取得[[局部极值]]且在该点[[可微]]，则 \( \nabla f(\mathbf{a}) = \mathbf{0} \)。
->>>>>>> a248c038068cac24d7081fb376bc97464feb5673
->>>>>>> f06c40ce77eed7015b880d0efee03cab2bbde75f
 	- 4. **[[拉格朗日乘数法]]**：用于求解在约束条件 \( g(x_1, x_2, \ldots, x_n) = 0 \) 下 \( f(x_1, x_2, \ldots, x_n) \) 的极值问题。如果 \( f \) 和 \( g \) 在点 \( \mathbf{a} \) [[可微]]且 \( \nabla g(\mathbf{a}) \neq \mathbf{0} \)([[梯度]])，则存在 \( \lambda \in \mathbb{R} \) 使得 \( \nabla f(\mathbf{a}) = \lambda \nabla g(\mathbf{a}) \)。
 	- 5. **[[隐函数定理]]**：若函数 \( F(x_1, x_2, \ldots, x_n, y) = 0 \) 在点 \( (a_1, a_2, \ldots, a_n, b) \) [[可微]]且 \( \frac{\partial F}{\partial y} \neq 0 \)，则存在一个[[局部函数]] \( y = f(x_1, x_2, \ldots, x_n) \) 使得 
 	  $$ F(x_1, x_2, \ldots, x_n, f(x_1, x_2, \ldots, x_n)) = 0 $$。

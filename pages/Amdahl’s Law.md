@@ -6,3 +6,4 @@ alias:: Amdahl 定律
   $$T_{un}=(1-a)T_{ut}+(aT_\text{old})/k=T_{ut}[(1-a)+a/k]$$
 - 由此可计算加速比 $S$ ：
   $$S=\frac{T_\text{old}}{T_\text{new}}=\frac{1}{(1-a)+a/k}$$
+-

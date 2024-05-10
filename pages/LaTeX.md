@@ -12,3 +12,7 @@
    \begin{matrix} 0 \\ 0 \\ \vdots \\[1ex] 0 \end{matrix} & \huge{\boldsymbol A^{(2)}} & \huge{\boldsymbol b^{(2)}}
   \end{pmatrix}
 - $\textcircled{i}$
+- $\triangleq$ Delta equal to 意思是“定义为” ￥
+-
+-
+-

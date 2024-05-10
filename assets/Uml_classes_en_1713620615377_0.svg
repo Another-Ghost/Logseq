@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 300 231" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:square;stroke-miterlimit:3;">
+    <g id="Plan-de-travail1" serif:id="Plan de travail1" transform="matrix(1,0,0,1.01999,0,26.5583)">
+        <rect x="0" y="-26.038" width="300" height="226.038" style="fill:none;"/>
+        <clipPath id="_clip1">
+            <rect x="0" y="-26.038" width="300" height="226.038"/>
+        </clipPath>
+        <g clip-path="url(#_clip1)">
+            <g transform="matrix(1,0,0,1.03644,-512,-291.367)">
+                <use xlink:href="#_Image2" x="511" y="255" width="301px" height="220px"/>
+            </g>
+            <g id="arrows" transform="matrix(1,0,0,0.980399,0,4.86359)">
+                <path d="M28,177L136,177" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1.5px;"/>
+                <path d="M28,146L136,146" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1.5px;"/>
+                <path d="M28,22L176,22" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1.5px;"/>
+                <g transform="matrix(1,0,0,1,1.11916,-33.4087)">
+                    <path d="M28,22L176,22" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1.5px;"/>
+                </g>
+                <path d="M28,53L156,53" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1.5px;"/>
+                <path d="M28,84L156,84" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1.5px;stroke-dasharray:10.5,9,0,0;"/>
+                <path d="M28,115L176,115" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1.5px;stroke-dasharray:10.5,9,0,0;"/>
+                <path d="M157,32L177.5,22L157,12" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1.5px;"/>
+                <path d="M177.5,53L157,43L157,63L177.5,53Z" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1.5px;"/>
+                <path d="M177.5,84L157,74L157,94L177.5,84Z" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1.5px;"/>
+                <path d="M157,125L177.5,115L157,105" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1.5px;"/>
+                <path d="M177.5,146L157,136L136.5,146L157,156L177.5,146Z" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1.5px;"/>
+                <path d="M177.5,177L157,167L136.5,177L157,187L177.5,177Z" style="fill-rule:nonzero;stroke:black;stroke-width:1.5px;"/>
+                <path d="M177.5,177L157,167L136.5,177L157,187L177.5,177Z" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:1.5px;"/>
+            </g>
+            <g id="text" transform="matrix(1,0,0,0.980399,0,4.86359)">
+                <g transform="matrix(1,0,0,1,191.424,21.3057)">
+                    <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:13px;">Navigable</text>
+                    <text x="0px" y="13px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:13px;">association</text>
+                </g>
+                <g transform="matrix(1,0,0,1,190.948,-8.4093)">
+                    <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:13px;">Association</text>
+                </g>
+                <g transform="matrix(1,0,0,1,191,57)">
+                    <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:13px;">Inheritance</text>
+                </g>
+                <g transform="matrix(1,0,0,1,191,80)">
+                    <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:13px;">Realization /</text>
+                </g>
+                <g transform="matrix(1,0,0,1,191,96)">
+                    <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:13px;">Implementation</text>
+                </g>
+                <g transform="matrix(1,0,0,1,191,119)">
+                    <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:13px;">Dependency</text>
+                </g>
+                <g transform="matrix(1,0,0,1,191,150)">
+                    <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:13px;">Aggregation</text>
+                </g>
+                <g transform="matrix(1,0,0,1,191,181)">
+                    <text x="0px" y="0px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:13px;">Composition</text>
+                </g>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <image id="_Image2" width="301px" height="220px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAS0AAADcCAYAAAAlWvfmAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC/ElEQVR4nO3WsQ3CAAADQQP7z8CikFBRp4xeupvA1csbQMhj287zfG973rwF4Mrxj9Zn2+vmMQBXvt4VkCJaQIpoASmiBaSIFpAiWkCKaAEpogWkiBaQIlpAimgBKaIFpIgWkCJaQIpoASmiBaSIFpAiWkCKaAEpogWkiBaQIlpAimgBKaIFpIgWkCJaQIpoASmiBaSIFpAiWkCKaAEpogWkiBaQIlpAimgBKaIFpIgWkCJaQIpoASmiBaSIFpAiWkCKaAEpogWkiBaQIlpAimgBKaIFpIgWkCJaQIpoASmiBaSIFpAiWkCKaAEpogWkiBaQIlpAimgBKaIFpIgWkCJaQIpoASmiBaSIFpAiWkCKaAEpogWkiBaQIlpAimgBKaIFpIgWkCJaQIpoASmiBaSIFpAiWkCKaAEpogWkiBaQIlpAimgBKaIFpIgWkCJaQIpoASmiBaSIFpAiWkCKaAEpogWkiBaQIlpAimgBKaIFpIgWkCJaQIpoASmiBaSIFpAiWkCKaAEpogWkiBaQIlpAimgBKaIFpIgWkCJaQIpoASmiBaSIFpAiWkCKaAEpogWkiBaQIlpAimgBKaIFpIgWkCJaQIpoASmiBaSIFpAiWkCKaAEpogWkiBaQIlpAimgBKaIFpIgWkCJaQIpoASmiBaSIFpAiWkCKaAEpogWkiBaQIlpAimgBKaIFpIgWkCJaQIpoASmiBaSIFpAiWkCKaAEpogWkiBaQIlpAimgBKaIFpIgWkCJaQIpoASmiBaSIFpAiWkCKaAEpogWkiBaQIlpAimgBKaIFpIgWkCJaQIpoASmiBaSIFpAiWkCKaAEpogWkiBaQIlpAimgBKaIFpIgWkCJaQIpoASmiBaSIFpAiWkCKaAEpogWkiBaQIlpAimgBKaIFpIgWkCJaQIpoASmiBaSIFpAiWkCKaAEpogWkiBaQIlpAimgBKaIFpIgWkCJaQIpoASmiBaSIFpAiWkCKaAEpogWkiBaQIlpAimgBKaIFpIgWkPID+JkLSgZ9RlYAAAAASUVORK5CYII="/>
+    </defs>
+</svg>

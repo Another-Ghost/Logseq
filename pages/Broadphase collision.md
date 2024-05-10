@@ -1,0 +1,8 @@
+- TODO
+- 此部分介绍初步碰撞检测（Broadphase collision）的设置，这是NVIDIA的PhysX系统的功能。你可以指定是使用初步检测客户端还是服务器端。
+- 虚幻引擎实施了多盒体裁剪，此功能将初步检测分割成盒体网格，而你可以控制这些盒体的设置。**MBPBounds** 和 **MBPOuter边界（MBPOuter Bounds）** 部分控制多盒体的边界。
+- **MBPBounds** 中的空间按照 **MBPNumSubDivs** 值进行划分，以创建网格。例如：
+	- 如果 MBPNumSubDivs = 2，将创建 4 单元格(2 x 2)网格。
+	- 如果 MBPNumSubDivs = 3，将创建 9 单元格(3 x 3)网格。
+- 如果在物理上活跃的object掉落到 **MBPOuterBounds** 指定的边界之外，将不再为其考虑碰撞情况。启用 **使用MBPOuter边界（Use MBPOuter Bounds）** 选项将在多盒体网格边缘上创建四个专用的单元格。
+- 如需详细了解该系统，请参阅NVIDIA关于[刚体碰撞](https://docs.nvidia.com/gameworks/content/gameworkslibrary/physx/guide/Manual/RigidBodyCollision.html)的文档。

@@ -93,3 +93,6 @@ alias:: 高斯型积分
 	  & =\int_{a}^{b} \frac{f^{(2 n+2)}\left(\xi_{x}\right)}{(2 n+2) !} w^{2}(x) d x \\
 	  & =\frac{f^{(2 n+2)}(\xi)}{(2 n+2) !} \int_{a}^{b} w^{2}(x) d x, \quad \xi \in(a, b)
 	  \end{aligned}
+- $R[f] =\int_{a}^{b} f(x) d x-\sum_{k=0}^{n} A_{k} f\left(x_{k}\right) \quad / *$  设  $P$  为  $f$  的过  $x_{0} \ldots x_{n}$  的插值多项式  $* / \\$
+  $=\int_{a}^{b} f(x) d x-\sum_{k=0}^{n} A_{k} P\left(x_{k}\right) \quad / *$  只要  $P$  的阶数不大于  $2 n+1,$  则下一步等式成立  $*/ \\$
+  $$=\int_{a}^{b} f(x) d x-\int_{a}^{b} P(x) d x=\int_{a}^{b}[f(x)-P(x)] d x$$

@@ -17,7 +17,7 @@ alias:: 傅里叶变换, FT, 傅氏变换
 	   $$f(t) = \sum_{n=-\infty}^{\infty} C_n e^{i 2\pi \frac{n}{T} t}$$
 	   其中，\(C_n\) 是[[复数傅里叶系数]]，通过下式给出：
 	   $$C_n = \frac{1}{T} \int_{-T/2}^{T/2} f(t) e^{-i 2\pi \frac{n}{T} t}\mathrm dt$$
-	  2. **频率的连续化**：当我们处理非周期函数时，考虑周期 \(T\) 趋向于无穷大，使得频率 \(n/T\) 变得连续。定义 \(\Delta \omega = 2\pi / T\)，随着 \(T \rightarrow \infty\)，\(\Delta \omega \rightarrow d\omega\)，频率变为连续变量 \(\omega\)。
+	  2. **频率的连续化**：当我们处理[[非周期函数]]时，考虑周期 \(T\) 趋向于无穷大，使得频率 \(n/T\) 变得连续。定义 \(\Delta \omega = 2\pi / T\)，随着 \(T \rightarrow \infty\)，\(\Delta \omega \rightarrow d\omega\)，频率变为连续变量 \(\omega\)。
 	  3. **傅里叶变换的引入**：在这个连续极限下，傅里叶级数转化为傅里叶变换。复数傅里叶系数 \(C_n\) 转化为傅里叶变换 \(F(\omega)\)，且求和转化为积分：
 	  $$F(\omega) = \int_{-\infty}^{\infty} f(t) e^{-i\omega t}\mathrm dt$$
 	   这就是傅里叶变换，它提供了函数 \(f(t)\) 在频率 \(\omega\) 上的表示。

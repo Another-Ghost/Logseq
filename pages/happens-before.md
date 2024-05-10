@@ -1,12 +1,13 @@
 alias:: 先行, happens-before relationship, happens-before 关系
 
-- *happens-before 关系* 是一种逻辑关系，它定义了程序中两个[[操作]]的顺序。如果事件A happens-before 事件B，那么在程序的执行中，A的效果（对内存的写入）对执行B的线程是[[可见]]的。
-	- 线程内的每个操作都happens-before它后面的操作。
+- ### 先发生关系
+  无论线程如何，如果满足以下条件之一，则[[evaluation]] `A` ^^happens-before^^ evaluation `B`：
+	- `A` [[sequenced-before]] `B`。
 	  logseq.order-list-type:: number
-	- 对于锁的释放操作happens-before随后对同一个锁的获取操作。
+	- `A` [[inter-thread happens before]] `B`。
 	  logseq.order-list-type:: number
-	- 对原子变量的修改操作happens-before这个变量后续的读取操作。
-	  logseq.order-list-type:: number
+	- >实现需要确保先发生关系是无环的，如果必要的话可以通过引入额外的同步来确保（这通常只有在涉及 consume operation 时才有必要）。
+- 如果一个评估修改了内存位置，而另一个读取或修改了相同的内存位置，并且至少其中一个评估不是原子操作，那么如果这两个评估之间不存在先发生关系，程序的行为是未定义的（程序发生数据竞争）。
 - ## 分类
 	- 在并发编程中，"happens-before"关系是确保内存操作顺序和可见性的关键概念。这种关系可以分为几种类型，以适应不同的同步需求和场景。以下是"happens-before"关系的一些主要分类：
 		- ### [[程序顺序规则]]（Program Order Rule）
@@ -86,7 +87,7 @@ alias:: 先行, happens-before relationship, happens-before 关系
 	- 在基本层面上，inter-thread happens-before 相对简单，依赖于 synchronizes-with 关系：如果一个线程中的操作 A 与另一个线程中的操作 B [[同步发生]]，那么A [[inter-thread happens-before]] B。它也是一个 *传递关系* ：如果A inter-thread happens-before B，且B inter-thread happens-before C，那么A inter-thread happens-before C。
 	- Inter-thread happens-before 还与[[sequenced-before 关系]]结合：如果操作A [[sequenced-before]]操作B，且操作B [[inter-thread happens-before]] 操作C，那么A inter-thread happens-before C。同样，如果A [[synchronizes-with]] B，并且B [[sequenced-before]] C ，那么A [[inter-thread happens-before]] C。这两者 结合意味着，**如果你在单个线程中进行一系列更改，你只需要一个[[synchronizes-with 关系]]，数据就对执行 C 的线程上的后续操作[[可见]]。
 - ## Strongly-Happens-before
-	- [[Strongly-happens-before 关系]]略有不同，但在大多数情况下归结为相同。上述描述的两条规则适用：如果操作A [[synchronizes with]] 操作B同步，或操作A [[sequenced-before]] 操作B，那么A [[strongly-happens-before]] B。
+	- [[Strongly-happens-before 关系]]略有不同，但在大多数情况下归结为相同。上述描述的两条规则适用：如果操作A [[synchronizes-with]] 操作B同步，或操作A [[sequenced-before]] 操作B，那么A [[strongly-happens-before]] B。
 	  传递排序也适用：如果A strongly-happens-before B，且B strongly-happens-before C，那么A strongly-happens-before C。
-	- 区别在于标记为[[memory_order_consume]]的操作参与[[inter-thread-happens-before关系]]（因此是happens-before关系），但不参与[[strongly-happens-before]]关系。由于绝大多数代码不应该使用memory_order_consume，这种区别实际上可能影响不大。
+	- 区别在于标记为[[memory_order_consume]]的操作参与[[inter-thread happens-before]]关系（因此是happens-before关系），但不参与[[strongly-happens-before]]关系。由于绝大多数代码不应该使用memory_order_consume，这种区别实际上可能影响不大。
 - 这些是强制执行线程间操作顺序的关键规则。

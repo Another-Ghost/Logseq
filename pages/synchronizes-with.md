@@ -1,4 +1,4 @@
-alias:: 同发, 同步发生, synchronizes-with relationship, synchronizes-with 关系
+alias:: 同发, 同步发生, synchronizes-with relationship, synchronizes-with 关系, 同步关系
 
 - ## 定义
 	- *synchronizes-with 关系* 是[[happens-before 关系]]的一个特例，它直接关联了**两个特定的操作**。一个操作（如对原子变量的写入）synchronizes-with另一个操作（如对同一原子变量的读取），如果第一个操作按照内存模型的要求保证了第二个操作可以看到第一个操作的结果。这种关系通常由特定的[[同步原语]]（如原子操作、锁的释放和获取）建立。
@@ -39,4 +39,5 @@ alias:: 同发, 同步发生, synchronizes-with relationship, synchronizes-with 
   }
   ```
   在这个例子中，`producer`线程中对`ready`的`store`操作与`consumer`线程中对`ready`的`load`操作之间建立了 `synchronizes-with` 关系，从而保证了`consumer`线程看到`producer`线程对`data`变量的修改。
+-
 -

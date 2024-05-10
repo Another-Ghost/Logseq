@@ -1,4 +1,4 @@
-alias:: RPCs, Remote Procedure Calls, 远程过程调用, replicated function, replicated functions
+alias:: RPCs, Remote Procedure Call, 远程过程调用, replicated function, 远程方法调用
 
 - [[远程过程调用]]可以从任何机器上调用，但将其实际执行定向到连接到网络会话的特定机器上。有三种类型的RPC可用：
   |RPC类型|说明|

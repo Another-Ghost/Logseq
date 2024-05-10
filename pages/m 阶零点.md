@@ -1,0 +1,28 @@
+alias:: m 重零点
+
+- # Definition
+	- 若 $f(z)=(z{-}z_{0})^{m}\varphi(z)$, $\varphi(z)$ 在 $z_{0}$ 处[[解析]]，且 $\varphi(z_0)\neq 0\:,m$ 为某一[[正整数]]，那么称 $z_{0}$ 为 $f(z)$ 的[m 阶零点]([[m 阶零点]])。
+	  logseq.order-list-type:: number
+	  id:: 64c477d7-496f-42b3-ae65-38a791e619a3
+		- > [[一阶零点]]
+		- >例子
+		   对于 $f(z) = (z-1)^2z$ ，
+		  $z=1$ 为其 $2$ 阶零点，此时的 $\varphi(z) = z$ ；
+		  $z=0$ 为其 $1$ 阶零点, 此时 $\varphi(z) = (z-1)^2$ 。
+- # Theorem
+	- 若 $f(z)$ 在 $z_{0}$ [[解析]], 那么 $z_{0}$ 为 $f(z)$ 的 $m$ *阶*[零点]([[m 阶零点]])的**充要条件**是
+	  logseq.order-list-type:: number
+	  $$
+	  f^{(m)}\left(z_{0}\right)=0\quad\left(n=0,1,\cdots,m-1\right),\quad f^{(m)}\left(z_{0}\right)\neq 0
+	  $$
+	- $z_0$ 为 $f(z)$ 的 $m$ 阶零点, 也是 $g(z)$ 的 $n$ 阶零点。则
+	  logseq.order-list-type:: number
+		- $z_0$ 为 $f(x)\cdot g(x)$ 的 $m+n$ *阶*[零点]([[m 阶零点]])。
+		  logseq.order-list-type:: number
+		- 如果 $m\ge n$, $z_0$ 为 $\frac{f(z)}{g(z)}$ 的[[可去奇点]]。
+		  logseq.order-list-type:: number
+		- 如果 $m<n$, $z_0$ 为 $\frac{f(z)}{g(z)}$ 的[[极点]]。
+		  logseq.order-list-type:: number
+	- 如果 $z_{0}$ 是 $f(z)$ 的[[m 阶极点]] $\Longleftrightarrow z_0$ 是 $\frac1{f( z)}$ 的[[m 阶零点]].
+	  logseq.order-list-type:: number
+-

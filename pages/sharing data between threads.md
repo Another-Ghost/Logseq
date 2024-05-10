@@ -1,4 +1,4 @@
 alias:: 线程间共享数据
 
-- ### [[race condition]]
--
+- ## [[race condition]]
+- ## [[互斥]]

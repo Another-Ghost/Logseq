@@ -10,7 +10,7 @@ alias:: 欧拉公式
 	  e^{i\pi}+1=0 \\
 	  i\pi = \ln(-1)
 	  \end{array}
-		- >$$e^{2k\pi}=1\quad(k=1,2,\cdots)$$
+		- $$e^{2k\pi i}=\cos2k\pi+i\sin2k\pi=1\quad(k=1,2,\cdots)$$
 - # Proof
 	- let $z = a+bi \in \mathbb{C}$, $a, b\in\mathbb{R}$.
 	  By theorem {{embed ((647a0831-3568-4c89-943e-f53086620cab))}}

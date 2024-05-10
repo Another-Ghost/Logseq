@@ -1,0 +1,2 @@
+- ^^Character^^ 是用于垂直方向玩家表现的特殊的[[Pawn]]。
+- 相比 Pawn , 增添了[[CharacterMovementComponent]]，[[CapsuleComponent]]和[[SkeletalMeshComponent]]。

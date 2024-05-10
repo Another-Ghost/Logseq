@@ -1,4 +1,4 @@
-filters:: {"sequence" true}
+filters:: {}
 alias:: converges, convergence, 收敛
 
 -

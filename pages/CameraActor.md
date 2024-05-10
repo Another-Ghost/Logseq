@@ -1,5 +1,6 @@
 alias:: Actor/CameraActor, ACameraActor
 
+- ^^Camera^^代表玩家的视角或玩家如何看到世界。因此，摄像机只与[[人类控制的玩家]]相关。
 - 有关[[摄像机]]的所有 *属性* 和 *行为* 均在[[CameraComponent]]中设置。[[CameraActor]]类主要用作[[CameraComponent]]的 wrapper，以使 Camera 可以被直接放置在关卡内，而非另一个类中。
   id:: 65410e90-517a-494f-acd8-c6a697b9ac0f
 - 两个 组件 被添加到[[CameraComponent]]，以辅助编辑器中的可视化布置，不过它们在游戏期间将 不可见 。

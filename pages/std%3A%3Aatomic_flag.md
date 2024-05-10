@@ -4,7 +4,7 @@
 	- **操作简单**：它只支持两种操作：设置（`set`）和清除（`clear`），以及检测并设置（`test-and-set`）。
 	- **初始化**：必须使用 `ATOMIC_FLAG_INIT` 宏进行初始化。
 - ### 操作
-	- **`test_and_set()`**：检查 `std::atomic_flag` 的当前值。如果 `std::atomic_flag` 之前未设置，将其设置为 `true` 并返回 `false`；如果之前已经被设置，则返回 `true`。这个操作是原子的。
+	- **[[test_and_set()]]**：检查 `std::atomic_flag` 的当前值。如果 `std::atomic_flag` 之前未设置，将其设置为 `true` 并返回 `false`；如果之前已经被设置，则返回 `true`。这个操作是原子的。
 	- **`clear()`**：将 `std::atomic_flag` 的值设置为 `false`。这个操作也是原子的。
 - ### 基本用法
   ```cpp

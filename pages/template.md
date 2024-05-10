@@ -37,5 +37,4 @@ alias:: 模板
 			  logseq.order-list-type:: number
 			- 用户定义的[[literal template]]的名称。
 			  logseq.order-list-type:: number
-			  <<<<<<< HEAD
 - # [[templated entity]]

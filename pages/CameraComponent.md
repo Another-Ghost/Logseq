@@ -1,4 +1,4 @@
-alias:: Component/CameraComponent
+alias:: UComponent/CameraComponent
 
 - [[CameraComponent]]代表[[摄像机]] 视角 和 设置 ，比如 [[Projection]] Type 、[[Field Of View]] 和 [[Post-Process]] Overrides 。
 - ## ViewTarget

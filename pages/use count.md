@@ -1,3 +1,1 @@
-alias:: 引用计数
-
--
+alias:: 引用计数, reference counting

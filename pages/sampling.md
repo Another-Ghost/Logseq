@@ -75,7 +75,7 @@ alias:: 采样, 抽样, 采样信号
 - ## 数字域频率与模拟域频率的关系
 	- 数字频率  $\omega$  与模拟角频率  $\Omega$ , 模拟频率  $f$  的关系为
 	  $$\omega=\Omega T=\frac{\Omega}{f_{s}}=\frac{2 \pi f}{f_{s}}=2 \pi f T$$
-	  [前面](((65dee8ce-44b5-4191-a058-04009c03bff7)))已说过, 数字频率  $\omega$  是模拟角频率对采样频率  $f_{s}$  的归一化频率, 因而采样频率  $f_{s}$  所对应的[[数字域采样频率]]为
+	  [前面](((65dee8ce-44b5-4191-a058-04009c03bff7)))已说过, 数字频率  $\omega$  是模拟角频率对采样频率  $f_{s}$  的^^归一化频率^^, 因而采样频率  $f_{s}$  所对应的[[数字域采样频率]]为
 	  $$\omega_{s}=\Omega_{s} T=2 \pi f_{s} / f_{s}=2 \pi$$
 		- [[数字域采样频率]]  $\omega_{s}$  就等于  $2 \pi$ , 也就是  $\hat{X}_{a}(\mathrm{j} \omega / T)=\left.\hat{X}_{a}(\mathrm{j} \Omega)\right|_{\Omega=\frac{\omega}{T}}$  **的[[延拓周期]]为**  $2 \pi$  。
 		  logseq.order-list-type:: number
@@ -92,4 +92,6 @@ alias:: 采样, 抽样, 采样信号
 	  |[[采样频率]]|$f_s$|$f_s=\frac{1}{T_s}$|$\mathrm{Hz}$|
 	  |[[采样角频率]]|$\Omega_s$|$\Omega_s=2\pi f_s$|$\mathrm{rad/s}$|
 	  |[[数字频率]]|$\omega$|$\omega=2\pi\frac{f}{f_s}=2 \pi f T_{\mathrm{s}}=\Omega T_{\mathrm{s}}=\frac{\Omega} {f_{\mathrm{s}}}$|$\mathrm{rad/s}$|
-	  |[[数字采样频率]]|$\omega_s$|$\omega_{s}=\Omega_{s} T=2 \pi f_{s} / f_{s}=2 \pi$|$\mathrm{rad/s}$|
+	  |[[数字采样频率]]|$\omega_s$|$\omega_{s}=\Omega_{s} T_s=2 \pi f_{s} / f_{s}=2 \pi$|$\mathrm{rad/s}$|
+	- > 上述内容可以参考：
+	  【数字信号处理教程（超浓缩版）】 【精准空降到 02:54】 https://www.bilibili.com/video/BV127411M7BU/?p=33&share_source=copy_web&vd_source=27f5502bd7a34d775a5d6aa446a54e99&t=174

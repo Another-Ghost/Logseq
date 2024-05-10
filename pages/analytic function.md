@@ -1,7 +1,7 @@
-alias:: 解析, 解析函数, analytic, holomorphic function, holomorphic, 全纯函数, 全纯
+alias:: 解析, 解析函数, analytic
 
 - # Definition
-	- 若 $f(z)$ 在 $z_0$ 的[[邻域]]内**处处**[可导]([[complex differentiable]])，则称f(z)在 $z_{0}$ 处[[解析]]。
+	- 若 $f(z)$ 在 $z_0$ 的[[邻域]]内**处处**[可导]([[complex differentiable]])，则称 $f(z)$ 在 $z_{0}$ 处[[解析]]。
 	- 若 $f(z)$ 在[[region]] $D$ 内每一点[[解析]]，则称 $f(z)$ 在$D$内[[解析]]，或说$f(z)$是 $D$ 内的[[analytic function]];
 	- 若 $f(z)$ 在 $z_0$ 处*不解析*，则称 $z_{0}$ 为 $f(z)$ 的[[奇点]]。
 	- >有时也说*函数*在一个[[闭区域]]上为[[解析]]，这是指函数在一个包含该*闭区域*的**更大的***区域*上为*解析*。

@@ -1,0 +1,3 @@
+- #shell
+- `ps` 是 "process status" 的缩写，用于显示当前系统中的进程状态。
+-

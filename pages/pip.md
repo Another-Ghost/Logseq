@@ -1,0 +1,10 @@
+- `pip` 是Python的包管理器，用于安装和管理Python包。以下是一些常用的 `pip` 命令：
+	- `pip install package_name`: 安装名为 `package_name` 的包。
+	- `pip uninstall package_name`: 卸载名为 `package_name` 的包。
+	- `pip freeze`: 列出所有已安装的包及其版本号。
+	- `pip list`: 列出所有已安装的包。
+	- `pip show package_name`: 显示名为 `package_name` 的包的详细信息。
+	- `pip install -r requirements.txt`: 从 `requirements.txt` 文件安装所有的包。
+	- `pip install package_name==version`: 安装特定版本的包。
+	- `pip upgrade package_name`: 升级名为 `package_name` 的包到最新版本。
+- 请注意，如果你在全局环境中运行这些命令，可能需要管理员权限。如果你在虚拟环境中运行这些命令，就不需要管理员权限。

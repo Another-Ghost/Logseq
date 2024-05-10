@@ -6,7 +6,7 @@ alias:: 玩法技能, Ability, 技能
   玩法技能可以在整个网络中自我[[复制]]，运行在客户端或服务器计算机上（包括客户端预测支持），甚至还能[[同步变量]]和执行[[RPC]]。
   Gameplay Ability 还可在游戏期间灵活实现游戏技能，例如提供的扩展功能可用于实现 *冷却* 和 *使用消耗* 、*玩家输入* 、使用 *动画蒙太奇* 的动画，以及对给予 Actor 的 *技能* 本身做出反应。
 - # 授予（grant）和撤销(revoke)技能
-	- 在Actor可以使用某项技能之前，必须向其[[Ability System Component]][[授予]]该技能。
+	- 在Actor可以使用某项技能之前，必须向其[[Ability System Component]] [[授予]]该技能。
 	  [[Ability System Component]]的以下函数可以授予某项技能：
 		- `GiveAbility`：使用[[FGameplayAbilitySpec]]指定要添加的技能，并返回[[FGameplayAbilitySpecHandle]]。
 		  logseq.order-list-type:: number

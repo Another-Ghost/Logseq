@@ -1,4 +1,4 @@
-alias:: converge absolutely, converges absolutely, 绝对收敛
+alias:: converge absolutely, converges absolutely, 绝对收敛, 级数绝对收敛
 
 - #SameForComplex
 - # Definition
@@ -9,4 +9,4 @@ alias:: converge absolutely, converges absolutely, 绝对收敛
 		  converges nonabsolutely.
 -
 - # Theorem
-	- If $\sum a_n$ **converges absolutely**, then $\sum a_n$ [[converges]].
+	- If $\sum a_n$ **converges absolutely**, then $\sum a_n$ [[series converges]].

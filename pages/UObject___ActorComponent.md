@@ -1,0 +1,3 @@
+alias:: ActorComponent, Actor Component
+
+-

@@ -2,3 +2,5 @@
 - [[Logseq template]]
 - [[Logseq 改进]]
 -
+- ## TODO 发布
+	- https://github.com/pengx17/logseq-publish

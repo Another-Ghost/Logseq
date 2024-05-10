@@ -1,6 +1,5 @@
 - `std::atomic` 是 C++11 中引入的一个模板类，用于提供[[原子操作]]。原子操作是指在多线程环境中不可被中断的操作，确保在读取、修改、写入变量时不会被其他线程打断，从而避免[[竞态条件]]。使用 `std::atomic` 可以安全地在多个线程之间共享和修改数据，而不需要使用[[互斥锁]]。
 - ### 基本用法
-  
   `std::atomic` 类模板可以用于基本数据类型（如 `int`、`float`、指针等），也可以用于用户自定义的类型，前提是这些类型满足`std::atomic`对类型的要求（例如，必须是可拷贝构造的）。
   
   下面是一个使用 `std::atomic` 的简单示例：
@@ -64,9 +63,9 @@
 		- **`operator T`**：隐式转换操作，获取存储的值，等同于调用 `load` 方法。
 	- ### 修改操作
 		- **`exchange`**：以原子方式替换存储的值，并返回旧值。
-		- **[[compare_exchange_weak]]** 和 **[[compare_exchange_strong]]**：比较存储的值是否与期望值相等，如果相等，则以原子方式替换为新的值。`compare_exchange_weak` 可能会因为假失败而需要重试，而 `compare_exchange_strong` 有更强的成功保证。
+		- **[[compare_exchange_weak()]]** 和 **[[compare_exchange_strong()]]**：比较存储的值是否与期望值相等，如果相等，则以原子方式替换为新的值。`compare_exchange_weak` 可能会因为假失败而需要重试，而 `compare_exchange_strong` 有更强的成功保证。
 	- ### 算术和位操作
-		- **`fetch_add`**、**`fetch_sub`**：对存储的值执行原子的加法或减法操作，并返回操作前的旧值。
+		- **[[fetch_add]]**、**[[fetch_sub]]**：对存储的值执行原子的加法或减法操作，并返回操作前的旧值。
 		- **`fetch_and`**、**`fetch_or`**、**`fetch_xor`**：执行原子的位与、位或、位异或操作，并返回操作前的旧值。
 		- **`operator++`**、**`operator--`**：提供原子的递增和递减操作。
 		- **`operator+=`**、**`operator-=`**：提供原子的加法和减法赋值操作。
@@ -139,8 +138,7 @@
 	  std::mutex Singleton::mutex_;
 	  ```
 	  在这个示例中，[[双检锁模式]]（Double-Checked Locking Pattern）与 `std::atomic` 结合使用，以确保单例对象的线程安全初始化。
-- `std::atomic<>` 类模板不仅仅是一套可特化的类型，作为原发模板也可以使用[自定义类型]([[std::atomic<> 类模板]])创建对应的原子变
-  量。因为是通用类模板，操作限制为 `load()` ， `store()` ，从用户类型赋值，转换为用户类型， `exchange()` ， `compare_exchange_weak()` 和 `compare_exchange_strong()` 。
+- `std::atomic<>` 类模板不仅仅是一套可特化的类型，作为原发模板也可以使用[自定义类型]([[std::atomic<> 类模板]])创建对应的原子变量。因为是通用类模板，操作限制为 `load()` ， `store()` ，从用户类型赋值，转换为用户类型， `exchange()` ， `compare_exchange_weak()` 和`compare_exchange_strong()` 。
   每种函数类型的[操作]([[原子操作]])都有一个内存序参数，这个参数可以用来指定存储的顺序。现在，只需要知道操作分为三类：
 	- 1. Store操作，可选如下内存序： memory_order_relaxed , memory_order_release , memory_order_seq_cst 。
 	- 2. Load操作，可选如下内存序： memory_order_relaxed , memory_order_consume , memory_order_acquire ,

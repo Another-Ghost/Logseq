@@ -27,3 +27,4 @@ alias:: compact, 紧集, compact sets, compactness
 		  but that (a) does **not**, in general(besides in [[euclidean space]] $R^k$), **imply** (b) and (c).
 	- 10. [[Bolzano-Weierstrass theorem]]
 	  Every [[bounded]] [[infinite]] **subset** of $R^k$ has a [[limit point]] in $R^k$.
+-
