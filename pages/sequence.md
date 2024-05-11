@@ -1,3 +1,4 @@
+public:: true
 alias:: 序列, sequences
 
 - # Definition

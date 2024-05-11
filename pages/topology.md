@@ -1,6 +1,7 @@
+public:: true
 alias:: 拓扑
 
-- # Definition
+- ## Definition
   A [[topology]] on a [[set]] $X$ is a [[collection]] $\tau$ of [[subsets]] of $X$ having the
   following properties:
 	- $\phi$([[empty set]]) and $X$ are in $\tau$.

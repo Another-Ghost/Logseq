@@ -1,3 +1,4 @@
+public:: true
 alias:: 域
 title:: field
 

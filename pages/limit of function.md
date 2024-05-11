@@ -1,3 +1,4 @@
+public:: true
 alias:: 极限, 极限值, limit
 
 - # Definition

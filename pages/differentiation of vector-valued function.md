@@ -1,3 +1,4 @@
+public:: true
 id:: 655cdcf1-0ef5-4b88-a1fb-ec3071d5249e
 alias:: 向量函数的微分, 向量函数的导数, 多元函数的导数, 多元函数的微分
 
@@ -112,4 +113,5 @@ alias:: 向量函数的微分, 向量函数的导数, 多元函数的导数, 多
 		  #+END_TIP
 	- 若映射 $f$ 在 $\boldsymbol x_{0}$ 的某一 *邻域* 内存在 $[[Jacobi 矩阵]] $\boldsymbol Jf$, 且 $\boldsymbol Jf$ 的各 元素 在点 $\boldsymbol x_{0}$ 处[[连续]]，则映射 $f$ 在点 $\boldsymbol x_{0}$ 处[[可微]].
 	  logseq.order-list-type:: number
+- ## [[复变函数的导数]]
 -

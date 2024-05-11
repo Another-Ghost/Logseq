@@ -1,3 +1,4 @@
+public:: true
 alias:: Stieltjes integral, 积分
 
 - # Definition

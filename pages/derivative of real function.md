@@ -1,4 +1,7 @@
-# Definition
+public:: true
+alias:: 实函数的导数, 实函数的微分
+
+- # Definition
 	- Let [[function]] $f$ be defined (and [[real-valued]]) on $[a, b]$. For any $x\in[a, b]$ form the [[quotient]]
 	  $$\phi(t)=\frac{f(t)-f(x)}{t-x} \quad(a<t<b, t \neq x)$$
 	  and define

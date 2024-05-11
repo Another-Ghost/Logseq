@@ -1,3 +1,4 @@
+public:: true
 alias:: 级数收敛
 
 - ## [[收敛半径]]

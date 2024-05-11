@@ -25,7 +25,8 @@ alias:: 欧几里得空间, 欧氏空间, euclidean spaces, euclidean k-space
   d(\mathbf{x}, \mathbf{y})=|\mathbf{x}-\mathbf{y}|=\sqrt{\sum_{k=1}^{n}\left(x_{i}-y_{j}\right)^{2}}\\
   \forall \mathbf{x}=\left(x_{1}, x_{2} \ldots \ldots x_{n}\right), \mathbf{y}=\left(y_{1}, y_{2}, \ldots, y_{n}\right) \in R^{k}
   \end{array}
-- The structure now defined (the [[vector space]] $R^k$ with the above [[inner product]] and [[norm]] is called [[euclidean k-space]].
+- The structure now defined (the [[vector space]] $R^k$ with the above [[inner product]] and [[norm]] ) is called [[euclidean k-space]].
+- {{embed ((661e9844-6de6-436a-b1bf-c9f8ae0d344c))}}
 - # Theorem
   id:: 64777831-9e87-4cdd-98b8-7e17ed21e62b
 	- Suppose $\mathbf{x},\mathbf{y},\mathbf{z}\in R^k$, and $\alpha$ is [[real]]. Then

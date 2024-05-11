@@ -9,4 +9,4 @@ alias:: 函数
 	  f(A\cup B)=f(A)\cup f(B) \\
 	  f(A\cap B)\ne f(A)\cap f(B)
 	  \end{array}
--
+- ## [[初等函数]]

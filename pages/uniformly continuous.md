@@ -1,3 +1,4 @@
+public:: true
 alias:: uniformly continuous mapping, 一致连续映射
 
 - # Definition

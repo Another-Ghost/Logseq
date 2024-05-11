@@ -1,3 +1,4 @@
+public:: true
 alias:: infinite series, 级数, 无穷级数
 
 - # Definition

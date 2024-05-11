@@ -1,3 +1,4 @@
+public:: true
 alias:: 多元函数
 
 - ### 定义

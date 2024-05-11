@@ -1,3 +1,4 @@
+public:: true
 alias:: 收敛序列, 序列收敛
 
 - # Definition
@@ -63,6 +64,7 @@ alias:: 收敛序列, 序列收敛
 	  (c) $\lim _{n \rightarrow \infty} \sqrt[n]{n}=1$.
 	  (d) If $p>0$ and $\alpha$ is **real**, then $\lim _{n \rightarrow \infty} \frac{n^{\alpha}}{(1+p)^{n}}=0$.
 	  (e) If $|x|<1$, then $\lim _{n \rightarrow \infty} x^{n}=0$.
+- ## [[uniform convergence]]
 - ## Summary
 	- 序列 收敛可以等价为极限存在。
 	  logseq.order-list-type:: number

@@ -1,3 +1,4 @@
+public:: true
 alias:: 环
 
 - ## 定义

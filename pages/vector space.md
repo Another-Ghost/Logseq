@@ -1,3 +1,4 @@
+public:: true
 alias:: 线性空间, 向量空间
 
 - # Definition

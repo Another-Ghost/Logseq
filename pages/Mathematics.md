@@ -1,4 +1,11 @@
-- ![image.png](../../../../../../assets/image_1681050938823_0.png)
-- ![image.png](../assets/image_1681051063644_0.png)
-- ![image.png](../assets/image_1681052048637_0.png)
--
+public:: true
+alias:: 数学, math, mathematic
+
+- ## [[集合论]]
+- ## [[数学分析]]
+	- ### [[复变函数]]
+- ## [[代数学]]
+  collapsed:: true
+	- ### [[高等代数]]
+- ## [[点集拓扑]]
+- ## [[离散数学]]

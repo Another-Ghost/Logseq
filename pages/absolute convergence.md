@@ -1,3 +1,4 @@
+public:: true
 alias:: converge absolutely, converges absolutely, 绝对收敛, 级数绝对收敛
 
 - #SameForComplex

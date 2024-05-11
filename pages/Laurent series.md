@@ -1,3 +1,4 @@
+public:: true
 alias:: 洛朗级数, Laurent expansion, 洛朗展开式
 
 - # Definition

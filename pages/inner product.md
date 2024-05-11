@@ -1,3 +1,4 @@
+public:: true
 alias:: scalar product, 内积
 
 - # Definition

@@ -1,3 +1,4 @@
+public:: true
 alias:: 柯西积分定理, 柯西-古萨定理
 
 - # Theorem

@@ -1,4 +1,5 @@
-alias:: connected, 连通集, 连通
+public:: true
+alias:: connected, 连通集, 连通, connectedness
 
 - # Definiton
   A set $E\subset X$ is said to be [[connected]] if $E$ is not a [[union]] of two **nonempty** [[separated sets]].

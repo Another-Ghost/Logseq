@@ -1,3 +1,4 @@
+public:: true
 filters:: {}
 alias:: limit points
 

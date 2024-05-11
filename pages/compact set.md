@@ -1,4 +1,4 @@
-alias:: compact, 紧集, compact sets, compactness
+alias:: compact, 紧集, compact sets, compactness, 紧致
 
 - # Definition
 	- A **subset** $K$ of a [[metric space]] $X$ is said to be [[compact]] if every [[open cover]] of $K$ contains a [[finite]] [[subcover]].
@@ -23,7 +23,7 @@ alias:: compact, 紧集, compact sets, compactness
 		- (b) E is [[compact]].
 		- (c) Every [[infinite]] **subset** of $E$ has a [[limit point]] in $E$.
 		- >The [[equivalence]] of (a) and (b) is known as [[Heme-Borel theorem]].
-		- >(b) and (c) are equivalent in **any** [[metric space]] (Exercise 26)
+		- >(b) and (c) are equivalent in **any** [[metric space]]
 		  but that (a) does **not**, in general(besides in [[euclidean space]] $R^k$), **imply** (b) and (c).
 	- 10. [[Bolzano-Weierstrass theorem]]
 	  Every [[bounded]] [[infinite]] **subset** of $R^k$ has a [[limit point]] in $R^k$.
