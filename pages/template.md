@@ -1,6 +1,6 @@
-alias:: 模板
+alias:: 模板, C++/template
 
-- 在 C++ 编程语言中，[[模板]]是一种[[实体]]，用于定义以下一种或多种结构：
+- 在 C++ 编程语言中，[[模板]]是一种[实体]([[C++/entity]])，用于定义以下一种或多种结构：
 	- 类[[family]]（[[class template]]），这可能包括[[嵌套类]]（nested class）。
 	  logseq.order-list-type:: number
 	- 函数 family（[[function template]]），这可能包括[[成员函数]]。
@@ -19,14 +19,14 @@ alias:: 模板
   [[类模板]]的[[实例化]]**不会**[[实例化]]其任何[[成员函数]]，**除非这些成员函数也被使用**。
   在[[链接]]时，由不同[[翻译单元]]生成的**相同[[实例化]]将会合并**。
 - [[类模板定义]]必须在[[隐式实例化]]的点可见，这就是为什么[[模板库]]通常在[[头文件]]中提供所有[[模板定义]]的原因（例如，大多数 Boost 库都是[[仅头文件]]的）。
-- # 语法
+- ## 语法
 	- ``` 
 	  template <parameter-list> requires-clause(optional) declaration
 	  `template <parameter-list> concept concept-name = constraint-expression; //C++20
 	  ```
 		- `parameter-list` 是一个非空的逗号分隔列表，包含[[模板参数]]，每个参数可以是非类型参数、类型参数、模板参数，或者是任何这些的[[参数包]]。
 		- `requires-clause`（自[[C++20]]起）是一个指定模板参数[[约束]]的[[requires-clause]]。
-- # [[template-id]]
+- ## [[C++/template-id]]
 	- ```
 	  template-name <parameter-list>		
 	  ```
@@ -37,4 +37,7 @@ alias:: 模板
 			  logseq.order-list-type:: number
 			- 用户定义的[[literal template]]的名称。
 			  logseq.order-list-type:: number
-- # [[templated entity]]
+- ## [[C++/templated entity]]
+- ## [[C++/template parameter]]
+- ## [[C++/template instantiation]]
+	- ### [[C++/template specialization]]

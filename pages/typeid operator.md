@@ -1,6 +1,6 @@
 alias:: typeid
 
-- `typeid` 允许检查表达式的[[type]]：
+- `typeid` 允许检查表达式的[[C++/type]]：
 - ``` cpp
   typeid (type)
   typeid (expression)
