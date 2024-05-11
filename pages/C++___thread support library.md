@@ -1,0 +1,6 @@
+- #<thread>
+- mutual exclusion: #<mutex> #<shared_mutex>
+- #<condition_variable>
+- #<semaphore>
+- #<future>
+-

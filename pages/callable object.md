@@ -18,7 +18,7 @@ alias:: 可调用对象
    auto lambda = [](int x) { std::cout << "Lambda Value: " << x << std::endl; };
    lambda(10); // 调用Lambda表达式
    ```
-- 4. **函数对象（Functor）**：任何定义了`operator()`的对象，也称为函数对象或仿函数（functor）。
+- 4. **[[函数对象]]（Functor）**：任何定义了`operator()`的对象，也称为函数对象或仿函数（functor）。
 - ```cpp
    struct MyFunctor {
        void operator()(int x) const {
