@@ -427,4 +427,4 @@
  :file/name-format :triple-lowbar
  :ui/show-brackets? false 
  :editor/logical-outdenting? false
- :publishing/all-pages-public? true}
+ :publishing/all-pages-public? false}
