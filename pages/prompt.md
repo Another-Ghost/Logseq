@@ -1,8 +1,9 @@
+public:: false
 alias:: prompts, 提示词
 
 - 可以用 gpt 帮助生成提示词。
 - ### 咒语
-	- Let’s think step by step
+	- Let's think step by step
 	- Take a deep breath and work on this step by step
 	  id:: 65fc35d1-5381-46b7-9b90-6fdf72b14ddf
 - ## 数学
@@ -32,3 +33,4 @@ alias:: prompts, 提示词
 	  4.输入数据：我们希望获得响应的"输入内容或问题"。
 	  5.输出指示：模型输出响应的数据格式，内容的风格、个性或态度等要求。
 - 专业名词不翻译
+-

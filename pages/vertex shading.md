@@ -4,7 +4,7 @@ alias:: 顶点着色
 - ### Two Tasks of Vertex Shading
 	- There are two main tasks of [[vertex shading]], namely,  to **compute the [[position]] for a vertex** and to **evaluate whatever the programmer may like to have as [[vertex output data]]**, such as a [[normal]] and [[texture coordinates]].
 - ### Origin of the Name of Vertex Shader
-	- **Traditionally** much of the *shade* of an object was computed by applying [[lights]] to each *vertex’s location* and *normal* and *storing* only the *resulting [[color]] at the [[vertex]]. 
+	- **Traditionally** much of the *shade* of an object was computed by applying [[lights]] to each *vertex's location* and *normal* and *storing* only the resulting [[color]] at the [[vertex]]. 
 	  These colors were then [[interpolated]] across the [[triangle]]. 
 	  **For this reason**, this *programmable vertex processing unit* was named the [[vertex shader]].
 	  **With the advent** of the modern *GPU*, along with some or all of the shading taking place per pixel, this vertex shading stage is more general and may not evaluate any shading equations at all. 

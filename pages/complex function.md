@@ -1,5 +1,6 @@
 alias:: 复变量函数, 复变函数, 复变量
 
+- ## 定义
 - 设 $D$ 是[[complex plane]]上一*点集*，如果对于 $D$ 中任意的一点$z$,有确定的[[复数]]$w$同它对应，则称在 $D$ 上定义了一个[[complex function]],记作 
   id:: 649be53c-fa5d-4254-ac57-32cb5822b946
   $$w=f(z)$$
@@ -15,7 +16,7 @@ alias:: 复变量函数, 复变函数, 复变量
   $$u = u(x,y), D =v(x,y)$$
   这样，一个[[complex function]] $w=f(z)$ 就相当于一对*二元*[[实变函数]].
 	- > $w=f(z)$的性质就取决于 $u=u\left(x,y\right)$ 与$v=v\left(\begin{matrix}x,y\end{matrix}\right)$ 的性质。
-- ## [[复变函数]]与[[实变函数]]
+- ## 复变函数与[[实变函数]]
 	- 不同点：
 	  logseq.order-list-type:: number
 		- $e^z$是 *周期函数* ，*周期* 为 $2k\pi i\ (k=0,\pm 1, \pm 2,\cdots)$。
@@ -30,4 +31,15 @@ alias:: 复变量函数, 复变函数, 复变量
 		  logseq.order-list-type:: number
 		- $\sqrt[3]{-27}$是三个值。
 		  logseq.order-list-type:: number
+- # [[解析函数]]
+- # [[复积分]]
+	- ## [[柯西积分定理]]
+- # 解析函数的级数表示
+	- ## [[复数项级数]]
+	- ## [[泰勒级数]]
+	- ## [[洛朗级数]]
+- # [[留数]]
+- # [[傅里叶变换]]
+- # [[拉普拉斯变换]]
+- # [[复分析参考]]
 -

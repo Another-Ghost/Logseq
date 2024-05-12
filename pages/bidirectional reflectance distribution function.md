@@ -1,3 +1,4 @@
+public:: true
 alias:: BRDF, 双向反射分布函数, BRDFs
 
 - for a given [[view ray]] the *quantity* we need to compute is $L_i(\bold{c}, −\bold{v})$([[radiance]]), where $\bold c$ is the [[camera position]] and $−\bold v$ is the direction along the [[view ray]].

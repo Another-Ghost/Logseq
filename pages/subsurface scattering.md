@@ -8,7 +8,7 @@ alias:: subsurface-scattered light, subsurface-scattered, 次表面散射
 - the transmitted light undergoesmultiple scattering and absorption events until finally some of it is **re-emitted back from the surface**. 
   As shown in this example, most of the *absorption* is at **longer** [[wavelengths]], leaving primarily *short-wavelength [[blue]] light*. 
   In addition, it scatters from particles inside the material. Eventually some refracted light is scattered back out of the surface, as shown by the blue arrows exiting the surface in various directions.
-  ![image.png](../assets/image_1695007755279_0.png)
+  ![image.png](../assets/image_1695007755279_0.png){:height 294, :width 670}
 - ## Entry-Exit Distance and Shading Scale
 - The [[subsurface-scattered light]] exits the surface at varying [[distances]] from the entry point.
 - The distribution of [[entry-exit distances]] depends on the [[density]] and *properties* of the [[scattering particles]] in the material.

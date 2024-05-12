@@ -6,7 +6,7 @@ alias:: particles
   > This process explains why [[clouds]] and [[fog]] [[scatter]] light so strongly. They are both
   created by condensation, which is the process of water molecules in the air clumping
   together into increasingly large *clusters*.
-- the term [[particles]] is used to refer to both *isolated molecules* and *multi-molecule clusters*.
+- the term ^^particles^^ is used to refer to both **isolated molecules clusters** and **multi-molecule clusters**.
 - They exhibits the same *directional variation* and [[wavelength dependence]].
 - This type of scattering is called [[Rayleigh scattering]] in the case of [[atmospheric particles]] and [[Tyndall scattering]] in the case of [[particles embedded in solids]].
 - As particle size increases beyond a [[wavelength]], the fact that the scattered waves

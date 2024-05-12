@@ -1,4 +1,4 @@
-- alias::局部光照[[局部光照]]
+- alias::局部光照
 - # Definition
 	- [[局部光照]]模型采用[[反射方程]]在每个[[表面点]]处局部地计算[[着色]]。
 	  logseq.order-list-type:: number

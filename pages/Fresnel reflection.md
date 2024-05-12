@@ -41,7 +41,7 @@ alias:: 菲涅尔反射, Fresnel reflectance, Fresnel function, 菲涅尔反射�
 	  F(\mathbf{n},\mathbf{l})\approx F_0+(1-F_0)(1-(\mathbf{n}\cdot\mathbf{l})^+)^5 \tag{1}
 	  $$
 	  这个函数是 *白色* 和 $F_0$ 之间的 RGB *插值* 。
-	- ![image.png](../assets/image_1696171634152_0.png){:height 425, :width 748}
+	- ![image.png](../assets/image_1696171634152_0.png){:height 366, :width 642}
 	  上图是[[Schlick's approximation]]与六种物质的[[外部反射]]的 *正确值* 进行了比较。
 	  前三种物质：玻璃、铜和铝。后三种物质是铬、铁和锌。
 	  其中实线显示完整的Fresnel方程，虚线显示 Schlick's approximation 。
