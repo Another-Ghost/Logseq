@@ -3,6 +3,6 @@ public:: true
 - # Outline
 	- ## [[CS]]
 	- ## [[Math]]
-	- ## [[GameTech]]
+	- ## [[Interactive Technology]]
 	- ## [[Signal Processing]]
 -

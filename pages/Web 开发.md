@@ -1,4 +1,6 @@
-## ChatGPT 文本处理
+public:: false
+
+- ## ChatGPT 文本处理
 	- TODO 
 	  \[
 	  \left|H\left(e^{j \omega}\right)\right|=\left\{\begin{array}{ll}

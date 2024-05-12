@@ -7,4 +7,3 @@
 	- [[ray tracing shaders]] perform calculations related to [[ray tracing]].
 	  logseq.order-list-type:: number
 -
--

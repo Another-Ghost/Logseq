@@ -1,4 +1,5 @@
 collapsed:: true
+public:: private
 
 	- ![image.png](../../../../../../assets/image_1681826484429_0.png){:height 368, :width 608}
 	- ![image.png](../assets/image_1681827695985_0.png)

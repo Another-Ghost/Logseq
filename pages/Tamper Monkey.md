@@ -1,4 +1,6 @@
-## Latex 脚本
+public:: false
+
+- ## Latex 脚本
 	- ~~输人 改 输入~~
 	- ~~靠回车分割这种情况~~
 	  ![image.png](../assets/image_1711204348584_0.png){:height 40, :width 305}
