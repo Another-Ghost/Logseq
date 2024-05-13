@@ -8,7 +8,11 @@ alias:: Gameplay 框架, Gameplay Framework
 - |类|描述|
   |--|--|
   |[[Actor]]||
-  |||
-  |||
-  |||
-  |||
+  |[[Pawn]]||
+  |[[Character]]||
+  | [[PlayerController]] ||
+  | [[AIController]] ||
+  |[[GameMode]]||
+  |[[GameState]]||
+  |[[PlayerState]]||
+  |[[GameInstance]]||

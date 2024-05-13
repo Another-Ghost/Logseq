@@ -1,6 +1,7 @@
-public:: true
+public:: false
 
 - [[Logseq 规范]]
+- [[Logseq 笔记规范]]
 - [[Logseq template]]
 - [[Logseq 改进]]
 - ## TODO 发布
