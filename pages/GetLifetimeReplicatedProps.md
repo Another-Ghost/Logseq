@@ -1,0 +1,2 @@
+- `GetLifetimeReplicatedProps` 函数负责复制你使用 `Replicated` 说明符指派的任何属性，并可用于配置属性的复制方式。
+-
