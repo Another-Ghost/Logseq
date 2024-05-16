@@ -5,7 +5,7 @@ alias:: Unreal GC
   在该 graph 根部是一组指定为[[root set]]的`UObject`。任何`UObject`都可以添加到根集。
   当进行垃圾回收时，引擎将从根集开始，搜索已知`UObject`引用树来跟踪所有引用的`UObject`。任何未被引用的`UObject`（意味着未在树搜索中找到这些对象）将被假设为不再需要，因此被删除。
 - ### UPROPERTY
-	- 你通常需要用一个[[UObject]]的[[UPROPERTY]]引用来保持其存活，这个 UObject 可以是一个 UObject pointer 或者存储 UObject pointer 的 [[Unreal/container]] 类，如[[TArray]]
+	- 你通常需要用一个[[UObject]]的[[UPROPERTY]]引用来保持其存活，这个 UObject 可以是一个 UObject pointer 或者存储 UObject pointer 的 [[Unreal/Container]] 类，如[[TArray]]
 	- [[Actor]] 及其 [[组件]] 通常属于例外情况，因为Actor通常被**链接到 [[root set]]的 Object**所引用（例如它们所属的 [[Level]] ），而 Actor 的 component 被 Actor 自身引用。
 		- Actor可以显式标记为销毁，方法是调用它们的`Destroy`函数，这是从进行中游戏移除Actor的标准方法。
 		- 组件可以使用[[UActorComponent::DestroyComponent]]函数显式销毁，但它们通常在拥有它们的 Actor 从游戏中移除时被销毁。

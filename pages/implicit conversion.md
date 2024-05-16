@@ -22,7 +22,7 @@ alias:: 隐式转换
 	- [[pointer upcast]]：指向[[派生类]]的指针可以转换为指向可访问和明确的[[基类]]的指针，而不会修改其[[const]]或[[volatile]]修饰。
 - # 类的隐式转换
 	- 在[[类]]中，可以通过三个[[成员函数]]来控制[[隐式转换]]：
-		- 单参数构造函数（single-argument [[constructors]]）：允许从特定类型进行隐式转换来初始化对象。
+		- 单参数构造函数（^^single-argument constructors^^）：允许从特定类型进行隐式转换来初始化对象。
 		  logseq.order-list-type:: number
 		- 赋值操作符（[[assignment operator]]）：允许在赋值操作中从特定类型进行隐式转换。
 		  logseq.order-list-type:: number
