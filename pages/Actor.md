@@ -5,7 +5,7 @@ alias:: AActor UObject/Actor
 	  logseq.order-list-type:: number
 	- Actor可以包含一系列[[ActorComponent]]。
 	  logseq.order-list-type:: number
-	- Actor 支持[网络]([[Unreal/Network]])复制属性和函数调用。
+	- Actor 支持[网络复制属性]([[Unreal/Network/Actor Replication]])和函数调用。
 	  logseq.order-list-type:: number
 - ## 生命周期
   id:: 663dcee1-b1c0-4be5-8e5d-115f6eb5fef7

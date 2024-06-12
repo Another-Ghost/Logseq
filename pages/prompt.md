@@ -33,4 +33,9 @@ alias:: prompts, 提示词
 	  4.输入数据：我们希望获得响应的"输入内容或问题"。
 	  5.输出指示：模型输出响应的数据格式，内容的风格、个性或态度等要求。
 - 专业名词不翻译
--
+- ### 小样本提示
+- ![image.png](../assets/image_1716038792839_0.png)
+- 思维链
+- ![image.png](../assets/image_1716038923354_0.png)
+- Retrieval Augmented Generation
+  检索增强生成

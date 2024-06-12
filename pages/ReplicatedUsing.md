@@ -1,2 +1,0 @@
-- ^^ReplicatedUsing 说明符^^具有和[[Replicated]]同样的功能，除此之外还能设置 [[RepNotify]] 函数。此函数将在[[客户端]]成功接收复制数据时触发。
--

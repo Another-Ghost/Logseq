@@ -1,0 +1,4 @@
+- Unity 导入资源时，它会为开发者存储并管理有关该资源的附加数据，例如应使用哪些导入设置来导入资源，以及整个项目中资源的使用位置。下面介绍了此过程：
+	- Unity 为资源分配唯一 ID。
+	- Unity 创建一个伴随资源文件的 `.meta` 文件。
+	- Unity [对资源进行处理](https://docs.unity3d.com/cn/2021.1/Manual/ImportingAssets.html#processing)。

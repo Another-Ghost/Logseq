@@ -1,0 +1,3 @@
+- Unity 可以引用的所有对象的基类。
+- 您从 Object 派生的任何公共变量都将在 Inspector 中显示为放置目标， 让您能够从 GUI 设置其值。UnityEngine.Object 是所有 Unity 内置对象的基类。
+- 虽然 Object 是一个类，但其本意不是为了在脚本中广泛使用。

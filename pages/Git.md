@@ -36,6 +36,9 @@
 - `git commit -m "代码提交信息"`
 - `git push origin master`
 -
-- # Error
+- ## Error
 	- [A lock file already exists in the repository](https://stackoverflow.com/questions/66449211/a-lock-file-already-exists-in-the-repository-which-blocks-this-operation-from-c)
 	  logseq.order-list-type:: number
+- ## Reference 
+  https://learngitbranching.js.org/?locale=zh_CN
+-

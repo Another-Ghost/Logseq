@@ -64,4 +64,3 @@ alias:: VSCode
 		- 在列表中选择可能的正确编码，例如 GBK 或 GB2312。
 		  logseq.order-list-type:: number
 	- 如果你不确定正确的编码是什么，可能需要尝试几种不同的编码，看看哪一种可以正确显示文本。
--

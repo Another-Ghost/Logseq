@@ -40,3 +40,9 @@ alias:: 分支
 	  ```
 	  
 	  这些是 `git branch` 命令的基本用法。你还可以使用其他选项来进行更复杂的操作。
+- 如果你想创建一个新的分支同时切换到新创建的分支的话，可以通过 `git checkout -b <your-branch-name>` 来实现。
+- ```cpp
+  git branch -D PuerTestDemo
+  Deleted branch PuerTestDemo (was eaa69cb).
+  ```
+-

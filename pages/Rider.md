@@ -14,4 +14,108 @@
   <!--Converted by ToLogseq-->
 - Git pull
 	- ![image.png](../assets/image_1715092612692_0.png)
--
+- ## 搜索快捷键
+	- 在JetBrains Rider中，快捷键可以大大提高你的开发效率。以下是一些与搜索相关的常用快捷键：
+	- ### 搜索快捷键
+		- **^^搜索任何内容^^（Search Everywhere）**：
+		  logseq.order-list-type:: number
+			- **Windows/Linux**: `Shift` + `Shift`
+			- **macOS**: `⇧` + `⇧`（两次Shift）
+			- 这个快捷键允许你快速搜索类、文件、符号、以及动作或设置。
+		- **在路径中搜索（Find in Path）**：
+		  logseq.order-list-type:: number
+			- **Windows/Linux**: `Ctrl` + `Shift` + `F`
+			- **macOS**: `⌘` + `⇧` + `F`
+			- 这个功能让你可以在整个项目或指定范围内搜索文本。
+		- **查找类（Find Class）**：
+		  logseq.order-list-type:: number
+			- **Windows/Linux**: `Ctrl` + `N`
+			- **macOS**: `⌘` + `O`
+			- 用于快速定位和打开类文件。
+		- **查找文件（Find File）**：
+		  logseq.order-list-type:: number
+			- **Windows/Linux**: `Ctrl` + `Shift` + `N`
+			- **macOS**: `⌘` + `⇧` + `O`
+			- 用于搜索并打开项目中的文件。
+		- **查找符号（Find Symbol）**：
+		  logseq.order-list-type:: number
+			- **Windows/Linux**: `Ctrl` + `Alt` + `Shift` + `N`
+			- **macOS**: `⌘` + `⌥` + `⇧` + `O`
+			- 用于搜索和导航到项目中的符号（如方法、变量等）。
+		- **跳转到文件（Navigate to File）**：
+		  logseq.order-list-type:: number
+			- **Windows/Linux**: `Ctrl` + `Shift` + `T`
+			- **macOS**: `⌘` + `⇧` + `T`
+			- 允许你通过文件名快速跳转到文件。
+		- **^^最近的文件^^（Recent Files）**：
+		  logseq.order-list-type:: number
+			- **Windows/Linux**: `Ctrl` + `E`
+			- **macOS**: `⌘` + `E`
+			- 列出最近打开的文件，方便快速切换。
+		- **查找和替换（Find and Replace）**：
+		  logseq.order-list-type:: number
+			- **查找**：
+				- **Windows/Linux**: `Ctrl` + `F`
+				- **macOS**: `⌘` + `F`
+			- **^^替换^^**：
+				- **Windows/Linux**: `Ctrl` + `R`
+				- **macOS**: `⌘` + `R`
+	- ### 如何查看和修改快捷键
+	  你可以在Rider中查看和修改快捷键：
+		- **打开设置**：
+		  logseq.order-list-type:: number
+			- **Windows/Linux**: `Ctrl` + `Alt` + `S`
+			- **macOS**: `⌘` + `,`
+		- **导航到键位映射（Keymap）**：
+		  logseq.order-list-type:: number
+			- 在设置窗口中，导航到 `Keymap` 部分。
+		- **搜索和修改快捷键**：
+		  logseq.order-list-type:: number
+			- 在 `Keymap` 中，你可以搜索特定的动作并查看其当前的快捷键。你还可以双击某个动作并为其设置新的快捷键。
+	- 通过熟练使用这些快捷键，你可以更高效地进行代码搜索和导航，提高开发效率。
+	  <!--Converted by ToLogseq-->
+- ## 查看继承层次
+  在JetBrains Rider中，查看类的继承关系可以帮助你理解项目的结构和类之间的关系。Rider提供了多种工具和视图来查看类的继承层次。以下是一些查看类继承关系的常用方法：
+- ### 使用继承层次视图（Hierarchy View）
+	- **查看类型层次（Type Hierarchy）**：
+	  logseq.order-list-type:: number
+		- **快捷键**：
+			- **Windows/Linux**: `Ctrl` + `H`
+			- **macOS**: `⌃` + `H`
+		- **使用方法**：将光标放在你感兴趣的类名上，然后按下上述快捷键。Rider会打开一个窗口，显示该类的继承层次，包括父类和子类。
+	- **查看方法层次（Method Hierarchy）**：
+	  logseq.order-list-type:: number
+		- **快捷键**：
+			- **Windows/Linux**: `Ctrl` + `Shift` + `H`
+			- **macOS**: `⌃` + `⇧` + `H`
+		- **使用方法**：将光标放在一个方法名上，然后按下上述快捷键。Rider会显示该方法在继承层次中的重写情况。
+	- **^^查看调用层次（Call Hierarchy）^^**：
+	  logseq.order-list-type:: number
+		- **快捷键**：
+			- **Windows/Linux**: `Ctrl` + `Alt` + `H`
+			- **macOS**: `⌥` + `⌘` + `H`
+		- **使用方法**：将光标放在方法名上，按下上述快捷键。Rider会显示该方法的调用关系，包括调用者和被调用者。
+- ### 使用结构工具窗口（Structure Tool Window）
+	- **打开结构工具窗口**：
+		- **快捷键**：
+			- **Windows/Linux**: `Alt` + `7`
+			- **macOS**: `⌘` + `7`
+		- **使用方法**：在结构工具窗口中，你可以查看当前文件的结构，包括类和成员。虽然这个窗口不会直接显示继承关系，但它有助于你快速浏览和导航代码。
+- ### 使用导航功能（Navigate Functionality）
+	- **快速导航到父类/接口（Navigate to Super Class/Interface）**：
+	  logseq.order-list-type:: number
+		- **快捷键**：
+			- **Windows/Linux**: `Ctrl` + `U`
+			- **macOS**: `⌘` + `U`
+		- **使用方法**：将光标放在类名上，按下快捷键，Rider会跳转到该类的父类或接口定义。
+	- **快速导航到实现（Navigate to Implementations）**：
+	  logseq.order-list-type:: number
+		- **快捷键**：
+			- **Windows/Linux**: `Ctrl` + `Alt` + `B`
+			- **macOS**: `⌥` + `⌘` + `B`
+		- **使用方法**：将光标放在类名或方法名上，按下快捷键，Rider会显示所有实现该类或方法的位置。
+- ### 使用代码检查功能（Code Inspection）
+	- **查看类的继承关系和使用情况**：
+		- 你可以使用Rider的代码检查功能，右键点击类名，选择 `Find Usages` 或 `Show Usage`，这会显示该类在项目中的所有引用和使用情况，有助于你理解其继承关系和应用场景。
+- 通过这些工具和视图，Rider可以帮助你全面了解项目中类的继承关系和结构，使你在开发和维护代码时更加得心应手。
+  <!--Converted by ToLogseq-->

@@ -9,4 +9,4 @@ alias:: Unreal Build Tool
 	  UBT解析传入的命令行参数，确定自己需要生成的目标类型。
 	- 实际生成阶段
 	  logseq.order-list-type:: number
-	  UBT根据环境和参数，开始生成makefile，确定C++的各种目录的位置。最终开始构建整个项目。此时编译工作交给标准C++编译器。
+	  UBT根据环境和参数，开始生成 makefile ，确定C++的各种目录的位置。最终开始构建整个项目。此时编译工作交给标准C++编译器。

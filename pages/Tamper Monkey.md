@@ -26,8 +26,8 @@ public:: false
 	- ~~自动部署 发布 问GPT~~
 	- 单词空格
 	- ~~汉字范围~~
-	- . 先不管
+	- TODO 结尾 .
 	- TODO , 处理
 	- $2)$ 、按巴特沃
 	- TODO 支持kimi
-	-
+	- TODO 收玫
